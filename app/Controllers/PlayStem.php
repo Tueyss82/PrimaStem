@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-class Home extends BaseController
+class PlayStem extends BaseController
 {
     public function index(): string
     {
