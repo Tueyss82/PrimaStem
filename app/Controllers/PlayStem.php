@@ -6,7 +6,7 @@ class PlayStem extends BaseController
 {
     public function index(): string
     {
-        return view('PrimaStem/accueil');
+        return view('PrimaStem/index');
     }
 
     public function exercices(): string

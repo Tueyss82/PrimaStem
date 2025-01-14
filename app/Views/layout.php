@@ -5,7 +5,6 @@
 <!-- HEADER: MENU + HEROE SECTION -->
 <header>
     <meta charset="UTF-8">
-    <title>Publicom</title>
     <meta name="description" content="The small framework with powerful features">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="/favicon.ico">
@@ -20,7 +19,10 @@
             <li class="menu-toggle">
                 <button id="menuToggle">&#9776;</button>
             </li>
-            <li class="menu-item hidden"><a href="<?= url_to('index') ?>">Accueil</a></li>
+            <li class="menu-item hidden"><a href="<?= url_to('primastem') ?>">Accueil</a></li>
+            <li class="menu-item hidden"><a href="">Nos Partenaires</a></li>
+            <li class="menu-item hidden"><a href="">Blog</a></li>
+            <li class="menu-item hidden"><a href="">Nous Contacter</a></li>
             <li class="menu-item hidden"><a href="<?= url_to('playstem') ?>">PlayStem</a></li>
             
         </ul>

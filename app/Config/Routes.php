@@ -8,7 +8,9 @@ use CodeIgniter\Router\RouteCollection;
 
 //service('auth')->routes($routes);
 
-$routes->get('/', 'Home::index', ['as' => 'index']);
+$routes->get('/', 'PrimaStem::index', ['as' => 'primastem']);
+ 
+$routes->get('/playstem', 'PlayStem::index', ['as' => 'playstem']);
 
 
 
@@ -85,8 +87,3 @@ $routes->post('modifier_solutions_exercices', 'PlayStem::updateSolutionsExercice
 
 $routes->post('supprimer_solutions_exercices', 'PlayStem::deleteSolutionsExercices', ['as' => 'supprSolutionExercices']);
 //-----------------------------------------------
-
-
- $routes->get('/', 'Home::index', ['as' => 'index']);
- 
- $routes->get('/playstem', 'PlayStem::index', ['as' => 'playstem']);
