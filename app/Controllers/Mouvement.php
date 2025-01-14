@@ -2,26 +2,27 @@
 
 namespace App\Controllers;
 
-class PlayStem extends BaseController
+class Mouvement extends BaseController
 {
-    public function index(): string
+    public function ajoutMouvement(): string
+    {
+        return view('PrimaStem/accueil');
+    }
+    public function createMouvement()
+    {
+        return view('PrimaStem/accueil');
+    }
+    public function modifMouvement(): string
     {
         return view('PrimaStem/accueil');
     }
 
-    public function exercices(): string
+    public function updateMouvement()
     {
         return view('PrimaStem/accueil');
     }
-    public function exercice(): string
-    {
-        return view('PrimaStem/accueil');
-    }
-    public function leçons(): string
-    {
-        return view('PrimaStem/accueil');
-    }
-    public function leçon(): string
+    
+    public function deleteMouvement()
     {
         return view('PrimaStem/accueil');
     }

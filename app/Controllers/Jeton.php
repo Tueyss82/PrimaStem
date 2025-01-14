@@ -2,26 +2,27 @@
 
 namespace App\Controllers;
 
-class PlayStem extends BaseController
+class Jeton extends BaseController
 {
-    public function index(): string
+    public function ajoutJeton(): string
+    {
+        return view('PrimaStem/accueil');
+    }
+    public function createJeton()
+    {
+        return view('PrimaStem/accueil');
+    }
+    public function modifJeton(): string
     {
         return view('PrimaStem/accueil');
     }
 
-    public function exercices(): string
+    public function updateJeton()
     {
         return view('PrimaStem/accueil');
     }
-    public function exercice(): string
-    {
-        return view('PrimaStem/accueil');
-    }
-    public function leçons(): string
-    {
-        return view('PrimaStem/accueil');
-    }
-    public function leçon(): string
+    
+    public function deleteJeton()
     {
         return view('PrimaStem/accueil');
     }

@@ -2,26 +2,27 @@
 
 namespace App\Controllers;
 
-class PlayStem extends BaseController
+class Solutions_Exercices extends BaseController
 {
-    public function index(): string
+    public function ajoutSolutionsExercices(): string
+    {
+        return view('PrimaStem/accueil');
+    }
+    public function createSolutionsExercices()
+    {
+        return view('PrimaStem/accueil');
+    }
+    public function modifSolutionsExercices(): string
     {
         return view('PrimaStem/accueil');
     }
 
-    public function exercices(): string
+    public function updateSolutionsExercices()
     {
         return view('PrimaStem/accueil');
     }
-    public function exercice(): string
-    {
-        return view('PrimaStem/accueil');
-    }
-    public function leçons(): string
-    {
-        return view('PrimaStem/accueil');
-    }
-    public function leçon(): string
+    
+    public function deleteSolutionsExercices()
     {
         return view('PrimaStem/accueil');
     }
