@@ -8,21 +8,21 @@ use CodeIgniter\Router\RouteCollection;
 
 //service('auth')->routes($routes);
 
+// Site PrimaStem
+
 $routes->get('/', 'PrimaStem::index', ['as' => 'primastem']);
- 
-$routes->get('/playstem', 'PlayStem::index', ['as' => 'playstem']);
 
+// Pages 
 
+$routes->get('contact', 'PrimaStem::contact', ['as' => 'contact']);
 
+$routes->get('partenaires', 'PrimaStem::partenaires', ['as' => 'partenaires']);
 
-
-
-
-
-
+$routes->get('blog', 'PrimaStem::blog', ['as' => 'blog']);
 
 //------------------Site exercice
 
+$routes->get('playstem', 'PlayStem::index', ['as' => 'playstem']);
 
 //----Renvoi des pages exercices et leçons 
 

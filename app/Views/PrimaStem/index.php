@@ -1,4 +1,4 @@
-<?= $this->extend('layout') ?>
+<?= $this->extend('layoutPrimaStem') ?>
 <?= $this->section('contenu') ?>
 
 <title>PrimaStem</title>
