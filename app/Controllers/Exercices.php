@@ -4,6 +4,17 @@ namespace App\Controllers;
 
 class Exercices extends BaseController
 {
+    
+    
+    public function exercices(): string
+    {
+        return view('PlayStem/Exercices');
+    }
+    public function exercice(): string
+    {
+        return view('PlayStem/Exercice');
+    }
+    
     public function ajoutExercices(): string
     {
         return view('PrimaStem/accueil');

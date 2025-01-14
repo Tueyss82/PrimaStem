@@ -26,12 +26,12 @@ $routes->get('/playstem', 'PlayStem::index', ['as' => 'playstem']);
 
 //----Renvoi des pages exercices et leçons 
 
-$routes->get('exercices', 'PlayStem::exercices', ['as' => 'exercices']);
+$routes->get('exercices', 'Exercices::exercices', ['as' => 'exercices']);
 
-$routes->get('exercice-(:num)', 'PlayStem::exercice/$1', ['as' => 'exercice']);
+$routes->get('exercice-(:num)', 'Exercices::exercice/$1', ['as' => 'exercice']);
 
-$routes->get('leçons', 'PlayStem::leçons', ['as' => 'leçons']);
-$routes->get('leçon-(num)', 'PlayStem::leçon/$1', ['as' => 'leçons']);
+$routes->get('leçons', 'Leçons::leçons', ['as' => 'leçons']);
+$routes->get('leçon-(num)', 'Leçons::leçon/$1', ['as' => 'leçons']);
 //-----------------------------------------------
 
 
