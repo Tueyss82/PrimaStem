@@ -1,4 +1,4 @@
-<?= $this->extend('layout') ?>
+<?= $this->extend('PlayStem/layoutPlayStem') ?>
 <?= $this->section('contenu') ?>
 
 
