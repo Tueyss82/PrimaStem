@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-class PlayStem extends BaseController
+class PrimaStem extends BaseController
 {
     public function index(): string
     {
