@@ -10,13 +10,24 @@ use CodeIgniter\Router\RouteCollection;
 
 $routes->get('/', 'Home::index', ['as' => 'index']);
 
- //----Renvoi des pages exercices et leçons 
+
+
+
+
+
+
+
+
+
+//------------------Site exercice
+
+
+//----Renvoi des pages exercices et leçons 
 
 $routes->get('exercices', 'Home::exercices', ['as' => 'exercices']);
 
 $routes->get('leçons', 'Home::leçons', ['as' => 'leçons']);
 //-----------------------------------------------
-
 
 
 
