@@ -30,7 +30,7 @@
         </div>
         <label for="addFiles" class="form-label">Fichiers Joints</label>
         <p class="fs-6">Max : 5 Fichiers et 20MB par fichier</p>
-        <button type="submit" class="button" id="addFiles">Ajouter des fichiers</button>
+        <input type="file" id="addFile">
         <div class="col-12">
             <button type="submit" class="btn btn-primary">Envoyer</button>
         </div>
