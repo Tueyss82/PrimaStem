@@ -16,11 +16,11 @@ class PrimaStem extends BaseController
 
     public function partenaires(): string
     {
-        return view('PrimaStem/index');
+        return view('PrimaStem/partenaires');
     }
 
     public function blog(): string
     {
-        return view('PrimaStem/index');
+        return view('PrimaStem/blog');
     }
 }

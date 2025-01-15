@@ -5,8 +5,8 @@
 
 <body>
 
-    <h1 class="fw-bold">Nous Contacter</h1>
-    <p>
+    <h1 class="fw-bold headerText">Nous Contacter</h1>
+    <p class="headerText">
         Nous souhaitons écouter vos demandes et vos souhaits.
         Remplissez le formulaire ci-dessous et nous vous répondrons au plus tôt possible !
     </p>
@@ -32,7 +32,7 @@
         <p class="fs-6">Max : 5 Fichiers et 20MB par fichier</p>
         <input type="file" id="addFile">
         <div class="col-12">
-            <button type="submit" class="btn btn-primary">Envoyer</button>
+            <button type="submit" class="submitButton">Envoyer</button>
         </div>
     </form>
 </body>
