@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="/favicon.ico">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
-    <link rel="stylesheet" type="text/css" href="../css/form.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -30,7 +29,7 @@
                         <a class="nav-link" href="<?= url_to('blog') ?>">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= url_to('contact') ?>">Nous Contacter</a>
+                        <a class="nav-link" href="<?= url_to('ajoutContact') ?>">Nous Contacter</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="<?= url_to('playstem') ?>">PlayStem</a>
@@ -48,10 +47,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 <footer>
-    <div class="copyrights">
-
-        <p>&copy; <?= date('Y') ?> CodeIgniter Foundation. CodeIgniter is open source project released under the MIT
-            open source licence.</p>
-
+    <div class="footer">
+        <div class="footerText">
+            &copy; <?= date('Y') ?> PrimaSTEM & co.
+        </div>
+        <div class="row">
+            <div class="col-md-6 footerText">
+                <p>Mail : primastem@gmail.com</p>
+                <p>Tel, WhatsApp : +33 6 24 95 09 36 (FR / EN)</p>
+                <p>Localisation : Cannes, France</p>
+            </div>
+            <div class="col-md-6 footerText">
+                <p>Suivez nos réseaux !</p>
+                <div class="footer-content">
+                    <a href="https://www.instagram.com/primastem.world/" target="_blank">
+                        <img src="../image/logoinstaforfooter.png" class="footerImg" alt="Logo Instagram" class="instagram-logo">
+                    Instagram : PrimaStem
+                    </a>
+                </div>
+                <p></p>
+            </div>
+        </div>
     </div>
 </footer>
