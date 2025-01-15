@@ -16,6 +16,22 @@
     text-align: center;
 }
 
+.customRow{
+    flex-shrink: 0;
+    padding-right: calc(var(--bs-gutter-x)*.5);
+    padding-left: calc(var(--bs-gutter-x)*.5);
+    margin-top: var(--bs-gutter-y);
+    width: 150px;
+}
+
+.footerSN {
+    width: 120px;
+}
+
+.footerImg {
+    width: 100px;
+}
+
 .imgIndex {
     width: 600px;
     padding-bottom: 50px;

@@ -14,11 +14,12 @@ $routes->get('/', 'PrimaStem::index', ['as' => 'primastem']);
 
 // Pages 
 
-$routes->get('contact', 'PrimaStem::contact', ['as' => 'contact']);
+$routes->get('contact', 'Contact::index', ['as' => 'ajoutContact']);
+$routes->post('contact', 'Contact::create', ['as' => 'createContact']);
 
 $routes->get('partenaires', 'PrimaStem::partenaires', ['as' => 'partenaires']);
 
-$routes->get('blog', 'PrimaStem::blog', ['as' => 'blog']);
+$routes->get('blog', 'Blog::index', ['as' => 'blog']);
 
 //------------------Site exercice
 

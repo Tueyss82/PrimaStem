@@ -30,7 +30,7 @@
                         <img src="../image/placeholder3.jpg">
                         <div class="carousel-caption d-none d-md-block">
                             <div class="bgTextPartner">
-                                <h5>Nom Partenaire</h5>
+                                <h5>Ethane Zimmermann</h5>
                                 <p>Avis Court du Partenaire</p>
                             </div>
                         </div>

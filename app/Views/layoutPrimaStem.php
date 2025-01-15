@@ -29,7 +29,7 @@
                         <a class="nav-link" href="<?= url_to('blog') ?>">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= url_to('contact') ?>">Nous Contacter</a>
+                        <a class="nav-link" href="<?= url_to('ajoutContact') ?>">Nous Contacter</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="<?= url_to('playstem') ?>">PlayStem</a>
@@ -48,8 +48,25 @@
 </body>
 <footer>
     <div class="footer">
-
-        <p class="footerText">&copy; <?= date('Y') ?> PrimaSTEM & co.</p>
-
+        <div class="footerText">
+            &copy; <?= date('Y') ?> PrimaSTEM & co.
+        </div>
+        <div class="row">
+            <div class="col-md-6 footerText">
+                <p>Mail : primastem@gmail.com</p>
+                <p>Tel, WhatsApp : +33 6 24 95 09 36 (FR / EN)</p>
+                <p>Localisation : Cannes, France</p>
+            </div>
+            <div class="col-md-6 footerText">
+                <p>Suivez nos réseaux !</p>
+                <div class="footer-content">
+                    <a href="https://www.instagram.com/primastem.world/" target="_blank">
+                        <img src="../image/logoinstaforfooter.png" class="footerImg" alt="Logo Instagram" class="instagram-logo">
+                    Instagram : PrimaStem
+                    </a>
+                </div>
+                <p></p>
+            </div>
+        </div>
     </div>
 </footer>
