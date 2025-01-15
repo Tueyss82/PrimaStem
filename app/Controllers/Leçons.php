@@ -6,11 +6,11 @@ class Leçons extends BaseController
 {
     public function leçons(): string
     {
-        return view('PlayStem/Leçons');
+        return view('PlayStem/Lecons');
     }
     public function leçon(): string
     {
-        return view('PlayStem/Leçon');
+        return view('PlayStem/Lecon');
     }
 
     
