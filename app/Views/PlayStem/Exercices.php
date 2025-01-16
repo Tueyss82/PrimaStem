@@ -2,18 +2,17 @@
 <?= $this->section('contenu') ?>
 
 
-<title>Fixed Sidebar List</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-
-<body>
   <div class="fixed-sidebar">
     <ul class="list-group">
-      <li class="list-group-item">Facile</li>
-      <li class="list-group-item">Intermédiaire</li>
-      <li class="list-group-item">Avancé</li>
-      <li class="list-group-item">A fourth item<>/li>
-      <li class="list-group-item">And a fifth one</li>
+      <li class="list-group-item">&nbsp;&nbsp;&nbsp;&nbsp;Facile<br>
+      <div class = "leçon"><a href="<?= url_to('leçons') ?>"> Premier Pas</a></div> 
+      <br><div class = "leçon"><a href="<?= url_to('leçons') ?>"> Evènements et point d'arrivée </a></div></li>
+
+      <li class="list-group-item">&nbsp;&nbsp;&nbsp;&nbsp;Intermédiaire <br>
+      <div class = "leçon"><a href="<?= url_to('leçons') ?>"> Fonction et appel de fonction</a></div></li>
+      <li class="list-group-item">Avancé <br><div class = "leçon"><a href="<?= url_to('leçons') ?>">  Aléatoire </a></div>
+    <br>  <div class = "leçon"><a href="<?= url_to('leçons') ?>"> Nombres aléatoires</a></div></li>
+      
     </ul>
   </div>
 
