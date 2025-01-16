@@ -28,8 +28,9 @@ $routes->get('playstem', 'PlayStem::index', ['as' => 'playstem']);
 //----Renvoi des pages exercices et leçons 
 
 $routes->get('exercices', 'Exercices::exercices', ['as' => 'exercices']);
-
-$routes->get('exercice-(:num)', 'Exercices::exercice/$1', ['as' => 'exercice']);
+///$1
+//(:num)
+$routes->get('exercice-', 'Exercices::exercice', ['as' => 'exercice']);
 
 $routes->get('lecons', 'Leçons::leçons', ['as' => 'leçons']);
 
