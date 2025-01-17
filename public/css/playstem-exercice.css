@@ -1,0 +1,24 @@
+.supportJeton { 
+    
+    max-height: 10%;
+    max-width: 10%;
+    padding-top: 200px;
+    margin-top: 60px;
+    margin-left: 120px; 
+    margin-bottom: 0px;
+  }
+
+.grilleRobot{
+    
+    max-height: 10%;
+    max-width: 10%;
+    padding-left: 900px;
+    margin-top: 0px;
+    bottom: 100px;
+
+  }
+.supportJeton,.grilleRobot{
+    /* padding-left: auto;
+    padding-bottom: auto; */
+    
+}
