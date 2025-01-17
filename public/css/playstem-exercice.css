@@ -1,7 +1,7 @@
 .supportJeton { 
     
-    max-height: 10%;
-    max-width: 10%;
+    height: 10% ;
+    width: 10%;
     padding-top: 200px;
     margin-top: 60px;
     margin-left: 120px; 
@@ -10,15 +10,31 @@
 
 .grilleRobot{
     
-    max-height: 10%;
-    max-width: 10%;
-    padding-left: 900px;
-    margin-top: 0px;
-    bottom: 100px;
-
+    height: 10%;
+    width: 10%;
+    padding-left: 700px;
+    padding-top: 250px ;
   }
-.supportJeton,.grilleRobot{
-    /* padding-left: auto;
-    padding-bottom: auto; */
-    
+
+.exercices-TextLayout{
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 28px;
+  padding-left: 400px;
+  padding-top: 100px;
+}
+.image-container {
+  display: flex;
+  flex-direction: row;  /* Aligne les images horizontalement */
+  gap: 10px;
+}
+.consignes{
+  padding-left: 100px;
+}
+.telecommande{
+  padding-top: 200px; 
+  padding-left: 140px;
+  margin-bottom: 200px;
+}
+.fleche-haut{
+  padding-top: 330px;
 }
