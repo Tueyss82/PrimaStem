@@ -55,7 +55,7 @@
             <div class="col-md-6 footerText">
                 <p>Mail : primastem@gmail.com</p>
                 <p>Tel, WhatsApp : +33 6 24 95 09 36 (FR / EN)</p>
-                <p>Localisation : Cannes, France</p>
+                <p>Localisation : <a href="https://www.google.com/maps/place/Cannes/@43.5391881,6.9682519,13z/data=!3m1!4b1!4m6!3m5!1s0x12ce8180530cffff:0x40819a5fd979e20!8m2!3d43.5539499!4d7.0170217!16zL20vMGt5Z3Y?entry=ttu&g_ep=EgoyMDI1MDExMC4wIKXMDSoASAFQAw%3D%3D"> Cannes, France</a></p>
             </div>
             <div class="col-md-6 footerText">
                 <p>Suivez nos réseaux !</p>

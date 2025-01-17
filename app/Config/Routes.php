@@ -17,9 +17,29 @@ $routes->get('/', 'PrimaStem::index', ['as' => 'primastem']);
 $routes->get('contact', 'Contact::index', ['as' => 'ajoutContact']);
 $routes->post('contact', 'Contact::create', ['as' => 'createContact']);
 
-$routes->get('partenaires', 'PrimaStem::partenaires', ['as' => 'partenaires']);
+// Partenaires
+
+$routes->get('partenaires', 'Partenaire::index', ['as' => 'partenaires']);
+
+$routes->get('ajout_partenaire', 'Partenaire::ajout', ['as' => 'ajoutPartenaire']);
+$routes->post('ajout_partenaire', 'Partenaire::create', ['as' => 'createPartenaire']);
+
+$routes->get('modifier_partenaire(:num)', 'Partenaire::modif/$1', ['as' => 'modifPartenaire']);
+$routes->post('modifier_partenaire', 'Partenaire::update', ['as' => 'updatePartenaire']);
+
+$routes->post('suppr_partenaire', 'Partenaire::delete', ['as' => 'supprPartenaire']);
+
+// Blog
 
 $routes->get('blog', 'Blog::index', ['as' => 'blog']);
+
+$routes->get('ajout_article', 'Blog::ajout', ['as' => 'ajoutArticle']);
+$routes->post('ajout_article', 'Blog::create', ['as' => 'createArticle']);
+
+$routes->get('modifier_article(:num)', 'Blog::modif/$1', ['as' => 'modifArticle']);
+$routes->post('modifier_article', 'Blog::update', ['as' => 'updateArticle']);
+
+$routes->get('suppr_article', 'Blog::delete', ['as' => 'supprArticle']);
 
 //------------------Site exercice
 
