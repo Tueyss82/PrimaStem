@@ -32,6 +32,19 @@
     width: 100px;
 }
 
+.divBlogTest {
+    background-color: #787878;
+}
+
+.descArt {
+    color: #f0f0f0;
+    text-align: center;
+}
+
+.imgArt{
+    width: 636px;
+}
+
 .imgIndex {
     width: 600px;
     padding-bottom: 50px;

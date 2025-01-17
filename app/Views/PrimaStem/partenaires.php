@@ -17,24 +17,21 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="../image/placeholder2.jpg">
-                        <div class="carousel-caption d-none d-md-block">
-                            <div class="bgTextPartner">
-                                <h5>Nom Partenaire</h5>
-                                <p>Avis Court du Partenaire</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../image/placeholder3.jpg">
-                        <div class="carousel-caption d-none d-md-block">
-                            <div class="bgTextPartner">
-                                <h5>Ethane Zimmermann</h5>
-                                <p>Avis Court du Partenaire</p>
-                            </div>
-                        </div>
-                    </div>
+                    <?php
+
+                    foreach ($listePartenaires as $partenaire) {
+                        // var_dump($partenaire);
+                        echo '<div class="carousel-item">
+                                <img src="../image/placeholder2.jpg">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <div class="bgTextPartner">
+                                        <h5>' . $partenaire['NOMPARTENAIRE'] . '</h5>
+                                        <p>' . $partenaire['AVISPARTENAIRE'] . '</p>
+                                    </div>
+                                </div>
+                            </div>';
+                    }
+                    ?>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
