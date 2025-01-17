@@ -1,45 +1,26 @@
 <?= $this->extend('PlayStem/layoutPlayStem') ?>
 <?= $this->section('contenu') ?>
 
-<div class="accueil">
-  <img class="l-ment-19" src="l-ment-190.png" />
-  <div class="l-ment-18">
-    En un robot,
-    <br />
-    développez chez l&#039;enfant une
-    <br />
-    base mathématique et logique solide
+<title>Accueil - PrimaStem</title>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6">
+      <img class="imageAccueil1" src="../image/imageAccueil1.png">
+    </div>
+
+    <h1 class="texte1">Donnez l'envie d'apprendre en s'amusant</h1>
+
   </div>
-  <div class="l-ment-17">Exercices en ligne</div>
-  <img class="l-ment-16" src="l-ment-160.png" />
-  <img class="l-ment-15" src="l-ment-150.png" />
-  <img class="l-ment-14" src="l-ment-140.png" />
-  <div class="l-ment-13"></div>
-  <div class="l-ment-12"></div>
-  <div class="l-ment-11"></div>
-  <div class="l-ment-10">Avancé</div>
-  <div class="l-ment-09">Intermédiaire</div>
-  <div class="l-ment-08">Facile</div>
-  <div class="l-ment-07"></div>
-  <div class="l-ment-06">
-    Donnez l&#039;envie d&#039;apprendre en s&#039;amusant
+  <div class="row">
+    <div class="col-md-6">
+      <h1 class="fw-bold">En un robot, développez chez l'enfant une base mathématique et logique solide</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non semper magna. Phasellus mattis venenatis enim, ut venenatis dui tristique vitae. Suspendisse volutpat eu quam at mollis. Suspendisse eget cursus augue, ac gravida metus. Vestibulum vitae vehicula mauris. Aliquam rutrum nulla sit amet lacus accumsan molestie. Etiam sed purus quis nunc ornare dignissim in ac mi. Etiam nisi ex, tristique at nibh commodo, auctor pulvinar ante. Morbi eget maximus lorem, at efficitur sem. Ut dapibus varius sapien, non laoreet velit suscipit quis.</p>
+    </div>
+    <div class="col-md-6">
+      <img class="imgIndex" src="../image/robot_spiral.jpeg">
+    </div>
   </div>
-  <img class="l-ment-05" src="l-ment-050.svg" />
-  <img class="l-ment-04" src="l-ment-040.svg" />
-  <div class="l-ment-03">Accueil</div>
-  <div class="l-ment-02">
-    <img class="l-ment-20" src="l-ment-200.png" />
-  </div>
-  <div class="l-ment-01">PrimaStem</div>
 </div>
-
-
-
-
-
-
-
-
-
 
 <?= $this->endSection() ?>
