@@ -16,7 +16,7 @@
     </ul>
   </div>
 
- <div class="boutonExercice1"><a href="<?= url_to('exercice') ?>"><img src="images/bouton_exercice"></a></div>
+ <div class="boutonExercice1"><a href="<?= url_to('exercice') ?>"><img src="imagesPlayStem/bouton_exercice"></a></div>
 <div class = "exercices"><h1>Exercices</h1></div>
 
 <h1>Evènements et point d'arrivée</h1>

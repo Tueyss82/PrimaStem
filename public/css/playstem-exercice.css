@@ -1,73 +1,78 @@
-.supportJeton { 
-    
-    height: 10% ;
-    width: 10%;
-    padding-top: 200px;
-    margin-top: 60px;
-    margin-left: 120px; 
-    margin-bottom: 0px;
-   
-  }
+.supportJeton {
 
-.grilleRobot{
-    
-    height: 10%;
-    width: 10%;
-    padding-left: 700px;
-    padding-top: 250px ;
-    
-  }
+  height: 10%;
+  width: 10%;
+  padding-top: 50px;
+  margin-top: 30px;
+  margin-left: 120px;
+  margin-bottom: 0px;
 
-.exercices-TextLayout{
+}
+
+.fleche-toutesLesDirections {
+  padding-top: 140px;
+  padding-left: 160px;
+  position: absolute;
+}
+
+.toutesLesRotations {
+  padding-top: 140px;
+  padding-left: 250px;
+  position: absolute;
+}
+
+.tousLesNombres {
+  padding-top: 140px;
+  padding-left: 330px;
+  position: absolute;
+}
+
+.toutesLesOperations {
+  padding-top: 140px;
+  padding-left: 410px;
+  position: absolute;
+}
+
+.fonction {
+  padding-top: 140px;
+  padding-left: 490px;
+  position: absolute;
+}
+
+.exercices-TextLayout {
   font-family: "Inter-SemiBold", sans-serif;
   font-size: 28px;
   padding-left: 400px;
   padding-top: 100px;
 }
+
 .image-container {
   display: flex;
-  flex-direction: row;  
-  gap: 10px;
+  flex-direction: row;
+  /* gap: 10px; */
 }
-.consignes{
+
+.consignes {
   padding-left: 100px;
 }
-.telecommande{
-  padding-top: 200px; 
-  padding-left: 140px;
+
+.telecommande {
+  padding-top: 100px;
+  padding-left: 100px;
   margin-bottom: 200px;
 }
-.fleche-toutesLesDirections{
-  padding-top: 330px;
-  padding-left: 170px;
+
+.grilleRobot {
+
+  padding-left: 800px;
+  padding-top: 90px;
+
   position: absolute;
 }
 
-.toutesLesRotations{
-  padding-top: 330px;
-  padding-left: 280px;
+.robotPrimaStem {
+  padding-top: 320px;
+  padding-left: 1015px;
   position: absolute;
-}
-
-.tousLesNombres{
-  padding-top: 330px;
-  padding-left: 390px;
-  position: absolute;
-}
-.toutesLesOperations{
-  padding-top: 330px;
-  padding-left: 500px;
-  position: absolute;
-}
-.fonction{
-  padding-top: 330px;
-  padding-left: 610px;
-  position: absolute;
-}
-
-.robotPrimaStem{
-  padding-top: 550px;
-  padding-left: 1305px;
-  position: absolute;
-
+  z-index: 1;
 }

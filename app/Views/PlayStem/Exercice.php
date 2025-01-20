@@ -1,34 +1,28 @@
-<?= $this->extend('PlayStem/layoutPlayStem') ?>
-<?= $this->section('contenu') ?>
+<?= $this->extend('PlayStem/layoutZoom') ?>
+<?= $this->section('contenuZoom') ?>
 
 
-<div class="exercices-TextLayout">
+<!-- <div class="exercices-TextLayout">
     <p>Exercices</p>
+</div> -->
+
+<!-- <div class="consignes"><img src="imagesPlayStem\consignes.png"></div> -->
+
+<div class="image-container">
+
+    <div class="supportJeton"><img src="imagesPlayStem\supportJeton.png"></div>
+
+    <div class="fleche-toutesLesDirections" id="direction"> <img src="imagesPlayStem\fleche-haut.png"></div>
+    <div class="toutesLesRotations"><img src="imagesPlayStem\rotation.png"></div>
+    <div class="tousLesNombres"><img src="imagesPlayStem\nombre.png"></div>
+    <div class="toutesLesOperations"><img src="imagesPlayStem\operations.png"></div>
+    <div class="fonction"><img src="imagesPlayStem\fonction.png"></div>
+    <div class="robotPrimaStem"><img src="imagesPlayStem\mini-logo.png"></div>
+    <div class="grilleRobot"><img src="imagesPlayStem\grilleRobot.png"></div>
+
 </div>
 
-<div class="consignes"><img src="image\consignes.png"></div>
+<div class="telecommande"><img src="imagesPlayStem\telecommande.png"></div>
 
-<div class="image-container ">
-
-    <div class="supportJeton"><img src="image\supportJeton.png"></div>
-
-    <div class="fleche-toutesLesDirections" id="direction"> <img src="image\fleche-haut.png"></div>
-    <div class="toutesLesRotations"><img src="image\rotation.png"></div>
-    <div class="tousLesNombres"><img src="image\nombre.png"></div>
-    <div class="toutesLesOperations"><img src="image\operations.png"></div>
-    <div class="fonction"><img src="image\fonction.png"></div>
-    <div class="robotPrimaStem"><img src="image\mini-logo.png"></div>
-    <div class="grilleRobot"><img src="image\grilleRobot.png"></div>
-</div>
-
-<div class="telecommande"><img src="image\telecommande.png"></div>
-
-<!-- <script>
-        direction.onclick = function() {
-            if (direction.onclick){
-                direction.inner.Html = `<div class = "fleche-haut" <img ` 
-            }
-        }
-    </script> -->
 
 <?= $this->endSection() ?>
