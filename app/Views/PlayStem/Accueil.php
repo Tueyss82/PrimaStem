@@ -6,10 +6,9 @@
 <div class="container mt-5">
   <div class="row">
     <div class="col-md-6">
-      <img class="imageAccueil1" src="../image/imageAccueil1.png">
+      
     </div>
-
-    <h1 class="texte1">Donnez l'envie d'apprendre en s'amusant</h1>
+  
 
   </div>
   <div class="row">
