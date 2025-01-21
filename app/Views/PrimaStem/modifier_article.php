@@ -7,8 +7,6 @@
 
     <h1 class="fw-bold headerText">Modification d'article</h1>
 
-    <?= var_dump($articleInfo) ?>
-
     <form method="post" action="<?= url_to('updateArticle') ?>" class="row g-3 mx-auto" enctype="multipart/form-data">
         <input id="IDARTICLE" name="IDARTICLE" type="hidden" value="<?= $articleInfo['IDARTICLE'] ?>" />
         <div class="col-12">

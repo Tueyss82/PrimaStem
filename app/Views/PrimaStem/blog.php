@@ -8,7 +8,7 @@
             <h1 class="headerText" id="divBlog">Blog - Articles</h1>
             <?php
             foreach ($listeArticles as $article) {
-                var_dump($article);
+                // var_dump($article);
 
                 echo '<div>
                             <img class="imgArt" src="../upload/'. $article['MINIAARTICLE'] .'">

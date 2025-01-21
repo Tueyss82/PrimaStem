@@ -89,29 +89,41 @@ class Blog extends BaseController
 
         $file = $this->request->getFile('MINIAARTICLE');
 
+        $fileName = $file->getName();
+
         // var_dump($articleData);
         // var_dump($oldFileName);
         // var_dump($file->getName());
         // die();
 
-        if (!empty($file)) {
+        if (!$fileName == '') {
             if (file_exists('../public/upload/' . $oldFileName['MINIAARTICLE'])) {
                 unlink('../public/upload/' . $oldFileName['MINIAARTICLE']);
             }
             $newFileName = $file->getRandomName();
             $file->move(WRITEPATH . '../public/upload', $newFileName);
+
+            $data = [
+                'TITRE' => $articleData['TITRE'],
+                'DESCRIPTIONARTICLE' => $articleData['DESCRIPTIONARTICLE'],
+                'MINIAARTICLE' => $newFileName
+            ];
+
+            $this->blogModel->update($articleData['IDARTICLE'], $data);
+
+            return redirect('modifArticleIndex');
         }
 
         $data = [
             'TITRE' => $articleData['TITRE'],
             'DESCRIPTIONARTICLE' => $articleData['DESCRIPTIONARTICLE'],
-            'MINIAARTICLE' => $newFileName
+            'MINIAARTICLE' => $oldFileName
         ];
 
         // var_dump($data);
         // die();
 
-        $this->blogModel->save($data);
+        $this->blogModel->update($articleData['IDARTICLE'], $data);
 
         return redirect('modifArticleIndex');
     }
@@ -132,6 +144,6 @@ class Blog extends BaseController
             unlink('../public/upload/' . $oldFileName['MINIAARTICLE']); // Supprime l'image en local
         }
 
-        return redirect('modifIndex');
+        return redirect('modifArticleIndex');
     }
 }
