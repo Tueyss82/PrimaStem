@@ -5,10 +5,10 @@
 dès que la version finale des test est approuvée*/
 
 
-let limitejetonsRotation = 0;
-rotation.onclick = function () {
 
-    while (limiteJetonsRotations < 1) {
+rotation.onclick = function () {
+    let limiteJetonsRotation = 0;
+    while (limiteJetonsRotation < 1) {
         let imgRotation = document.createElement('img');
         imgRotation.setAttribute('src', 'imagesPlayStem/rotation.png');
         jetonRotation.prepend(imgRotation);
@@ -73,6 +73,12 @@ rotation.onclick = function () {
         imgRepeter360.setAttribute('src', 'imagesPlayStem/repeter360.png');
         jetonRepeter360.prepend(imgRepeter360);
 
-        limiteJetonsRotations++;
+        limiteJetonsRotation++;
+    }
+
+    if (mouvement||operations||fonction||nombres){
+        imagesRotation = rotation.querySelectorAll('img');
+        imagesRotation.forEach((img) => img.remove());
+        limiteJetonsRotations = 0;
     }
 }

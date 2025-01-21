@@ -13,10 +13,12 @@
 <div class="supportJeton"> <img src="imagesPlayStem\supportJeton.png"></div>
 
 <div class="fleche-toutesLesDirections" id="mouvement"> <button><img src="imagesPlayStem\fleche-haut-support.png"></button></div>
-<div class="toutesLesRotations" id="rotation"><img src="imagesPlayStem\rotation.png"></div>
-<div class="tousLesNombres" id="nombres"><img src="imagesPlayStem\nombre.png"></div>
-<div class="toutesLesOperations" id="operations"><img src="imagesPlayStem\operations.png"></div>
-<div class="fonction" id="fonction"><img src="imagesPlayStem\fonction.png"></div>
+<div class="toutesLesRotations" id="rotation"><button> <img src="imagesPlayStem\rotation.png"></button></div>
+<div class="tousLesNombres" id="nombres"><button><img src="imagesPlayStem\nombre.png"></button></div>
+<div class="toutesLesOperations" id="operations"><button><img src="imagesPlayStem\operations.png"></button></div>
+<div class="fonction" id="fonction"><button><img src="imagesPlayStem\fonction.png"></button></div>
+
+
 <div class="robotPrimaStem"><img src="imagesPlayStem\mini-logo.png"></div>
 <div class="grilleRobot"><img src="imagesPlayStem\grilleRobot.png"></div>
 
@@ -38,7 +40,7 @@
 <div class="jetonRepeter7" id="jetonRepeter7"> </div>
 <div class="jetonRepeter8" id="jetonRepeter8"> </div>
 <div class="jetonRepeter9" id="jetonRepeter9"> </div>
-<div class="jetonRepeter10" id="jetonRepete10"> </div>
+<div class="jetonRepeter10" id="jetonRepeter10"> </div>
 <div class="jetonRepeter18" id="jetonRepeter18"> </div>
 <div class="jetonRepeter36" id="jetonRepeter36"> </div>
 <div class="jetonRepeter72" id="jetonRepeter72"> </div>

@@ -4,9 +4,9 @@
 dès que la version finale des test est approuvée*/
 
 
-    let limiteJetonsMouvement = 0; 
+    
     mouvement.onclick =  function(){
-     
+    let limiteJetonsMouvement = 0; 
     while(limiteJetonsMouvement <1){
     let imgAvant = document.createElement('img');
     imgAvant.setAttribute('src','imagesPlayStem/fleche-haut.png');
@@ -29,5 +29,10 @@ dès que la version finale des test est approuvée*/
     jetonMouvementAleatoire.prepend(imgAleatoire);
 
     limiteJetonsMouvement++;
+    }
+    if (rotation||operations||fonction||nombres){
+        imagesMouvements = mouvement.querySelectorAll('img');
+        imagesMouvements.forEach((img) => img.remove());
+        limiteJetonsMouvement = 0;
     }
     }

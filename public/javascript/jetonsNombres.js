@@ -118,4 +118,9 @@ nombres.onclick = function () {
 
         limiteJetonsRotations++;
     }
+    if (mouvement||rotation||operations||fonction){
+        imagesNombres = nombres.querySelectorAll('img');
+        imagesNombres.forEach((img) => img.remove());
+        limiteJetonsRotations = 0;
+    }
 }
