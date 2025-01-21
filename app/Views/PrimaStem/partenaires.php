@@ -22,7 +22,7 @@
                     foreach ($listePartenaires as $partenaire) {
                         // var_dump($partenaire);
                         echo '<div class="carousel-item">
-                                <img src="../image/placeholder2.jpg">
+                                <img src="../upload/partenaires/'. $partenaire['IMGPARTENAIRE'] .'">
                                 <div class="carousel-caption d-none d-md-block">
                                     <div class="bgTextPartner">
                                         <h5>' . $partenaire['NOMPARTENAIRE'] . '</h5>

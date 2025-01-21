@@ -2,7 +2,6 @@
 <?= $this->section('contenu') ?>
 
 <title>Blog - PrimaStem</title>
-<?= var_dump($listeArticles) ?>
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-6">
@@ -10,8 +9,9 @@
             <?php
             foreach ($listeArticles as $article) {
                 // var_dump($article);
+
                 echo '<div>
-                            <img class="imgArt" src="../image/main.jpeg">
+                            <img class="imgArt" src="../upload/'. $article['MINIAARTICLE'] .'">
                         </div>';
                 echo '<div class="divBlogTest">
                         <h1 class="headerText">'. $article['TITRE'] .'<h1>

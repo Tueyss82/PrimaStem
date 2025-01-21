@@ -59,3 +59,8 @@ body{
 .submitButton {
     background-color: #cd3301;
 }
+
+.text-center {
+    text-align: center !important;
+    padding-bottom: 475px;
+}

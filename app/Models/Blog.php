@@ -48,4 +48,9 @@ class Blog extends Model
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
 
+    public function getOldFileNameArticle($articleId) {
+        return $this->select('MINIAARTICLE')
+        ->where('IDARTICLE = '. $articleId)
+        ->find($articleId);
+    }
 }

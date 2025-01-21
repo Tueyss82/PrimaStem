@@ -9,18 +9,10 @@ class PrimaStem extends BaseController
         return view('PrimaStem/index');
     }
 
-    public function contact(): string
+    public function adminIndex(): string
     {
-        return view('PrimaStem/contact');
+        return view('PrimaStem/adminIndex');
     }
 
-    public function partenaires(): string
-    {
-        return view('PrimaStem/partenaires');
-    }
 
-    public function blog(): string
-    {
-        return view('PrimaStem/blog');
-    }
 }

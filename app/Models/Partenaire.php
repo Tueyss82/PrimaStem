@@ -47,4 +47,10 @@ class Partenaire extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+    public function getOldFileNamePartenaire($partenaireId) {
+        return $this->select('IMGPARTENAIRE')
+        ->where('IDPARTENAIRE = '. $partenaireId)
+        ->find($partenaireId);
+    }
 }
