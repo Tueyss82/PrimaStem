@@ -25,28 +25,43 @@ class Partenaire extends BaseController
 
     public function ajout()
     {
-        $articles = $this->partenaireModel->findAll();
-
-        return view('PrimaStem/blog', [
-            'listeArticles' => $articles
-        ]);
+        return view('PrimaStem/ajoutPartenaire');
     }
 
     public function create()
     {
-        $articles = $this->partenaireModel->findAll();
+        $partenaireData = $this->request->getPost();
 
-        return view('PrimaStem/blog', [
-            'listeArticles' => $articles
-        ]);
+        $file = $this->request->getFile('IMGPARTENAIRE');
+        $newFileName = $file->getRandomName();
+        
+        // var_dump($partenaireData);
+        // var_dump($file);
+        // die();
+
+        $file->move(WRITEPATH . '../public/upload/partenaires', $newFileName);
+
+        $data = [
+            'NOMPARTENAIRE' => $partenaireData['NOMPARTENAIRE'],
+            'AVISPARTENAIRE' => $partenaireData['AVISPARTENAIRE'],
+            'IMGPARTENAIRE' => $newFileName
+        ];
+
+        // var_dump($data);
+        // die();
+
+        $this->partenaireModel->save($data);
+
+        return redirect('modifPartenaireIndex');
+
     }
 
-    public function modif()
+    public function modifIndex()
     {
-        $articles = $this->partenaireModel->findAll();
+        $partenaires = $this->partenaireModel->findAll();
 
-        return view('PrimaStem/blog', [
-            'listeArticles' => $articles
+        return view('PrimaStem/modifPartenaireIndex', [
+            'listePartenaires' => $partenaires
         ]);
     }
 
