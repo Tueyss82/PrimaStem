@@ -12,11 +12,11 @@
 
 <div class="supportJeton"> <img src="imagesPlayStem\supportJeton.png"></div>
 
-<div class="fleche-toutesLesDirections" id="mouvement"> <button><img src="imagesPlayStem\fleche-haut-support.png"></button></div>
-<div class="toutesLesRotations" id="rotation"><button> <img src="imagesPlayStem\rotation.png"></button></div>
-<div class="tousLesNombres" id="nombres"><button><img src="imagesPlayStem\nombre.png"></button></div>
-<div class="toutesLesOperations" id="operations"><button><img src="imagesPlayStem\operations.png"></button></div>
-<div class="fonction" id="fonction"><button><img src="imagesPlayStem\fonction.png"></button></div>
+<div class="fleche-toutesLesDirections" id="mouvement"> <button><img src="imagesPlayStem\mouvementCategorie.png"></button></div>
+<div class="toutesLesRotations" id="rotation"><button> <img src="imagesPlayStem\repetitionCategorie.png"></button></div>
+<div class="tousLesNombres" id="nombres"><button><img src="imagesPlayStem\nombresCategorie.png"></button></div>
+<div class="toutesLesOperations" id="operations"><button><img src="imagesPlayStem\operationsCategorie.png"></button></div>
+<div class="fonction" id="fonction"><button><img src="imagesPlayStem\speciauxCategorie.png"></button></div>
 
 
 <div class="robotPrimaStem"><img src="imagesPlayStem\mini-logo.png"></div>
