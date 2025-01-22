@@ -1,38 +1,58 @@
 "use strict";
 
-/* Toutes les images sont à remplacer par des données d'images en base de données
-dès que la version finale des test est approuvée*/
 
+let limiteJetonsMouvements = 0;
 
+mouvement.onclick = function () {
     
-    mouvement.onclick =  function(){
-    let limiteJetonsMouvement = 0; 
-    while(limiteJetonsMouvement <1){
-    let imgAvant = document.createElement('img');
-    imgAvant.setAttribute('src','imagesPlayStem/fleche-haut.png');
-    jetonAvancer.prepend(imgAvant);
+    
+    while (limiteJetonsMouvements < 1) {
+        let imgAvant = document.createElement('img');
+        imgAvant.setAttribute('src', 'imagesPlayStem/fleche-haut.png');
+        jetonAvancer.prepend(imgAvant);
 
-    let imgReculer = document.createElement('img');
-    imgReculer.setAttribute('src','imagesPlayStem/fleche-bas.png');
-    jetonReculer.prepend(imgReculer);
+        let imgReculer = document.createElement('img');
+        imgReculer.setAttribute('src', 'imagesPlayStem/fleche-bas.png');
+        jetonReculer.prepend(imgReculer);
 
-    let imgDroite = document.createElement('img');
-    imgDroite.setAttribute('src','imagesPlayStem/fleche-droite.png');
-    jetonAvancerDroite.prepend(imgDroite);
+        let imgDroite = document.createElement('img');
+        imgDroite.setAttribute('src', 'imagesPlayStem/fleche-droite.png');
+        jetonAvancerDroite.prepend(imgDroite);
 
-    let imgGauche = document.createElement('img');
-    imgGauche.setAttribute('src','imagesPlayStem/fleche-gauche.png');
-    jetonAvancerGauche.prepend(imgGauche);
+        let imgGauche = document.createElement('img');
+        imgGauche.setAttribute('src', 'imagesPlayStem/fleche-gauche.png');
+        jetonAvancerGauche.prepend(imgGauche);
 
-    let imgAleatoire = document.createElement('img');
-    imgAleatoire.setAttribute('src','imagesPlayStem/fleche-aleatoire.png');
-    jetonMouvementAleatoire.prepend(imgAleatoire);
+        let imgAleatoire = document.createElement('img');
+        imgAleatoire.setAttribute('src', 'imagesPlayStem/fleche-aleatoire.png');
+        jetonMouvementAleatoire.prepend(imgAleatoire);
 
-    limiteJetonsMouvement++;
+        limiteJetonsMouvements++;
+
+        
     }
-    if (rotation||operations||fonction||nombres){
-        imagesMouvements = mouvement.querySelectorAll('img');
-        imagesMouvements.forEach((img) => img.remove());
-        limiteJetonsMouvement = 0;
-    }
-    }
+    let jetonsMouvements = [];
+        jetonsMouvements.push("jetonAvancer");
+        jetonsMouvements.push("jetonReculer");
+        jetonsMouvements.push("jetonAvancerDroite");
+        jetonsMouvements.push("jetonAvancerGauche");
+        jetonsMouvements.push("jetonMouvementAleatoire");
+
+        if ((rotation.onclick) || (operations.onclick) || (fonction.onclick) || (nombres.onclick)) {
+            let allDivMouvement = document.querySelectorAll('divMouvement');
+            allDivMouvement.forEach( (div) => {                
+                let imagesMouvement = div.querySelectorAll('img');
+                
+                imagesMouvement.forEach(image => { image.remove()});
+
+            });
+            jetonsMouvements = [];
+            limiteJetonsMouvements = 0;
+        }
+
+
+    // if (mouvement){
+    //     limiteJetonsMouvements = 1;
+    // }
+
+}

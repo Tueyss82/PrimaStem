@@ -4,9 +4,9 @@
 dès que la version finale des test est approuvée*/
 
 
-let limitejetonsNombres = 0;
+let limiteJetonsNombres = 0;
 nombres.onclick = function () {
-
+    
     while (limiteJetonsNombres < 1) {
         let imgJeton1 = document.createElement('img');
         imgJeton1.setAttribute('src', 'imagesPlayStem/nombre1.png');
@@ -116,11 +116,49 @@ nombres.onclick = function () {
         imgJeton360.setAttribute('src', 'imagesPlayStem/nombre360.png');
         jeton360.prepend(imgJeton360);
 
-        limiteJetonsRotations++;
+        limiteJetonsNombres++;
+
     }
-    if (mouvement||rotation||operations||fonction){
-        imagesNombres = nombres.querySelectorAll('img');
-        imagesNombres.forEach((img) => img.remove());
-        limiteJetonsRotations = 0;
-    }
+
+    let jetonsNombres = [];
+        jetonsNombres.push("jeton1");
+        jetonsNombres.push("jeton2");
+        jetonsNombres.push("jeton3");
+        jetonsNombres.push("jeton4");
+        jetonsNombres.push("jeton5");
+        jetonsNombres.push("jeton6");
+        jetonsNombres.push("jeton7");
+        jetonsNombres.push("jeton8");
+        jetonsNombres.push("jeton9");
+        jetonsNombres.push("jeton10");
+        jetonsNombres.push("jeton15");
+        jetonsNombres.push("jeton20");
+        jetonsNombres.push("jeton36");
+        jetonsNombres.push("jeton40");
+        jetonsNombres.push("jeton45");
+        jetonsNombres.push("jeton50");
+        jetonsNombres.push("jeton60");
+        jetonsNombres.push("jeton72");
+        jetonsNombres.push("jeton90");
+        jetonsNombres.push("jeton100");
+        jetonsNombres.push("jeton108");
+        jetonsNombres.push("jeton120");
+        jetonsNombres.push("jeton135");
+        jetonsNombres.push("jeton144");
+        jetonsNombres.push("jeton150");
+        jetonsNombres.push("jeton180");
+        jetonsNombres.push("jeton360");
+        
+        if ((rotation.onclick) || (operations.onclick) || (fonction.onclick) || (nombres.onclick)) {
+            let allDivNombres = document.querySelectorAll('.divNombres');
+            allDivNombres.forEach( (div) => {                
+                let imagesNombres = div.querySelectorAll('img');
+                
+                imagesNombres.forEach(image => { image.remove()});
+
+            });
+            jetonsNombres = [];
+            limiteJetonsNombres = 0;
+        }
+    
 }

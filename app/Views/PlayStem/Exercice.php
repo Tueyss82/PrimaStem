@@ -10,26 +10,29 @@
 
 <!-- <div class="image-container"> -->
 
+<div class="div-position">
+<div class="fleche-toutesLesDirections" id="mouvement"> <button ><img src="imagesPlayStem\mouvementCategorie.png" ></button></div>
+<div class="toutesLesRotations" id="rotation"><button> <img src="imagesPlayStem\repetitionCategorie.png" ></button></div>
+<div class="tousLesNombres" id="nombres"><button ><img src="imagesPlayStem\nombresCategorie.png" ></button></div>
+<div class="toutesLesOperations" id="operations"><button ><img src="imagesPlayStem\operationsCategorie.png" ></button></div>
+<div class="fonction" id="fonction"><button><img src="imagesPlayStem\speciauxCategorie.png" ></button></div>
+</div>
+
+
 <div class="supportJeton"> <img src="imagesPlayStem\supportJeton.png"></div>
-
-<div class="fleche-toutesLesDirections" id="mouvement"> <button><img src="imagesPlayStem\mouvementCategorie.png"></button></div>
-<div class="toutesLesRotations" id="rotation"><button> <img src="imagesPlayStem\repetitionCategorie.png"></button></div>
-<div class="tousLesNombres" id="nombres"><button><img src="imagesPlayStem\nombresCategorie.png"></button></div>
-<div class="toutesLesOperations" id="operations"><button><img src="imagesPlayStem\operationsCategorie.png"></button></div>
-<div class="fonction" id="fonction"><button><img src="imagesPlayStem\speciauxCategorie.png"></button></div>
-
 
 <div class="robotPrimaStem"><img src="imagesPlayStem\mini-logo.png"></div>
 <div class="grilleRobot"><img src="imagesPlayStem\grilleRobot.png"></div>
 
-
+<div class="divMouvement" id = "divMouvement">
 <div class="jetonAvancer" id="jetonAvancer">  </div>
 <div class="jetonReculer" id="jetonReculer"> </div>
 <div class="jetonAvancerGauche" id="jetonAvancerGauche"> </div>
 <div class="jetonAvancerDroite" id="jetonAvancerDroite"> </div>
 <div class="jetonMouvementAleatoire" id="jetonMouvementAleatoire"> </div>
+</div>
 
-
+<div class="divRotation" id ="divRotation">
 <div class="jetonRotation" id="jetonRotation"> </div>
 <div class="jetonRepeter2" id="jetonRepeter2"> </div>
 <div class="jetonRepeter3" id="jetonRepeter3"> </div>
@@ -46,8 +49,9 @@
 <div class="jetonRepeter72" id="jetonRepeter72"> </div>
 <div class="jetonRepeter180" id="jetonRepeter180"> </div>
 <div class="jetonRepeter360" id="jetonRepeter360"> </div>
+</div>
 
-
+<div class="divNombres">
 <div class="jeton1" id="jeton1"> </div>
 <div class="jeton2" id="jeton2"> </div>
 <div class="jeton3" id="jeton3"> </div>
@@ -76,8 +80,9 @@
 <div class="jeton150" id="jeton150"> </div>
 <div class="jeton180" id="jeton180"> </div>
 <div class="jeton360" id="jeton360"> </div>
+</div>
 
-
+<div class="divOperations">
 <div class="jetonPlus1" id="jetonPlus1"> </div>
 <div class="jetonPlus2" id="jetonPlus2"> </div>
 <div class="jetonPlus3" id="jetonPlus3"> </div>
@@ -110,10 +115,12 @@
 <div class="jetonPuissanceDe3" id="jetonPuissanceDe3"> </div>
 
 <div class="jetonRacineCarreDeNombreX" id="jetonRacineCarreDeNombreX"> </div>
+</div>
 
+<div class="divSpeciaux">
 <div class="jetonFonction" id="jetonFonction"> </div>
 <div class="jetonPause" id="jetonPause"> </div>
-
+</div>
 <div class="telecommande"><img src="imagesPlayStem\telecommande.png"></div>
 
 
