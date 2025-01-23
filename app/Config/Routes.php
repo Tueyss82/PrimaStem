@@ -23,27 +23,29 @@ $routes->post('contact', 'Contact::create', ['as' => 'createContact']);
 
 $routes->get('partenaires', 'Partenaire::index', ['as' => 'partenaires']);
 
-$routes->get('ajout_partenaire', 'Partenaire::ajout', ['as' => 'ajoutPartenaire']);
-$routes->post('ajout_partenaire', 'Partenaire::create', ['as' => 'createPartenaire']);
+$routes->get('ajoutPartenaire', 'Partenaire::ajout', ['as' => 'ajoutPartenaire']);
+$routes->post('ajoutPartenaire', 'Partenaire::create', ['as' => 'createPartenaire']);
 
-$routes->get('modifier_partenaire', 'Partenaire::modifIndex', ['as' => 'modifPartenaireIndex']);
-$routes->get('modifier_partenaire(:num)', 'Partenaire::modif/$1', ['as' => 'modifPartenaire']);
-$routes->post('modifier_partenaire', 'Partenaire::update', ['as' => 'updatePartenaire']);
+$routes->get('modifierPartenaire', 'Partenaire::modifIndex', ['as' => 'modifPartenaireIndex']);
+$routes->get('modifierPartenaire(:num)', 'Partenaire::modif/$1', ['as' => 'modifPartenaire']);
+$routes->post('modifierPartenaire', 'Partenaire::update', ['as' => 'updatePartenaire']);
 
-$routes->post('suppr_partenaire', 'Partenaire::delete', ['as' => 'supprPartenaire']);
+$routes->get('supprPartenaire', 'Partenaire::deleteIndex', ['as' => 'supprPartenaireIndex']);
+$routes->post('supprPartenaire', 'Partenaire::delete', ['as' => 'supprPartenaire']);
 
 // Blog
 
 $routes->get('blog', 'Blog::index', ['as' => 'blog']);
 
-$routes->get('ajout_article', 'Blog::ajout', ['as' => 'ajoutArticle']);
-$routes->post('ajout_article', 'Blog::create', ['as' => 'createArticle']);
+$routes->get('ajoutArticle', 'Blog::ajout', ['as' => 'ajoutArticle']);
+$routes->post('ajoutArticle', 'Blog::create', ['as' => 'createArticle']);
 
-$routes->get('modifier_article', 'Blog::modifIndex', ['as' => 'modifArticleIndex']);
-$routes->get('modifier_article(:num)', 'Blog::modif/$1', ['as' => 'modifArticle']);
-$routes->post('modifier_article', 'Blog::update', ['as' => 'updateArticle']);
+$routes->get('modifierArticle', 'Blog::modifIndex', ['as' => 'modifArticleIndex']);
+$routes->get('modifierArticle(:num)', 'Blog::modif/$1', ['as' => 'modifArticle']);
+$routes->post('modifierArticle', 'Blog::update', ['as' => 'updateArticle']);
 
-$routes->post('suppr_article', 'Blog::delete', ['as' => 'supprArticle']);
+$routes->get('supprArticle', 'Blog::deleteIndex', ['as' => 'supprArticleIndex']);
+$routes->post('supprArticle', 'Blog::delete', ['as' => 'supprArticle']);
 
 //------------------Site exercice
 

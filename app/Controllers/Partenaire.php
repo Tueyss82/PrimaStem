@@ -16,10 +16,16 @@ class Partenaire extends BaseController
 
     public function index()
     {
-        $partenaires = $this->partenaireModel->findAll();
+        $firstPartenaire = $this->partenaireModel->getOnlyFirstPartenaire();
+
+        $allPartenaires = $this->partenaireModel->findAll();
+
+        $partenaires = $this->partenaireModel->findAllExceptFirstResult($firstPartenaire[0]['IDPARTENAIRE']);
 
         return view('PrimaStem/partenaires', [
-            'listePartenaires' => $partenaires
+            'listePartenaires' => $partenaires,
+            'firstPartenaire' => $firstPartenaire,
+            'allPartenaires' => $allPartenaires
         ]);
     }
 
@@ -121,6 +127,15 @@ class Partenaire extends BaseController
         return redirect('modifPartenaireIndex');
     }
 
+    public function deleteIndex()
+    {
+        $partenaires = $this->partenaireModel->findAll();
+
+        return view('PrimaStem/supprPartenaireIndex', [
+            'listePartenaires' => $partenaires
+        ]);
+    }
+
     public function delete()
     {
         $partenaireId = $this->request->getPost(); // Récupère l'ID de l'article
@@ -137,6 +152,6 @@ class Partenaire extends BaseController
             unlink('../public/upload/partenaires/' . $oldFileName['IMGPARTENAIRE']); // Supprime l'image en local
         }
 
-        return redirect('modifPartenaireIndex');
+        return redirect('supprPartenaireIndex');
     }
 }

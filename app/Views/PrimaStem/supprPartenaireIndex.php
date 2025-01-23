@@ -29,7 +29,10 @@ $table = new table();
                 $partenaire['NOMPARTENAIRE'],
                 $partenaire['AVISPARTENAIRE'],
                 '<img class="imgModif" src="../upload/partenaires/' . $partenaire['IMGPARTENAIRE'] . '">',
-                '<button class="submitButton" ><a href="' .  url_to('modifPartenaire', $partenaire['IDPARTENAIRE']) . '">Modifier</a></button>',
+                '<form method="post" class="form" action="' . url_to('supprPartenaire', $partenaire['IDPARTENAIRE']) . '">
+                    <input type="hidden" name="IDPARTENAIRE" value="' . $partenaire['IDPARTENAIRE'] . '">
+                    <input type="submit" class="submitButton" value="Supprimer">
+                </form>',
             );
         }
         echo $table->generate();

@@ -128,6 +128,15 @@ class Blog extends BaseController
         return redirect('modifArticleIndex');
     }
 
+    public function deleteIndex()
+    {
+        $articles = $this->blogModel->findAll();
+
+        return view('PrimaStem/supprIndex', [
+            'listeArticles' => $articles
+        ]);
+    }
+
     public function delete()
     {
         $articleId = $this->request->getPost(); // Récupère l'ID de l'article
@@ -144,6 +153,6 @@ class Blog extends BaseController
             unlink('../public/upload/' . $oldFileName['MINIAARTICLE']); // Supprime l'image en local
         }
 
-        return redirect('modifArticleIndex');
+        return redirect('supprArticleIndex');
     }
 }
