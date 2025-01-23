@@ -6,7 +6,7 @@ dès que la version finale des test est approuvée*/
 
 let limiteJetonsRotation = 0;
 
-rotation.onclick = function () {
+rotation.addEventListener("click", function() {
    
     while (limiteJetonsRotation < 1) {
         let imgRotation = document.createElement('img');
@@ -97,15 +97,15 @@ rotation.onclick = function () {
 
             let change = divRotation.style.display = "none";
             
-            // let allDivRotation = document.querySelectorAll('.divRotation');
-            // allDivRotation.forEach( (div) => {                
-            //     let imagesRotation = div.querySelectorAll('img');
+            let allDivRotation = document.querySelectorAll('.divRotation');
+            allDivRotation.forEach( (div) => {                
+                let imagesRotation = div.querySelectorAll('img');
                 
-            //     imagesRotation.forEach(image => { image.remove()});
-            // });
-            // jetonsRotation = [];
-            // limiteJetonsRotation = 0;
+                imagesRotation.forEach(image => { image.remove()});
+            });
+            jetonsRotation = [];
+            limiteJetonsRotation = 0;
 
         }
     
-}
+})
