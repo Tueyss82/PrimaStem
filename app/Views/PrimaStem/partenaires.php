@@ -7,29 +7,26 @@
     <div class="row">
         <div class="col-md-6">
             <div id="carouselExampleControls" class="carousel slide h-100" data-ride="carousel">
-                <div class="carousel-inner">
+                <div class="carousel-inner imgCarousel bgImgCarousel">
                     <div class="carousel-item active">
-                        <img src="../image/placeholder1.jpg">
-                        <div class="carousel-caption d-none d-md-block">
-                            <div class="bgTextPartner">
-                                <h5>Nom Partenaire</h5>
-                                <p>Avis Court du Partenaire</p>
-                            </div>
-                        </div>
+                        <?php
+                            echo '<img class="imgCarousel" src="../upload/partenaires/'. $firstPartenaire[0]['IMGPARTENAIRE'] .'">';
+                        ?>
                     </div>
                     <?php
-
+                    // var_dump($firstPartenaire);
+                    // die();
                     foreach ($listePartenaires as $partenaire) {
                         // var_dump($partenaire);
-                        echo '<div class="carousel-item">
-                                <img src="../upload/partenaires/'. $partenaire['IMGPARTENAIRE'] .'">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <div class="bgTextPartner">
-                                        <h5>' . $partenaire['NOMPARTENAIRE'] . '</h5>
-                                        <p>' . $partenaire['AVISPARTENAIRE'] . '</p>
-                                    </div>
-                                </div>
-                            </div>';
+                        echo '  <div class="carousel-item div-container">
+                                    <img class="imgCarousel" src="../upload/partenaires/' . $partenaire['IMGPARTENAIRE'] . '">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <div class="bgTextPartner">
+                                                <h5>' . $partenaire['NOMPARTENAIRE'] . '</h5>
+                                                <p>' . $partenaire['AVISPARTENAIRE'] . '</p>
+                                            </div>
+                                        </div>
+                                </div>';
                     }
                     ?>
                 </div>
@@ -44,6 +41,7 @@
             </div>
         </div>
         <div class="col-md-6">
+            <?= var_dump($allPartenaires) ?>
             <h1 class="fw-bold">Nos Partenaires <br> nous soutiennent ! </h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.</p>
             <p>Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor.</p>
