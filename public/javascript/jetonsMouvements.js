@@ -3,7 +3,7 @@
 
 let limiteJetonsMouvements = 0;
 
-mouvement.onclick = function () {
+mouvement.addEventListener("click", function () {
     
     
     while (limiteJetonsMouvements < 1) {
@@ -31,28 +31,28 @@ mouvement.onclick = function () {
 
         
     }
-    let jetonsMouvements = [];
-        jetonsMouvements.push("jetonAvancer");
-        jetonsMouvements.push("jetonReculer");
-        jetonsMouvements.push("jetonAvancerDroite");
-        jetonsMouvements.push("jetonAvancerGauche");
-        jetonsMouvements.push("jetonMouvementAleatoire");
+    // let jetonsMouvements = [];
+    //     jetonsMouvements.push("jetonAvancer");
+    //     jetonsMouvements.push("jetonReculer");
+    //     jetonsMouvements.push("jetonAvancerDroite");
+    //     jetonsMouvements.push("jetonAvancerGauche");
+    //     jetonsMouvements.push("jetonMouvementAleatoire");
 
-        if ((rotation.onclick) || (operations.onclick) || (fonction.onclick) || (nombres.onclick)) {
-            let allDivMouvement = document.querySelectorAll('divMouvement');
-            allDivMouvement.forEach( (div) => {                
-                let imagesMouvement = div.querySelectorAll('img');
+    //     if ((rotation.onclick) || (operations.onclick) || (fonction.onclick) || (nombres.onclick)) {
+    //         let allDivMouvement = document.querySelectorAll('divMouvement');
+    //         allDivMouvement.forEach( (div) => {                
+    //             let imagesMouvement = div.querySelectorAll('img');
                 
-                imagesMouvement.forEach(image => { image.remove()});
+    //             imagesMouvement.forEach(image => { image.remove()});
 
-            });
-            jetonsMouvements = [];
-            limiteJetonsMouvements = 0;
-        }
+    //         });
+    //         jetonsMouvements = [];
+    //         limiteJetonsMouvements = 0;
+    //     }
 
 
     // if (mouvement){
     //     limiteJetonsMouvements = 1;
     // }
 
-}
+})

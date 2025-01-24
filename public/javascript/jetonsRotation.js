@@ -6,7 +6,7 @@ dès que la version finale des test est approuvée*/
 
 let limiteJetonsRotation = 0;
 
-rotation.onclick = function () {
+rotation.addEventListener("click", function() {
    
     while (limiteJetonsRotation < 1) {
         let imgRotation = document.createElement('img');
@@ -75,37 +75,27 @@ rotation.onclick = function () {
 
         limiteJetonsRotation++;
     }
-    let jetonsRotation = [];
-        jetonsRotation.push("jetonRotation");
-        jetonsRotation.push("jetonRepeter2");
-        jetonsRotation.push("jetonRepeter3");
-        jetonsRotation.push("jetonRepeter4");
-        jetonsRotation.push("jetonRepeter5");
-        jetonsRotation.push("jetonRepeter6");
-        jetonsRotation.push("jetonRepeterAleatoire");
-        jetonsRotation.push("jetonRepeter7");
-        jetonsRotation.push("jetonRepeter8");
-        jetonsRotation.push("jetonRepeter9");
-        jetonsRotation.push("jetonRepeter10");
-        jetonsRotation.push("jetonRepeter18");
-        jetonsRotation.push("jetonRepeter36");
-        jetonsRotation.push("jetonRepeter72");
-        jetonsRotation.push("jetonRepeter180");
-        jetonsRotation.push("jetonRepeter360");
+    // let jetonsRotation = [];
+    //     jetonsRotation.push("jetonRotation");
+    //     jetonsRotation.push("jetonRepeter2");
+    //     jetonsRotation.push("jetonRepeter3");
+    //     jetonsRotation.push("jetonRepeter4");
+    //     jetonsRotation.push("jetonRepeter5");
+    //     jetonsRotation.push("jetonRepeter6");
+    //     jetonsRotation.push("jetonRepeterAleatoire");
+    //     jetonsRotation.push("jetonRepeter7");
+    //     jetonsRotation.push("jetonRepeter8");
+    //     jetonsRotation.push("jetonRepeter9");
+    //     jetonsRotation.push("jetonRepeter10");
+    //     jetonsRotation.push("jetonRepeter18");
+    //     jetonsRotation.push("jetonRepeter36");
+    //     jetonsRotation.push("jetonRepeter72");
+    //     jetonsRotation.push("jetonRepeter180");
+    //     jetonsRotation.push("jetonRepeter360");
         
-        if ((!mouvement.onclick) || (!operations.onclick) || (!fonction.onclick) || (!nombres.onclick)) {
-
-            let change = divRotation.style.display = "none";
+    //         jetonsRotation = [];
             
-            // let allDivRotation = document.querySelectorAll('.divRotation');
-            // allDivRotation.forEach( (div) => {                
-            //     let imagesRotation = div.querySelectorAll('img');
-                
-            //     imagesRotation.forEach(image => { image.remove()});
-            // });
-            // jetonsRotation = [];
-            // limiteJetonsRotation = 0;
 
-        }
+        
     
-}
+})

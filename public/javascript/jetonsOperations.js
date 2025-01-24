@@ -5,7 +5,7 @@ dès que la version finale des test est approuvée*/
 
 let limiteJetonsOperations = 0;
 
-operations.onclick = function () {
+operations.addEventListener("click", function (event)  {
     
     while (limiteJetonsOperations < 1) {
         
@@ -113,35 +113,35 @@ operations.onclick = function () {
 
     }
 
-    let jetonsOperations = [];
-        jetonsOperations.push("jetonRotation");
-        jetonsOperations.push("jetonRepeter2");
-        jetonsOperations.push("jetonRepeter3");
-        jetonsOperations.push("jetonRepeter4");
-        jetonsOperations.push("jetonRepeter5");
-        jetonsOperations.push("jetonRepeter6");
-        jetonsOperations.push("jetonRepeterAleatoire");
-        jetonsOperations.push("jetonRepeter7");
-        jetonsOperations.push("jetonRepeter8");
-        jetonsOperations.push("jetonRepeter9");
-        jetonsOperations.push("jetonRepeter10");
-        jetonsOperations.push("jetonRepeter18");
-        jetonsOperations.push("jetonRepeter36");
-        jetonsOperations.push("jetonRepeter72");
-        jetonsOperations.push("jetonRepeter180");
-        jetonsOperations.push("jetonRepeter360");
+    // let jetonsOperations = [];
+    //     jetonsOperations.push("jetonRotation");
+    //     jetonsOperations.push("jetonRepeter2");
+    //     jetonsOperations.push("jetonRepeter3");
+    //     jetonsOperations.push("jetonRepeter4");
+    //     jetonsOperations.push("jetonRepeter5");
+    //     jetonsOperations.push("jetonRepeter6");
+    //     jetonsOperations.push("jetonRepeterAleatoire");
+    //     jetonsOperations.push("jetonRepeter7");
+    //     jetonsOperations.push("jetonRepeter8");
+    //     jetonsOperations.push("jetonRepeter9");
+    //     jetonsOperations.push("jetonRepeter10");
+    //     jetonsOperations.push("jetonRepeter18");
+    //     jetonsOperations.push("jetonRepeter36");
+    //     jetonsOperations.push("jetonRepeter72");
+    //     jetonsOperations.push("jetonRepeter180");
+    //     jetonsOperations.push("jetonRepeter360");
 
-        if ((rotation.onclick) || (operations.onclick) || (fonction.onclick) || (nombres.onclick)) {
-            let allDivOperations = document.querySelectorAll('divOperations');
-            allDivOperations.forEach( (div) => {                
-                let imagesOperations = div.querySelectorAll('img');
+    //     if ((rotation.onclick) || (operations.onclick) || (fonction.onclick) || (nombres.onclick)) {
+    //         let allDivOperations = document.querySelectorAll('divOperations');
+    //         allDivOperations.forEach( (div) => {                
+    //             let imagesOperations = div.querySelectorAll('img');
                 
-                imagesOperations.forEach(image => { image.remove()});
+    //             imagesOperations.forEach(image => { image.remove()});
 
-            });
-            jetonsOperations = [];
-            limiteJetonsOperations = 0;
-        }
+    //         });
+    //         jetonsOperations = [];
+    //         limiteJetonsOperations = 0;
+    //     }
 
 
-}
+})

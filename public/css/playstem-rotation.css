@@ -1,104 +1,110 @@
-.jetonRotation{
+.jetonRotation {
+  padding-top: 170px;
+  padding-left: 155px;
+  position: absolute;
+}
 
-    padding-top: 380px;
-    padding-left: 160px;
-    position: absolute;
-  }
-  
-  .jetonRepeter2{
-  
-    padding-top: 380px;
-    padding-left: 240px;
-    position: absolute;
-  }
-  
-  .jetonRepeter3{
-  
-    padding-top: 380px;
-    padding-left: 320px;
-    position: absolute;
-  }
-  
-  .jetonRepeter4{
-  
-    padding-top: 380px;
-    padding-left: 400px;
-    position: absolute;
-  }
-  
-  .jetonRepeter5{
-  
-    padding-top: 380px;
-    padding-left: 480px;
-    position: absolute;
-  }
-  
-  .jetonRepeter6{
-  
-    padding-top: 480px;
-    padding-left: 160px;
-    position: absolute;
-  }
-  
-  .jetonRepeterAleatoire{
-  
-    padding-top: 480px;
-    padding-left: 240px;
-    position: absolute;
-  }
-  
-  .jetonRepeter7{
-  
-    padding-top: 480px;
-    padding-left: 320px;
-    position: absolute;
-  }
-  
-  .jetonRepeter8{
-  
-    padding-top: 480px;
-    padding-left: 400px;
-    position: absolute;
-  }
-  
-  .jetonRepeter9{
-  
-    padding-top: 480px;
-    padding-left: 480px;
-    position: absolute;
-  }
-  
-  .jetonRepeter18{
-  
-    padding-top: 580px;
-    padding-left: 160px;
-    position: absolute;
-  }
-  
-  .jetonRepeter36{
-  
-    padding-top: 580px;
-    padding-left: 240px;
-    position: absolute;
-  }
-  
-  .jetonRepeter72{
-  
-    padding-top: 580px;
-    padding-left: 320px;
-    position: absolute;
-  }
-  
-  .jetonRepeter180{
-  
-    padding-top: 580px;
-    padding-left: 400px;
-    position: absolute;
-  }
-  
-  .jetonRepeter360{
-  
-    padding-top: 580px;
-    padding-left: 480px;
-    position: absolute;
-  }
+.jetonRepeter2 {
+
+  padding-top: 170px;
+  padding-left: 235px;
+  position: absolute;
+}
+
+.jetonRepeter3 {
+
+  padding-top: 170px;
+  padding-left: 315px;
+  position: absolute;
+}
+
+.jetonRepeter4 {
+
+  padding-top: 170px;
+  padding-left: 395px;
+  position: absolute;
+}
+
+.jetonRepeter5 {
+
+  padding-top: 170px;
+  padding-left: 475px;
+  position: absolute;
+}
+
+.jetonRepeter6 {
+
+  padding-top: 250px;
+  padding-left: 155px;
+  position: absolute;
+}
+
+.jetonRepeterAleatoire {
+
+  padding-top: 250px;
+  padding-left: 235px;
+  position: absolute;
+}
+
+.jetonRepeter7 {
+
+  padding-top: 250px;
+  padding-left: 315px;
+  position: absolute;
+}
+
+.jetonRepeter8 {
+
+  padding-top: 250px;
+  padding-left: 395px;
+  position: absolute;
+}
+
+.jetonRepeter9 {
+
+  padding-top: 250px;
+  padding-left: 475px;
+  position: absolute;
+}
+
+.jetonRepeter10 {
+
+  padding-top: 330px;
+  padding-left: 155px;
+  position: absolute;
+
+}
+
+.jetonRepeter18 {
+
+  padding-top: 330px;
+  padding-left: 235px;
+  position: absolute;
+}
+
+.jetonRepeter36 {
+
+  padding-top: 330px;
+  padding-left: 315px;
+  position: absolute;
+}
+
+.jetonRepeter72 {
+  padding-top: 330px;
+  padding-left: 395px;
+  position: absolute;
+}
+
+.jetonRepeter180 {
+
+  padding-top: 330px;
+  padding-left: 475px;
+  position: absolute;
+
+}
+
+.jetonRepeter360 {
+  padding-top: 410px;
+  padding-left: 155px;
+  position: absolute;
+}
