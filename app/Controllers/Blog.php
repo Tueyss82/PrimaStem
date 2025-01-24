@@ -48,7 +48,7 @@ class Blog extends BaseController
         $file = $this->request->getFile('MINIAARTICLE');
         $newFileName = $file->getRandomName();
 
-        $file->move(WRITEPATH . '../public/upload', $newFileName);
+        $file->move(WRITEPATH . 'upload/', $newFileName);
 
         // $newImgName = $this->file->getRandomName();
         // $this->file->move(WRITEPATH . '..\upload');
@@ -97,11 +97,11 @@ class Blog extends BaseController
         // die();
 
         if (!$fileName == '') {
-            if (file_exists('../public/upload/' . $oldFileName['MINIAARTICLE'])) {
-                unlink('../public/upload/' . $oldFileName['MINIAARTICLE']);
+            if (file_exists(WRITEPATH . 'upload/' . $oldFileName['MINIAARTICLE'])) {
+                unlink(WRITEPATH . 'upload/' . $oldFileName['MINIAARTICLE']);
             }
             $newFileName = $file->getRandomName();
-            $file->move(WRITEPATH . '../public/upload', $newFileName);
+            $file->move(WRITEPATH . 'upload/', $newFileName);
 
             $data = [
                 'TITRE' => $articleData['TITRE'],
@@ -149,8 +149,8 @@ class Blog extends BaseController
 
         $this->blogModel->delete($this->request->getPost('IDARTICLE'));  // Suppression du message avec l'ID via POST
 
-        if (file_exists('../public/upload/' . $oldFileName['MINIAARTICLE'])) { // Si le fichier existe alors la condition est vraie
-            unlink('../public/upload/' . $oldFileName['MINIAARTICLE']); // Supprime l'image en local
+        if (file_exists(WRITEPATH . 'upload/' . $oldFileName['MINIAARTICLE'])) { // Si le fichier existe alors la condition est vraie
+            unlink(WRITEPATH . 'upload/'  . $oldFileName['MINIAARTICLE']); // Supprime l'image en local
         }
 
         return redirect('supprArticleIndex');

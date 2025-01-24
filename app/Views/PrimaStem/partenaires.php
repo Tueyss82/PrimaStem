@@ -7,10 +7,10 @@
     <div class="row">
         <div class="col-md-6">
             <div id="carouselExampleControls" class="carousel slide h-100" data-ride="carousel">
-                <div class="carousel-inner imgCarousel bgImgCarousel">
+                <div class="carousel-inner imgCarousel">
                     <div class="carousel-item active">
                         <?php
-                            echo '<img class="imgCarousel" src="../upload/partenaires/'. $firstPartenaire[0]['IMGPARTENAIRE'] .'">';
+                            echo '<img class="imgCarousel" src="'.base_url('files/upload/' . $firstPartenaire[0]['IMGPARTENAIRE'] ).    '">';
                         ?>
                     </div>
                     <?php
@@ -18,8 +18,8 @@
                     // die();
                     foreach ($listePartenaires as $partenaire) {
                         // var_dump($partenaire);
-                        echo '  <div class="carousel-item div-container">
-                                    <img class="imgCarousel" src="../upload/partenaires/' . $partenaire['IMGPARTENAIRE'] . '">
+                        echo '  <div class="carousel-item">
+                                    <img class="imgCarousel" src="'.base_url('files/upload/' . $partenaire['IMGPARTENAIRE'] ).'">
                                         <div class="carousel-caption d-none d-md-block">
                                             <div class="bgTextPartner">
                                                 <h5>' . $partenaire['NOMPARTENAIRE'] . '</h5>

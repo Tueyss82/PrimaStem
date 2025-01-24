@@ -33,6 +33,8 @@ $routes->post('modifierPartenaire', 'Partenaire::update', ['as' => 'updateParten
 $routes->get('supprPartenaire', 'Partenaire::deleteIndex', ['as' => 'supprPartenaireIndex']);
 $routes->post('supprPartenaire', 'Partenaire::delete', ['as' => 'supprPartenaire']);
 
+$routes->get('files/upload/(:any)', 'FileController::serveImage/$1'); //Get Images
+
 // Blog
 
 $routes->get('blog', 'Blog::index', ['as' => 'blog']);

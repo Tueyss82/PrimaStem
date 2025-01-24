@@ -1,7 +1,7 @@
 <?= $this->extend('layoutPrimaStem') ?>
 <?= $this->section('contenu') ?>
 
-<?php
+<?php   
 
 use \CodeIgniter\View\Table;
 
@@ -22,13 +22,12 @@ $table = new table();
 
         <?php
         $table->setHeading('Nom du Partenaire', 'Avis du Partenaire', 'Image', 'Modifier');
-
         foreach ($listePartenaires as $partenaire) {
-            // var_dump($partenaire);
+            var_dump($partenaire);
             $table->addRow(
                 $partenaire['NOMPARTENAIRE'],
                 $partenaire['AVISPARTENAIRE'],
-                '<img class="imgModif" src="../upload/partenaires/' . $partenaire['IMGPARTENAIRE'] . '">',
+                '<img class="imgModif" src="'.base_url('files/upload/' . $partenaire['IMGPARTENAIRE'] ).'">',
                 '<button class="submitButton" ><a href="' .  url_to('modifPartenaire', $partenaire['IDPARTENAIRE']) . '">Modifier</a></button>',
             );
         }

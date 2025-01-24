@@ -45,7 +45,7 @@ class Partenaire extends BaseController
         // var_dump($file);
         // die();
 
-        $file->move(WRITEPATH . '../public/upload/partenaires', $newFileName);
+        $file->move(WRITEPATH . 'upload/', $newFileName);
 
         $data = [
             'NOMPARTENAIRE' => $partenaireData['NOMPARTENAIRE'],
@@ -96,11 +96,11 @@ class Partenaire extends BaseController
         // die();
 
         if (!$fileName == '') {
-            if (file_exists('../public/upload/partenaires/' . $oldFileName['IMGPARTENAIRE'])) {
-                unlink('../public/upload/partenaires/' . $oldFileName['IMGPARTENAIRE']);
-            }
+            if (file_exists(WRITEPATH . 'upload/' . $oldFileName['IMGPARTENAIRE'])) {
+                unlink(WRITEPATH . 'upload/' . $oldFileName['IMGPARTENAIRE']);
+            }   
             $newFileName = $file->getRandomName();
-            $file->move(WRITEPATH . '../public/upload/partenaires/', $newFileName);
+            $file->move(WRITEPATH . 'upload/', $newFileName);
 
             $data = [
                 'NOMPARTENAIRE' => $partenaireData['NOMPARTENAIRE'],
@@ -148,8 +148,8 @@ class Partenaire extends BaseController
 
         $this->partenaireModel->delete($this->request->getPost('IDPARTENAIRE'));  // Suppression du message avec l'ID via POST
 
-        if (file_exists('../public/upload/partenaires/' . $oldFileName['IMGPARTENAIRE'])) { // Si le fichier existe alors la condition est vraie
-            unlink('../public/upload/partenaires/' . $oldFileName['IMGPARTENAIRE']); // Supprime l'image en local
+        if (file_exists(WRITEPATH . 'upload/' . $oldFileName['IMGPARTENAIRE'])) { // Si le fichier existe alors la condition est vraie
+            unlink(WRITEPATH . 'upload/' . $oldFileName['IMGPARTENAIRE']); // Supprime l'image en local
         }
 
         return redirect('supprPartenaireIndex');
