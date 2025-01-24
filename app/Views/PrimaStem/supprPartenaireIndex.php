@@ -28,7 +28,7 @@ $table = new table();
             $table->addRow(
                 $partenaire['NOMPARTENAIRE'],
                 $partenaire['AVISPARTENAIRE'],
-                '<img class="imgModif" src="../upload/partenaires/' . $partenaire['IMGPARTENAIRE'] . '">',
+                '<img class="imgModif" src="'.base_url('files/upload/' . $partenaire['IMGPARTENAIRE'] ). '">',
                 '<form method="post" class="form" action="' . url_to('supprPartenaire', $partenaire['IDPARTENAIRE']) . '">
                     <input type="hidden" name="IDPARTENAIRE" value="' . $partenaire['IDPARTENAIRE'] . '">
                     <input type="submit" class="submitButton" value="Supprimer">

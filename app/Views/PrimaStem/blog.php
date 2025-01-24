@@ -11,7 +11,7 @@
                 // var_dump($article);
 
                 echo '<div>
-                            <img class="imgArt" src="../upload/'. $article['MINIAARTICLE'] .'">
+                            <img class="imgArt" src="'.base_url('files/upload/' . $article['MINIAARTICLE'] ).'">
                         </div>';
                 echo '<div class="divBlogTest">
                         <h1 class="headerText">'. $article['TITRE'] .'<h1>
@@ -21,7 +21,7 @@
             }
 
             ?>
-        </div>
+        </div> 
         <div class="col-md-6">
             <h1 class="headerText" id="divPostInsta">Notre Instagram !</h1>
             <h1>** WORK IN PROGRESS **</h1>

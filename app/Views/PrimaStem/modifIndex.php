@@ -17,7 +17,7 @@
             foreach ($listeArticles as $article) {
                 // var_dump($article);
                 echo '<div>
-                            <img class="imgArt" src="../upload/' . $article['MINIAARTICLE'] . '">
+                            <img class="imgArt" src="'.base_url('files/upload/' . $article['MINIAARTICLE'] ). '">
                         </div>';
                 echo '<div class="divBlogTest">
                         <h1 class="headerText">' . $article['TITRE'] . '<h1>
