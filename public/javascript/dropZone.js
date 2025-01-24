@@ -3,25 +3,28 @@
 
 // Sélectionne l'image et le conteneur
 let imgTelecommande = document.getElementById('telecommandeImg');
-let conteneur = document.getElementById('bodyAll');
 
 // Récupère le chemin de l'image (src)
-let imageUrlTelecommande = img.src;
+let imageUrlTelecommande = imgTelecommande.src;
 
 // Applique l'image comme arrière-plan
-bodyAll.style.backgroundImage = `url('${imageUrl}')`;
+bodyAll.style.backgroundImage = `url('${imageUrlTelecommande}')`;
 bodyAll.style.backgroundRepeat =  'no-repeat';
+bodyAll.style.backgroundPosition =  '12% 0%';
+
 // Cache l'image originale
-img.style.display = 'none';
+imgTelecommande.style.display = 'none';
 
-let imgGrilleRobot = document.getElementById('telecommandeImg');
 
-// Récupère le chemin de l'image (src)
-let imageUrlGrille = img.src;
+// let imgGrille = document.getElementById('grilleRobot');
+
+// // Récupère le chemin de l'image (src)
+// let imageUrlGrille = imgGrille.src;
 
 // Applique l'image comme arrière-plan
-bodyAll.style.backgroundImage = `url('${imageUrl}')`;
-bodyAll.style.backgroundRepeat =  'no-repeat';
-// Cache l'image originale
-img.style.display = 'none';
+// grilleBackground.style.backgroundImage = `url('${imageUrlGrille}')`;
+// grilleBackground.style.backgroundRepeat =  'no-repeat';
+// grilleBackground.style.backgroundPosition =  '75% 0%';
+// // Cache l'image originale
+// imgGrille.style.display = 'none';
 

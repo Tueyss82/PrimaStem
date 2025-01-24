@@ -98,17 +98,25 @@
 
   padding-left: 800px;
   padding-top: 0px;
-  margin-top: 100px;
 
 }
 
 .robotPrimaStem {
-  padding-top: 660px;
+  padding-top: 100px;
   padding-left: 1015px;
+ 
 }
 
 .bodyAll{
-  background-position: 25% 75% ;
-    
+  display:unset;
+
 }
+
+.grilleBackground{
+  background-image: url('../imagesPlayStem/grilleRobot.png');
+  background-repeat: no-repeat;
+  background-position: 85% 9%;
+  background-size: auto 12%;
+}
+
 

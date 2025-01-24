@@ -9,7 +9,7 @@
 <!-- <div class="consignes"><img src="imagesPlayStem\consignes.png"></div> -->
 
 <!-- <div class="image-container"> -->
-<div id="bodyAll" class="bodyAll">
+<div id="grilleBackground" class="grilleBackground">
 <div class="div-position">
     <div class="fleche-toutesLesDirections" id="mouvement"> <button><img src="imagesPlayStem\mouvementCategorie.png"></button></div>
     <div class="toutesLesRotations" id="rotation"><button> <img src="imagesPlayStem\repetitionCategorie.png"></button></div>
@@ -117,38 +117,46 @@
     <div class="jetonPause" id="jetonPause"> </div>
 </div>
 
+
 <div class="supportJeton"> <img src="imagesPlayStem\supportJeton.png"></div>
 
-<div class="robotPrimaStem"><img src="imagesPlayStem\mini-logo.png"></div>
-<div class="grilleRobot"><img src="imagesPlayStem\grilleRobot.png"></div>
 
-<div class="dropZone" id="dropZone">
-    <div class="dropZone1"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-    <div class="dropZone2"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-    <div class="dropZone3"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-    <div class="dropZone4"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-    <div class="dropZone5"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-    <div class="dropZone6"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-    <div class="dropZone7"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-    <div class="dropZone8"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-    <div class="dropZone9"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-    <div class="dropZone10"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-    <div class="dropZone11"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-    <div class="dropZone12"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-    <div class="dropZone13"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-    <div class="dropZone14"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-    <div class="dropZone15"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-    <div class="dropZone16"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-    <div class="dropZone17"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-    <div class="dropZone18"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-    <div class="dropZone19"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-    <div class="dropZone20"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-    <div class="dropZone21"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-    <div class="dropZone22"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-    
-</div>
-<div class="telecommande"  id="telecommande"><img id="telecommandeImg" src="imagesPlayStem\telecommande.png"></div>
-</div>
+    <div class="robotPrimaStem" id="robotPrimaStem"><img src="imagesPlayStem\mini-logo.png"></div>
 
 
-<?= $this->endSection() ?>
+<!-- <div class="grilleRobot" id="grilleRobot"><img src="imagesPlayStem\grilleRobot.png"></div> -->
+
+
+
+<div id="bodyAll" class="bodyAll">
+    <div class="dropZone" id="dropZone">
+        <div class="dropZone1"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone2"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone3"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone4"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone5"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone6"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone7"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone8"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone9"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone10"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone11"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone12"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone13"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone14"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone15"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone16"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone17"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone18"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone19"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone20"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone21"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone22"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+
+    </div>
+
+    <div class="telecommande" id="telecommande"><img id="telecommandeImg" src="imagesPlayStem\telecommande.png"></div>
+
+    </div>
+
+    <?= $this->endSection() ?>
