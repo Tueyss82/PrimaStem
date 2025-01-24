@@ -21,7 +21,7 @@ fonction.addEventListener("click", function() {
 
 
         // let jetonsSpeciaux = [];
-        // jetonsSpeciaux.push("jetonFonction");
+        // 
 
         // if ((!rotation.onclick) || (!operations.onclick) || (!fonction.onclick) || (!nombres.onclick)) {
         //     let allDivSpeciaux = document.querySelectorAll('divSpeciaux');

@@ -76,23 +76,7 @@ rotation.addEventListener("click", function() {
         limiteJetonsRotation++;
     }
     // let jetonsRotation = [];
-    //     jetonsRotation.push("jetonRotation");
-    //     jetonsRotation.push("jetonRepeter2");
-    //     jetonsRotation.push("jetonRepeter3");
-    //     jetonsRotation.push("jetonRepeter4");
-    //     jetonsRotation.push("jetonRepeter5");
-    //     jetonsRotation.push("jetonRepeter6");
-    //     jetonsRotation.push("jetonRepeterAleatoire");
-    //     jetonsRotation.push("jetonRepeter7");
-    //     jetonsRotation.push("jetonRepeter8");
-    //     jetonsRotation.push("jetonRepeter9");
-    //     jetonsRotation.push("jetonRepeter10");
-    //     jetonsRotation.push("jetonRepeter18");
-    //     jetonsRotation.push("jetonRepeter36");
-    //     jetonsRotation.push("jetonRepeter72");
-    //     jetonsRotation.push("jetonRepeter180");
-    //     jetonsRotation.push("jetonRepeter360");
-        
+
     //         jetonsRotation = [];
             
 
