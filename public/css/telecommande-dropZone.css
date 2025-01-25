@@ -1,135 +1,154 @@
-/* .dropZone{
-   
-} */
+.dropZoneligne1 {
+    display: flex;
+    flex-direction: row;
+}
 
-.dropZone1 {    
-    padding-top: 0px;
-    padding-left: 131px;
-    
+.dropZoneligne2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.dropZoneligne3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.dropZoneligne4 {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.dropZone1 {
+    padding-top: 10px;
+    padding-left: 190px;
+    flex-direction: inherit;
+
 }
 
 .dropZone2 {
-    padding-top: 0px;
-    padding-left: 1230px;
-
+    padding-top: 10px;
+    padding-left: 27px;
+    flex-direction: inherit;
 }
 
 .dropZone3 {
-    padding-top: 60px;
-    padding-left: 324px;
-    
+    padding-top: 10px;
+    padding-left: 23px;
+    flex-direction: inherit;
 }
 
 .dropZone4 {
-    padding-top: 60px;
-    padding-left: 400px;
-    
+    padding-top: 10px;
+    padding-left: 25px;
+    flex-direction: inherit;
 }
 
 .dropZone5 {
-    padding-top: 60px;
-    padding-left: 500px;
-    
+    padding-top: 10px;
+    padding-left: 16.5px;
+    flex-direction: inherit;
 }
 
 .dropZone6 {
-    padding-top: 60px;
-    padding-left: 130px;
-    
+    padding-top: 10px;
+    padding-left: 16px;
+    flex-direction: inherit;
 }
 
 .dropZone7 {
-    padding-top: 60px;
-    padding-left: 130px;
-    
+    padding-top: 20px;
+    padding-left: 189.5px;
+    flex-direction: inherit;
 }
 
 .dropZone8 {
-    padding-top: 60px;
-    padding-left: 130px;
-    
+    padding-top: 20px;
+    padding-left: 27px;
+    flex-direction: inherit;
 }
 
 .dropZone9 {
-    padding-top: 60px;
-    padding-left: 130px;
-    
+    padding-top: 20px;
+    padding-left: 23px;
+    flex-direction: inherit;
 }
 
 .dropZone10 {
-    padding-top: 60px;
-    padding-left: 130px;
-    
+    padding-top: 20px;
+    padding-left: 25px;
+    flex-direction: inherit;
 }
 
 .dropZone11 {
-    padding-top: 60px;
-    padding-left: 130px;
-    
+    padding-top: 20px;
+    padding-left: 17px;
+    flex-direction: inherit;
 }
 
 .dropZone12 {
-    padding-top: 60px;
-    padding-left: 130px;
-    
+    padding-top: 20px;
+    padding-left: 17px;
+    flex-direction: inherit;
 }
 
 .dropZone13 {
-    padding-top: 60px;
-    padding-left: 130px;
-    
+    padding-top: 40px;
+    padding-left: 230px;
+    flex-direction: inherit;
 }
 
 .dropZone14 {
-    padding-top: 60px;
-    padding-left: 130px;
-    
+    padding-top: 40px;
+    padding-left: 25.5px;
+    flex-direction: inherit;
 }
 
 .dropZone15 {
-    padding-top: 60px;
-    padding-left: 130px;
-    
+    padding-top: 40px;
+    padding-left: 23px;
+    flex-direction: inherit;
 }
 
 .dropZone16 {
-    padding-top: 60px;
-    padding-left: 130px;
-    
+    padding-top: 40px;
+    padding-left: 25px;
+    flex-direction: inherit;
 }
 
 .dropZone17 {
-    padding-top: 60px;
-    padding-left: 130px;
-    
+    padding-top: 40px;
+    padding-left: 15px;
+    flex-direction: inherit;
 }
 
 .dropZone18 {
-    padding-top: 60px;
-    padding-left: 130px;
-    
+    padding-top: 19px;
+    padding-left: 230px;
+    flex-direction: inherit;
 }
 
 .dropZone19 {
-    padding-top: 60px;
-    padding-left: 130px;
-    
+    padding-top: 19px;
+    padding-left: 26px;
+    flex-direction: inherit;
 }
 
 .dropZone20 {
-    padding-top: 60px;
-    padding-left: 130px;
-    
+    padding-top: 19px;
+    padding-left: 23px;
+    flex-direction: inherit;
 }
 
 .dropZone21 {
-    padding-top: 60px;
-    padding-left: 130px;
-    
+    padding-top: 19px;
+    padding-left: 25px;
+    flex-direction: inherit;
 }
 
 .dropZone22 {
-    padding-top: 60px;
-    padding-left: 130px;
-    
+    padding-top: 19px;
+    padding-left: 15px;
+    flex-direction: inherit;
+    margin-bottom: 200px;
 }

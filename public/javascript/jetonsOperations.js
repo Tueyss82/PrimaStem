@@ -114,22 +114,7 @@ operations.addEventListener("click", function (event)  {
     }
 
     // let jetonsOperations = [];
-    //     jetonsOperations.push("jetonRotation");
-    //     jetonsOperations.push("jetonRepeter2");
-    //     jetonsOperations.push("jetonRepeter3");
-    //     jetonsOperations.push("jetonRepeter4");
-    //     jetonsOperations.push("jetonRepeter5");
-    //     jetonsOperations.push("jetonRepeter6");
-    //     jetonsOperations.push("jetonRepeterAleatoire");
-    //     jetonsOperations.push("jetonRepeter7");
-    //     jetonsOperations.push("jetonRepeter8");
-    //     jetonsOperations.push("jetonRepeter9");
-    //     jetonsOperations.push("jetonRepeter10");
-    //     jetonsOperations.push("jetonRepeter18");
-    //     jetonsOperations.push("jetonRepeter36");
-    //     jetonsOperations.push("jetonRepeter72");
-    //     jetonsOperations.push("jetonRepeter180");
-    //     jetonsOperations.push("jetonRepeter360");
+
 
     //     if ((rotation.onclick) || (operations.onclick) || (fonction.onclick) || (nombres.onclick)) {
     //         let allDivOperations = document.querySelectorAll('divOperations');
