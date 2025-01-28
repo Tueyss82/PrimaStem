@@ -31,11 +31,19 @@ class Partenaire extends BaseController
 
     public function ajout()
     {
+        $user = auth()->user();
+        if (!$user->inGroup('admin')) {
+            return view('PrimaStem/index');
+        }
         return view('PrimaStem/ajoutPartenaire');
     }
 
     public function create()
     {
+        $user = auth()->user();
+        if (!$user->inGroup('admin')) {
+            return view('PrimaStem/index');
+        }
         $partenaireData = $this->request->getPost();
 
         $file = $this->request->getFile('IMGPARTENAIRE');
@@ -63,6 +71,10 @@ class Partenaire extends BaseController
 
     public function modifIndex()
     {
+        $user = auth()->user();
+        if (!$user->inGroup('admin')) {
+            return view('PrimaStem/index');
+        }
         $partenaires = $this->partenaireModel->findAll();
 
         return view('PrimaStem/modifPartenaireIndex', [
@@ -72,6 +84,10 @@ class Partenaire extends BaseController
 
     public function modif($partenaireId)
     {
+        $user = auth()->user();
+        if (!$user->inGroup('admin')) {
+            return view('PrimaStem/index');
+        }
         $partenaire = $this->partenaireModel->find($partenaireId);
 
         return view('PrimaStem/modifPartenaire', [
@@ -81,6 +97,10 @@ class Partenaire extends BaseController
 
     public function update()
     {
+        $user = auth()->user();
+        if (!$user->inGroup('admin')) {
+            return view('PrimaStem/index');
+        }
         $partenaireData = $this->request->getPost();
 
         $oldFileName = $this->partenaireModel->getOldFileNamePartenaire($partenaireData['IDARTICLE']);
@@ -129,6 +149,10 @@ class Partenaire extends BaseController
 
     public function deleteIndex()
     {
+        $user = auth()->user();
+        if (!$user->inGroup('admin')) {
+            return view('PrimaStem/index');
+        }
         $partenaires = $this->partenaireModel->findAll();
 
         return view('PrimaStem/supprPartenaireIndex', [
@@ -138,6 +162,10 @@ class Partenaire extends BaseController
 
     public function delete()
     {
+        $user = auth()->user();
+        if (!$user->inGroup('admin')) {
+            return view('PrimaStem/index');
+        }
         $partenaireId = $this->request->getPost(); // Récupère l'ID de l'article
         // var_dump($partenaireId);
         // die();

@@ -34,6 +34,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="<?= url_to('playstem') ?>">PlayStem</a>
                     </li>
+                    <li class="nav-item">
+                        <?php
+                        $user = auth()->user();
+                        $admin = $user && $user->inGroup('admin');
+                        ?>
+                        <?= $admin ? '<a class="nav-link" href="' . url_to('logout') . '">Se Déconnecter</a>' : '' ?>
+                    </li>
                 </ul>
 
             </div>
@@ -62,7 +69,7 @@
                 <div class="footer-content">
                     <a href="https://www.instagram.com/primastem.world/" target="_blank">
                         <img src="../image/logoinstaforfooter.png" class="footerImg" alt="Logo Instagram" class="instagram-logo">
-                    Instagram : PrimaStem
+                        Instagram : PrimaStem
                     </a>
                 </div>
                 <p></p>

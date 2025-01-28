@@ -11,8 +11,10 @@ class PrimaStem extends BaseController
 
     public function adminIndex(): string
     {
+        $user = auth()->user();
+        if (!$user->inGroup('admin')) {
+            return view('PrimaStem/index');
+        }
         return view('PrimaStem/adminIndex');
     }
-
-
 }
