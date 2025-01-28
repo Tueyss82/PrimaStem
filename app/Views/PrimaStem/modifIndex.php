@@ -21,7 +21,7 @@
                         </div>';
                 echo '<div class="divBlogTest">
                         <h1 class="headerText">' . $article['TITRE'] . '<h1>
-                        <p class="fs-6 descArt">' . $article['DESCRIPTIONARTICLE'] . '</p>
+                        <p class="fs-6 descArt" id="description">' . $article['DESCRIPTIONARTICLE'] . '</p>
                         <a class="submitButton" href="' . url_to('modifArticle', $article['IDARTICLE']) . '">Modifier</a>
                     </div>';
             }
@@ -30,4 +30,5 @@
         </div>
     </div>
 </div>
+<script src="javascript/primastemMain.js"></script>
 <?= $this->endSection() ?>

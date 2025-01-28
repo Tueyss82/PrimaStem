@@ -36,6 +36,16 @@ class Blog extends BaseController
         ]);
     }
 
+    public function showArticle($articleId)
+    {
+        $articleData = $this->blogModel->getAllByIdGiven($articleId);
+
+        return view('PrimaStem/article', [
+            'data' => $articleData,
+            'idArticle' => $articleId
+        ]);
+    }
+
     public function ajout()
     {
         return view('PrimaStem/ajout_article');

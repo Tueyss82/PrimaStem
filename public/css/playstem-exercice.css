@@ -1,35 +1,76 @@
+/* .button{
+  background-color: white;
+  border-color: inherit;
+  border-width: 0px;
+} */
+/* 
+ .divMouvement{
+  display: flex;
+  flex-direction: row; 
+  gap: 10px; 
+  position: relative;
+  z-index: 3;
+} */
+
+/* .divRotation{
+  
+}
+.divNombres{
+  
+}
+.divOperations{
+  
+}
+.divSpeciaux{
+  
+}  */
+
+.div-position {
+  display: flex;
+  flex-direction: row;
+  /* Empile verticalement les divs */
+  gap: 10px;
+  /* Ajoute un espacement entre les divs */
+}
+
+.supportJeton {
+  padding-top: 0px;
+  margin-left: 120px;
+  margin-bottom: 200px;
+}
+
 .fleche-toutesLesDirections {
-  padding-top: 70px;
-  padding-left: 200px;
-  margin-bottom: 600px;
-  z-index: 4;
-  height: max-content;
+  padding-top: 220px;
+  padding-left: 130px;
+  margin-bottom: 30px;
+  z-index: 2;
 }
 
 .toutesLesRotations {
-  padding-top: 70px;
-  padding-left: 20px;
-  z-index: 4;
-  height: max-content;
+  padding-top: 220px;
+  padding-left: 10px;
+  z-index: 2;
 }
 
 .tousLesNombres {
-  padding-top: 70px;
-  padding-left: 20px;
-  z-index: 4;
-  height: max-content;
+  padding-top: 220px;
+  padding-left: 10px;
+
+  z-index: 2;
 }
 
 .toutesLesOperations {
-  padding-top: 70px;
-  padding-left: 20px;
-  height: max-content;
+  padding-top: 220px;
+  padding-left: 10px;
+
+  z-index: 2;
 }
 
 .fonction {
-  padding-top: 70px;
-  padding-left: 20px;
-  height: max-content;
+  padding-top: 220px;
+  padding-left: 10px;
+
+  z-index: 2;
 }
 
 .exercices-TextLayout {
@@ -49,6 +90,11 @@
   padding-left: 100px;
 }
 
+.telecommande {
+  padding-left: 100px;
+  margin-bottom: 100px;
+
+}
 
 .grilleRobot {
 
@@ -58,108 +104,21 @@
 }
 
 .robotPrimaStem {
-  padding-top: 100px;
+  padding-top: 490px;
   padding-left: 1147px;
-  
+  position: absolute;
 }
 
 .bodyAll {
   background-image: url('../imagesPlayStem/telecommande.png');
   background-repeat: no-repeat;
   background-position:12% 0%;
+
 }
 
 .grilleBackground {
-  /* background-image: url('../imagesPlayStem/grilleRobot.png');
+  background-image: url('../imagesPlayStem/grilleRobot.png');
   background-repeat: no-repeat;
-  background-position: 65% 100%; */
-  
-}
-.supportJeton{
-  display: flex;
-  flex-direction: row;
-  background-size: 30% ;
-  background-image: url('../imagesPlayStem/supportJeton.png');
-  background-repeat: no-repeat;
-  background-position: 11.5% 0%;
-  
-}
-
-.positionJetonsMouvement{
-  display: flex;
-  flex-direction: row;
-}
-
-.positionJetonsMouvement div{
-  /* display: flex;
-  flex-direction: row; */
-}
-
-.positionJetonsRepetition{
-  display: flex;
-  flex-direction: row;
-}
-
-.positionJetonsRepetition div{
-  /* display: flex;
-  flex-direction: row; */
-}
-
-.positionJetonsNombres1{
-  display: flex;
-  flex-direction: row;
-  position: relative;
-}
-
-
-.positionJetonsNombres2{
-  display: flex;
-  flex-direction: row;
-  position: relative;
-}
-
-
-.positionJetonsNombres3{
-  display: flex;
-  flex-direction: row;
-  position: relative;
-}
-
-
-.positionJetonsNombres4{
-  display: flex;
-  flex-direction: row;
-  position: relative;
-}
-
-
-.positionJetonsNombres5{
-  display: flex;
-  flex-direction: row;
-  position: relative;
-}
-
-.positionJetonsNombres6{
-  display: flex;
-  flex-direction: row;
-  position: relative;
-}
-.positionJetonsOperations{
-  display: flex;
-  flex-direction: row;
-}
-
-.positionJetonsOperations div{
-  /* display: flex;
-  flex-direction: row; */
-}
-
-.positionJetonsSpeciaux{
-  display: flex;
-  flex-direction: row;
-}
-
-.positionJetonsSpeciaux div{
-  /* display: flex;
-  flex-direction: row; */
+  background-position: 65% 25%;
+  background-size: auto 30%;
 }

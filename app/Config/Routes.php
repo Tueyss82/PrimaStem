@@ -6,7 +6,7 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 
-//service('auth')->routes($routes);
+service('auth')->routes($routes);
 
 // Site PrimaStem
 
@@ -38,6 +38,8 @@ $routes->get('files/upload/(:any)', 'FileController::serveImage/$1'); //Get Imag
 // Blog
 
 $routes->get('blog', 'Blog::index', ['as' => 'blog']);
+
+$routes->get('article(:num)', 'Blog::showArticle/$1', ['as' => 'article']);
 
 $routes->get('ajoutArticle', 'Blog::ajout', ['as' => 'ajoutArticle']);
 $routes->post('ajoutArticle', 'Blog::create', ['as' => 'createArticle']);
