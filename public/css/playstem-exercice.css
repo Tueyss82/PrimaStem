@@ -1,36 +1,8 @@
-/* .button{
-  background-color: white;
-  border-color: inherit;
-  border-width: 0px;
-} */
-/* 
- .divMouvement{
-  display: flex;
-  flex-direction: row; 
-  gap: 10px; 
-  position: relative;
-  z-index: 3;
-} */
-
-/* .divRotation{
-  
-}
-.divNombres{
-  
-}
-.divOperations{
-  
-}
-.divSpeciaux{
-  
-}  */
-
 .div-position {
   display: flex;
   flex-direction: row;
-  /* Empile verticalement les divs */
   gap: 10px;
-  /* Ajoute un espacement entre les divs */
+
 }
 
 .supportJeton {
@@ -93,6 +65,7 @@
 .telecommande {
   padding-left: 100px;
   margin-bottom: 100px;
+  z-index: 2;
 
 }
 
@@ -104,21 +77,27 @@
 }
 
 .robotPrimaStem {
-  padding-top: 490px;
+  padding-top: 500px;
   padding-left: 1147px;
-  position: absolute;
+  
 }
 
 .bodyAll {
-  background-image: url('../imagesPlayStem/telecommande.png');
+  /* background-image: url('../imagesPlayStem/telecommande.png');
   background-repeat: no-repeat;
-  background-position:12% 0%;
-
+  background-position:12% 0%; */
+  z-index: 3;
 }
 
 .grilleBackground {
   background-image: url('../imagesPlayStem/grilleRobot.png');
   background-repeat: no-repeat;
-  background-position: 65% 25%;
-  background-size: auto 30%;
+  background-position: 65% 100%;
+  
+}
+.supportJetons{
+  background-image: url('../imagesPlayStem/supportJeton.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  
 }
