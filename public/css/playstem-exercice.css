@@ -105,16 +105,45 @@
   flex-direction: row; */
 }
 
-.positionJetonsNombres{
+.positionJetonsNombres1{
   display: flex;
   flex-direction: row;
-}
-  
-.positionJetonsNombres .jeton6{
-  display: flex;
-  flex-direction: initial;
+  position: relative;
 }
 
+
+.positionJetonsNombres2{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+
+.positionJetonsNombres3{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+
+.positionJetonsNombres4{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+
+.positionJetonsNombres5{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.positionJetonsNombres6{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
 .positionJetonsOperations{
   display: flex;
   flex-direction: row;

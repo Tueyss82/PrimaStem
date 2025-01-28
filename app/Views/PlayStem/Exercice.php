@@ -41,35 +41,51 @@
         <div class="jetonRepeter360" id="jetonRepeter360"> </div>
     </div>
 
-    <div class="positionJetonsNombres">
+
+    <div class="positionJetonsNombres1">
         <div class="jeton1" id="jeton1"> </div>
         <div class="jeton2" id="jeton2"> </div>
         <div class="jeton3" id="jeton3"> </div>
         <div class="jeton4" id="jeton4"> </div>
         <div class="jeton5" id="jeton5"> </div>
+    </div>
+
+    <div class="positionJetonsNombres2">
         <div class="jeton6" id="jeton6"> </div>
         <div class="jeton7" id="jeton7"> </div>
         <div class="jeton8" id="jeton8"> </div>
         <div class="jeton9" id="jeton9"> </div>
         <div class="jeton10" id="jeton10"> </div>
+    </div>
 
+    <div class="positionJetonsNombres3">
         <div class="jeton15" id="jeton15"> </div>
         <div class="jeton20" id="jeton20"> </div>
         <div class="jeton36" id="jeton36"> </div>
         <div class="jeton40" id="jeton40"> </div>
         <div class="jeton45" id="jeton45"> </div>
-        <div class="jeton50" id="jeton50"> </div>
-        <div class="jeton60" id="jeton60"> </div>
-        <div class="jeton72" id="jeton72"> </div>
-        <div class="jeton90" id="jeton90"> </div>
-        <div class="jeton100" id="jeton100"> </div>
-        <div class="jeton108" id="jeton108"> </div>
-        <div class="jeton120" id="jeton120"> </div>
-        <div class="jeton135" id="jeton135"> </div>
-        <div class="jeton144" id="jeton144"> </div>
-        <div class="jeton150" id="jeton150"> </div>
-        <div class="jeton180" id="jeton180"> </div>
-        <div class="jeton360" id="jeton360"> </div>
+    </div>
+
+    <div class="positionJetonsNombres4">
+    <div class="jeton50" id="jeton50"> </div>
+    <div class="jeton60" id="jeton60"> </div>
+    <div class="jeton72" id="jeton72"> </div>
+    <div class="jeton90" id="jeton90"> </div>
+    <div class="jeton100" id="jeton100"> </div>
+
+    </div>
+    <div class="positionJetonsNombres5">
+    <div class="jeton108" id="jeton108"> </div>
+    <div class="jeton120" id="jeton120"> </div>
+    <div class="jeton135" id="jeton135"> </div>
+    <div class="jeton144" id="jeton144"> </div>
+    <div class="jeton150" id="jeton150"> </div>
+
+    </div>
+
+    <div class="positionJetonsNombres6">
+    <div class="jeton180" id="jeton180"> </div>
+    <div class="jeton360" id="jeton360"> </div>
 
     </div>
 
