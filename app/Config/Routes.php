@@ -8,52 +8,48 @@ use CodeIgniter\Router\RouteCollection;
 
 
 // Site PrimaStem
-
-$routes->get('/', 'PrimaStem::index', ['as' => 'primastem']);
 service('auth')->routes($routes);
 
-$routes->group('admin', ['filter' => 'session'], static function ($routes) {
-    $routes->get('/', 'PrimaStem::adminIndex', ['as' => 'backofficeIndex']); // Backoffice Admin (need login before)
-    
-}) ;
-
-
 // Pages 
+
+$routes->get('/', 'PrimaStem::index', ['as' => 'primastem']);
+
+$routes->get('partenaires', 'Partenaire::index', ['as' => 'partenaires']);
+
+$routes->get('blog', 'Blog::index', ['as' => 'blog']);
 
 $routes->get('contact', 'Contact::index', ['as' => 'ajoutContact']);
 $routes->post('contact', 'Contact::create', ['as' => 'createContact']);
 
-// Partenaires
+$routes->group('admin', ['namespace' => 'App\Controllers', 'filter' => 'session'], static function ($routes) {
+    $routes->get('/', 'PrimaStem::adminIndex', ['as' => 'backofficeIndex']); // Backoffice Admin (need login before)
 
-$routes->get('partenaires', 'Partenaire::index', ['as' => 'partenaires']);
+    // Partenaires
+    $routes->get('ajoutPartenaire', 'Partenaire::ajout', ['as' => 'ajoutPartenaire']);
+    $routes->post('ajoutPartenaire', 'Partenaire::create', ['as' => 'createPartenaire']);
 
-$routes->get('ajoutPartenaire', 'Partenaire::ajout', ['as' => 'ajoutPartenaire']);
-$routes->post('ajoutPartenaire', 'Partenaire::create', ['as' => 'createPartenaire']);
+    $routes->get('modifierPartenaire', 'Partenaire::modifIndex', ['as' => 'modifPartenaireIndex']);
+    $routes->get('modifierPartenaire(:num)', 'Partenaire::modif/$1', ['as' => 'modifPartenaire']);
+    $routes->post('modifierPartenaire', 'Partenaire::update', ['as' => 'updatePartenaire']);
 
-$routes->get('modifierPartenaire', 'Partenaire::modifIndex', ['as' => 'modifPartenaireIndex']);
-$routes->get('modifierPartenaire(:num)', 'Partenaire::modif/$1', ['as' => 'modifPartenaire']);
-$routes->post('modifierPartenaire', 'Partenaire::update', ['as' => 'updatePartenaire']);
+    $routes->get('supprPartenaire', 'Partenaire::deleteIndex', ['as' => 'supprPartenaireIndex']);
+    $routes->post('supprPartenaire', 'Partenaire::delete', ['as' => 'supprPartenaire']);
 
-$routes->get('supprPartenaire', 'Partenaire::deleteIndex', ['as' => 'supprPartenaireIndex']);
-$routes->post('supprPartenaire', 'Partenaire::delete', ['as' => 'supprPartenaire']);
+    // Blog
+    $routes->get('article(:num)', 'Blog::showArticle/$1', ['as' => 'article']);
+
+    $routes->get('ajoutArticle', 'Blog::ajout', ['as' => 'ajoutArticle']);
+    $routes->post('ajoutArticle', 'Blog::create', ['as' => 'createArticle']);
+
+    $routes->get('modifierArticle', 'Blog::modifIndex', ['as' => 'modifArticleIndex']);
+    $routes->get('modifierArticle(:num)', 'Blog::modif/$1', ['as' => 'modifArticle']);
+    $routes->post('modifierArticle', 'Blog::update', ['as' => 'updateArticle']);
+
+    $routes->get('supprArticle', 'Blog::deleteIndex', ['as' => 'supprArticleIndex']);
+    $routes->post('supprArticle', 'Blog::delete', ['as' => 'supprArticle']);
+});
 
 $routes->get('files/upload/(:any)', 'FileController::serveImage/$1'); //Get Images
-
-// Blog
-
-$routes->get('blog', 'Blog::index', ['as' => 'blog']);
-
-$routes->get('article(:num)', 'Blog::showArticle/$1', ['as' => 'article']);
-
-$routes->get('ajoutArticle', 'Blog::ajout', ['as' => 'ajoutArticle']);
-$routes->post('ajoutArticle', 'Blog::create', ['as' => 'createArticle']);
-
-$routes->get('modifierArticle', 'Blog::modifIndex', ['as' => 'modifArticleIndex']);
-$routes->get('modifierArticle(:num)', 'Blog::modif/$1', ['as' => 'modifArticle']);
-$routes->post('modifierArticle', 'Blog::update', ['as' => 'updateArticle']);
-
-$routes->get('supprArticle', 'Blog::deleteIndex', ['as' => 'supprArticleIndex']);
-$routes->post('supprArticle', 'Blog::delete', ['as' => 'supprArticle']);
 
 //------------------Site exercice
 

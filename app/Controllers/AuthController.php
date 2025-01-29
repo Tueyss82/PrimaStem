@@ -12,8 +12,8 @@ class AuthController extends BaseController
         return view('Shield/login');
     }
 
-    public function logout()
-    {
-        return view('Shield/login');
-    }
+    // public function createLogin()
+    // {
+    //     return view('PrimaStem/index.php');
+    // }
 }
