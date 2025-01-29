@@ -6,12 +6,68 @@
     <div class="robotPrimaStem" id="robotPrimaStem"><img src="imagesPlayStem\mini-logo.png"></div>
 </div>
 
+
+
+
 <div class="supportJeton">
-    <div class="fleche-toutesLesDirections" id="mouvement"> <button><img src="imagesPlayStem\mouvementCategorie.png"></button></div>
-    <div class="toutesLesRotations" id="rotation"><button> <img src="imagesPlayStem\repetitionCategorie.png"></button></div>
-    <div class="tousLesNombres" id="nombres"><button><img src="imagesPlayStem\nombresCategorie.png"></button></div>
-    <div class="toutesLesOperations" id="operations"><button><img src="imagesPlayStem\operationsCategorie.png"></button></div>
-    <div class="fonction" id="fonction"><button><img src="imagesPlayStem\speciauxCategorie.png"></button></div>
+    <div class="boutonsCategories">
+        <div class="fleche-toutesLesDirections" id="mouvement"> <button><img src="imagesPlayStem\mouvementCategorie.png"></button></div>
+        <div class="toutesLesRotations" id="rotation"><button> <img src="imagesPlayStem\repetitionCategorie.png"></button></div>
+        <div class="tousLesNombres" id="nombres"><button><img src="imagesPlayStem\nombresCategorie.png"></button></div>
+        <div class="toutesLesOperations" id="operations"><button><img src="imagesPlayStem\operationsCategorie.png"></button></div>
+        <div class="fonction" id="fonction"><button><img src="imagesPlayStem\speciauxCategorie.png"></button></div>
+    </div>
+    <div class="positionJetonsNombres1">
+        <div class="jeton1" id="jeton1"> </div>
+        <div class="jeton2" id="jeton2"> </div>
+        <div class="jeton3" id="jeton3"> </div>
+        <div class="jeton4" id="jeton4"> </div>
+        <div class="jeton5" id="jeton5"> </div>
+    </div>
+
+    <div class="positionJetonsNombres2">
+        <div class="jeton6" id="jeton6"> </div>
+        <div class="jeton7" id="jeton7"> </div>
+        <div class="jeton8" id="jeton8"> </div>
+        <div class="jeton9" id="jeton9"> </div>
+        <div class="jeton10" id="jeton10"> </div>
+    </div>
+
+    <div class="positionJetonsNombres3">
+        <div class="jeton15" id="jeton15"> </div>
+        <div class="jeton20" id="jeton20"> </div>
+        <div class="jeton36" id="jeton36"> </div>
+        <div class="jeton40" id="jeton40"> </div>
+        <div class="jeton45" id="jeton45"> </div>
+    </div>
+
+    <div class="positionJetonsNombres4">
+        <div class="jeton50" id="jeton50"> </div>
+        <div class="jeton60" id="jeton60"> </div>
+        <div class="jeton72" id="jeton72"> </div>
+        <div class="jeton90" id="jeton90"> </div>
+        <div class="jeton100" id="jeton100"> </div>
+
+    </div>
+    <div class="positionJetonsNombres5">
+        <div class="jeton108" id="jeton108"> </div>
+        <div class="jeton120" id="jeton120"> </div>
+        <div class="jeton135" id="jeton135"> </div>
+        <div class="jeton144" id="jeton144"> </div>
+        <div class="jeton150" id="jeton150"> </div>
+
+    </div>
+
+    <div class="positionJetonsNombres6">
+        <div class="jeton180" id="jeton180"> </div>
+        <div class="jeton360" id="jeton360"> </div>
+
+    </div>
+
+
+
+
+
 
     <div class="positionJetonsMouvement">
         <div class="jetonAvancer" id="jetonAvancer"> </div>
@@ -42,52 +98,6 @@
     </div>
 
 
-    <div class="positionJetonsNombres1">
-        <div class="jeton1" id="jeton1"> </div>
-        <div class="jeton2" id="jeton2"> </div>
-        <div class="jeton3" id="jeton3"> </div>
-        <div class="jeton4" id="jeton4"> </div>
-        <div class="jeton5" id="jeton5"> </div>
-    </div>
-
-    <div class="positionJetonsNombres2">
-        <div class="jeton6" id="jeton6"> </div>
-        <div class="jeton7" id="jeton7"> </div>
-        <div class="jeton8" id="jeton8"> </div>
-        <div class="jeton9" id="jeton9"> </div>
-        <div class="jeton10" id="jeton10"> </div>
-    </div>
-
-    <div class="positionJetonsNombres3">
-        <div class="jeton15" id="jeton15"> </div>
-        <div class="jeton20" id="jeton20"> </div>
-        <div class="jeton36" id="jeton36"> </div>
-        <div class="jeton40" id="jeton40"> </div>
-        <div class="jeton45" id="jeton45"> </div>
-    </div>
-
-    <div class="positionJetonsNombres4">
-    <div class="jeton50" id="jeton50"> </div>
-    <div class="jeton60" id="jeton60"> </div>
-    <div class="jeton72" id="jeton72"> </div>
-    <div class="jeton90" id="jeton90"> </div>
-    <div class="jeton100" id="jeton100"> </div>
-
-    </div>
-    <div class="positionJetonsNombres5">
-    <div class="jeton108" id="jeton108"> </div>
-    <div class="jeton120" id="jeton120"> </div>
-    <div class="jeton135" id="jeton135"> </div>
-    <div class="jeton144" id="jeton144"> </div>
-    <div class="jeton150" id="jeton150"> </div>
-
-    </div>
-
-    <div class="positionJetonsNombres6">
-    <div class="jeton180" id="jeton180"> </div>
-    <div class="jeton360" id="jeton360"> </div>
-
-    </div>
 
     <div class="positionJetonsOperations">
         <div class="jetonPlus1" id="jetonPlus1"> </div>
@@ -129,48 +139,48 @@
         <div class="jetonFonction" id="jetonFonction"> </div>
         <div class="jetonPause" id="jetonPause"> </div>
     </div>
-</div>
-<div id="bodyAll" class="bodyAll">
-    <div class="dropZoneligne1" id="dropZoneligne1" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <div class="dropZone1"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone2"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone3"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone4"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone5"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone6"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+
+    <div id="bodyAll" class="bodyAll">
+        <div class="dropZoneligne1" id="dropZoneligne1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="dropZone1"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+            <div class="dropZone2"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+            <div class="dropZone3"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+            <div class="dropZone4"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+            <div class="dropZone5"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+            <div class="dropZone6"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        </div>
+
+
+        <div class="dropZoneligne2" id="dropZoneligne2" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="dropZone7"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+            <div class="dropZone8"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+            <div class="dropZone9"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+            <div class="dropZone10"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+            <div class="dropZone11"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+            <div class="dropZone12"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+
+        </div>
+
+
+
+        <div class="dropZoneligne3" id="dropZoneligne3" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="dropZone13"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+            <div class="dropZone14"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+            <div class="dropZone15"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+            <div class="dropZone16"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+            <div class="dropZone17"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        </div>
+
+
+
+        <div class="dropZoneligne4" id="dropZoneligne4" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="dropZone18"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+            <div class="dropZone19"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+            <div class="dropZone20"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+            <div class="dropZone21"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+            <div class="dropZone22"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        </div>
     </div>
-
-
-    <div class="dropZoneligne2" id="dropZoneligne2" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <div class="dropZone7"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone8"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone9"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone10"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone11"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone12"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-
-    </div>
-
-
-
-    <div class="dropZoneligne3" id="dropZoneligne3" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <div class="dropZone13"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone14"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone15"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone16"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone17"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-    </div>
-
-
-
-    <div class="dropZoneligne4" id="dropZoneligne4" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <div class="dropZone18"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone19"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone20"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone21"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone22"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-    </div>
-
 
 </div>
 

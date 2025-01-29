@@ -1,189 +1,177 @@
-.jeton1{
+.jeton1 {
+  padding-top: 170px;
+  position: relative;
+}
 
-    padding-top: 170px;
-    padding-left: 155px;
-    position: absolute;
-  }
-  
-  .jeton2{
-  
-    padding-top: 170px;
-    padding-left: 235px;
-    position: absolute;
-  }
-  
-  .jeton3{
-  
-    padding-top: 170px;
-    padding-left: 315px;
-    position: absolute;
-  }
-  
-  .jeton4{
-  
-    padding-top: 170px;
-    padding-left: 395px;
-    position: absolute;
-  }
-  
-  .jeton5{
-  
-    padding-top: 170px;
-    padding-left: 475px;
-    position: absolute;
-  }
-  
-  .jeton6{
-  
-    padding-top: 250px;
-    padding-left: 155px;
-    position: absolute;
-  }
-  
-  .jeton7{
-  
-    padding-top: 250px;
-    padding-left: 240px;
-    position: absolute;
-  }
-  
-  .jeton8{
-  
-    padding-top: 250px;
-    padding-left: 320px;
-    position: absolute;
-  }
-  
-  .jeton9{
-  
-    padding-top: 250px;
-    padding-left: 400px;
-    position: absolute;
-  }
-  
-  .jeton10{
-  
-    padding-top: 250px;
-    padding-left: 480px;
-    position: absolute;
-  }
-  
-  .jeton15{
-  
-    padding-top: 330px;
-    padding-left: 160px;
-    position: absolute;
-  }
-  
-  .jeton20{
-  
-    padding-top: 330px;
-    padding-left: 240px;
-    position: absolute;
-  }
-  
-  .jeton36{
-  
-    padding-top: 330px;
-    padding-left: 320px;
-    position: absolute;
-  }
-  
-  .jeton40{
-  
-    padding-top: 330px;
-    padding-left: 400px;
-    position: absolute;
-  }
-  
-  .jeton45{
-  
-    padding-top: 330px;
-    padding-left: 480px;
-    position: absolute;
-  }
-  
-  .jeton50{
-  
-    padding-top: 410px;
-    padding-left: 155px;
-    position: absolute;
-  }
-  
-  .jeton60{
-  
-    padding-top: 410px;
-    padding-left: 235px;
-    position: absolute;
-  }
-  
-  .jeton72{
-  
-    padding-top: 410px;
-    padding-left: 315px;
-    position: absolute;
-  }
-  
-  .jeton90{
-  
-    padding-top: 410px;
-    padding-left: 395px;
-    position: absolute;
-  }
-  
-  .jeton100{
-  
-    padding-top: 410px;
-    padding-left: 475px;
-    position: absolute;
-  }
-  
-  .jeton108{
-  
-    padding-top: 490px;
-    padding-left: 160px;
-    position: absolute;
-  }
-  
-  .jeton120{
-  
-    padding-top: 490px;
-    padding-left: 240px;
-    position: absolute;
-  }
-  
-  .jeton135{
-  
-    padding-top: 490px;
-    padding-left: 320px;
-    position: absolute;
-  }
-  
-  .jeton144{
-  
-    padding-top: 490px;
-    padding-left: 400px;
-    position: absolute;
-  }
-  
-  .jeton150{
-  
-    padding-top: 490px;
-    padding-left: 480px;
-    position: absolute;
-  }
-  
-  .jeton180{
-  
-    padding-top: 570px;
-    padding-left: 160px;
-    position: absolute;
-  }
-  
-  .jeton360{
-  
-    padding-top: 570px;
-    padding-left: 240px;
-    position: absolute;
-  }
-   
+.jeton2 {
+
+  padding-top: 170px;
+  position: relative;
+}
+
+.jeton3 {
+
+  padding-top: 170px;
+  position: relative;
+}
+
+.jeton4 {
+
+  padding-top: 170px;
+  position: relative;
+}
+
+.jeton5 {
+
+  padding-top: 170px;
+  position: relative;
+}
+
+.jeton6 {
+
+  padding-top: 250px;
+  flex-direction: column;
+}
+
+.jeton7 {
+
+  padding-top: 250px;
+  position: relative;
+}
+
+.jeton8 {
+
+  padding-top: 250px;
+  position: relative;
+}
+
+.jeton9 {
+
+  padding-top: 250px;
+  position: relative;
+
+}
+
+.jeton10 {
+
+  padding-top: 250px;
+  position: relative;
+
+}
+
+.jeton15 {
+
+  padding-top: 330px;
+  position: relative;
+
+}
+
+.jeton20 {
+
+  padding-top: 330px;
+  position: relative;
+
+}
+
+.jeton36 {
+
+  padding-top: 330px;
+  position: relative;
+
+}
+
+.jeton40 {
+
+  padding-top: 330px;
+  position: relative;
+
+}
+
+.jeton45 {
+
+  padding-top: 330px;
+  position: relative;
+
+}
+
+.jeton50 {
+
+  padding-top: 410px;
+  position: relative;
+
+}
+
+.jeton60 {
+
+  padding-top: 410px;
+  position: relative;
+
+}
+
+.jeton72 {
+
+  padding-top: 410px;
+  position: relative;
+
+}
+
+.jeton90 {
+
+  padding-top: 410px;
+  position: relative;
+
+}
+
+.jeton100 {
+
+  padding-top: 410px;
+  position: relative;
+}
+
+.jeton108 {
+
+  padding-top: 490px;
+  position: relative;
+}
+
+.jeton120 {
+
+  padding-top: 490px;
+  position: relative;
+
+}
+
+.jeton135 {
+
+  padding-top: 490px;
+  position: relative;
+
+}
+
+.jeton144 {
+
+  padding-top: 490px;
+  position: relative;
+
+}
+
+.jeton150 {
+
+  padding-top: 490px;
+  position: relative;
+
+}
+
+.jeton180 {
+
+  padding-top: 570px;
+  position: relative;
+
+}
+
+.jeton360 {
+
+  padding-top: 570px;
+  position: relative;
+
+}
