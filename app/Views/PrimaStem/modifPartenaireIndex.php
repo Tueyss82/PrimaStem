@@ -23,7 +23,7 @@ $table = new table();
         <?php
         $table->setHeading('Nom du Partenaire', 'Avis du Partenaire', 'Image', 'Modifier');
         foreach ($listePartenaires as $partenaire) {
-            var_dump($partenaire);
+            // var_dump($partenaire);
             $table->addRow(
                 $partenaire['NOMPARTENAIRE'],
                 $partenaire['AVISPARTENAIRE'],

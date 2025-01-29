@@ -33,6 +33,6 @@
         </div>
     </div>
 </div>
-<script src="javascript/primastemMain.js"></script>
+<script src="../javascript/primastemMain.js"></script>
 
 <?= $this->endSection() ?>
