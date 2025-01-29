@@ -18,14 +18,24 @@ class Partenaire extends BaseController
     {
         $firstPartenaire = $this->partenaireModel->getOnlyFirstPartenaire();
 
+        // var_dump($firstPartenaire);
+        // die();
+
         $allPartenaires = $this->partenaireModel->findAll();
 
-        $partenaires = $this->partenaireModel->findAllExceptFirstResult($firstPartenaire[0]['IDPARTENAIRE']);
+        if(!empty($firstPartenaire)) {
+            $partenaires = $this->partenaireModel->findAllExceptFirstResult($firstPartenaire[0]['IDPARTENAIRE']);
+
+            return view('PrimaStem/partenaires', [
+                'listePartenaires' => $partenaires,
+                'firstPartenaire' => $firstPartenaire,
+                'allPartenaires' => $allPartenaires
+            ]);
+        }
 
         return view('PrimaStem/partenaires', [
-            'listePartenaires' => $partenaires,
             'firstPartenaire' => $firstPartenaire,
-            'allPartenaires' => $allPartenaires
+            'listePartenaires' => $allPartenaires
         ]);
     }
 
