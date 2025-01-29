@@ -53,4 +53,10 @@ class Blog extends Model
         ->where('IDARTICLE = '. $articleId)
         ->find($articleId);
     }
+
+    public function getAllByIdGiven($articleId) {
+        return $this->select('TITRE, MINIAARTICLE, DESCRIPTIONARTICLE')
+        ->where('IDARTICLE = '. $articleId)
+        ->find($articleId);
+    }
 }

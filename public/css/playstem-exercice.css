@@ -6,7 +6,6 @@
   margin-bottom: 600px;
   z-index: 4;
   height: max-content;
-  
 }
 
 .toutesLesRotations {
@@ -14,7 +13,6 @@
   padding-left: 20px;
   z-index: 4;
   height: max-content;
-  width: max-content;
 }
 
 .tousLesNombres {
@@ -22,21 +20,25 @@
   padding-left: 20px;
   z-index: 4;
   height: max-content;
-  width: max-content;
 }
 
 .toutesLesOperations {
   padding-top: 70px;
   padding-left: 20px;
   height: max-content;
-  width:max-content;
 }
 
 .fonction {
   padding-top: 70px;
   padding-left: 20px;
   height: max-content;
-  width: max-content;
+}
+
+.exercices-TextLayout {
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 28px;
+  padding-left: 400px;
+  padding-top: 100px;
 }
 
 
@@ -50,6 +52,11 @@
   padding-left: 100px;
 }
 
+.telecommande {
+  padding-left: 100px;
+  margin-bottom: 100px;
+
+}
 
 .grilleRobot {
 
@@ -59,33 +66,32 @@
 }
 
 .robotPrimaStem {
-  padding-top: 100px;
+  padding-top: 490px;
   padding-left: 1147px;
-  
+  position: absolute;
 }
 
 .bodyAll {
   background-image: url('../imagesPlayStem/telecommande.png');
   background-repeat: no-repeat;
   background-position:12% 0%;
+
 }
 
 .grilleBackground {
-  /* background-image: url('../imagesPlayStem/grilleRobot.png');
+  background-image: url('../imagesPlayStem/grilleRobot.png');
   background-repeat: no-repeat;
   background-position: 65% 100%; */
   
 }
 .supportJeton{
+  display: flex;
+  flex-direction: row;
   background-size: 30% ;
   background-image: url('../imagesPlayStem/supportJeton.png');
   background-repeat: no-repeat;
   background-position: 11.5% 0%;
-}
-
-.boutonsCategories{
-display: flex;
-flex-direction: row;
+  
 }
 
 .positionJetonsMouvement{
@@ -111,39 +117,45 @@ flex-direction: row;
 .positionJetonsNombres1{
   display: flex;
   flex-direction: row;
-  
+  position: relative;
 }
 
 
 .positionJetonsNombres2{
-  
-  
+  display: flex;
+  flex-direction: row;
+  position: relative;
 }
 
 
 .positionJetonsNombres3{
-  
-  
+  display: flex;
+  flex-direction: row;
+  position: relative;
 }
 
 
 .positionJetonsNombres4{
-  
-  
+  display: flex;
+  flex-direction: row;
+  position: relative;
 }
 
 
 .positionJetonsNombres5{
-  
-  
+  display: flex;
+  flex-direction: row;
+  position: relative;
 }
 
 .positionJetonsNombres6{
-  
-  
+  display: flex;
+  flex-direction: row;
+  position: relative;
 }
 .positionJetonsOperations{
-  
+  display: flex;
+  flex-direction: row;
 }
 
 .positionJetonsOperations div{
