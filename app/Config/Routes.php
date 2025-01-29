@@ -17,9 +17,12 @@ $routes->get('/', 'PrimaStem::index', ['as' => 'primastem']);
 $routes->get('partenaires', 'Partenaire::index', ['as' => 'partenaires']);
 
 $routes->get('blog', 'Blog::index', ['as' => 'blog']);
+$routes->get('article(:num)', 'Blog::showArticle/$1', ['as' => 'article']);
 
 $routes->get('contact', 'Contact::index', ['as' => 'ajoutContact']);
 $routes->post('contact', 'Contact::create', ['as' => 'createContact']);
+
+$routes->get('files/upload/(:any)', 'FileController::serveImage/$1'); //Get Images
 
 $routes->group('admin', ['namespace' => 'App\Controllers', 'filter' => 'session'], static function ($routes) {
     $routes->get('/', 'PrimaStem::adminIndex', ['as' => 'backofficeIndex']); // Backoffice Admin (need login before)
@@ -36,8 +39,6 @@ $routes->group('admin', ['namespace' => 'App\Controllers', 'filter' => 'session'
     $routes->post('supprPartenaire', 'Partenaire::delete', ['as' => 'supprPartenaire']);
 
     // Blog
-    $routes->get('article(:num)', 'Blog::showArticle/$1', ['as' => 'article']);
-
     $routes->get('ajoutArticle', 'Blog::ajout', ['as' => 'ajoutArticle']);
     $routes->post('ajoutArticle', 'Blog::create', ['as' => 'createArticle']);
 
@@ -49,7 +50,6 @@ $routes->group('admin', ['namespace' => 'App\Controllers', 'filter' => 'session'
     $routes->post('supprArticle', 'Blog::delete', ['as' => 'supprArticle']);
 });
 
-$routes->get('files/upload/(:any)', 'FileController::serveImage/$1'); //Get Images
 
 //------------------Site exercice
 

@@ -20,30 +20,27 @@
             <label for="inputIdentification" class="form-label">Nom et Prénom</label>
             <div class="row">
                 <div class="col-md-6">
-                    <input type="text" class="form-control" name="NOM" placeholder="Votre Nom...">
+                    <input type="text" class="form-control" id="inputName" name="NOM" placeholder="Votre Nom..." required>
                 </div>
                 <div class="col-md-6">
-                    <input type="text" class="form-control" name="PRENOM" placeholder="Votre Prénom...">
+                    <input type="text" class="form-control" id="inputPrenom" name="PRENOM" placeholder="Votre Prénom..." required>
                 </div>
             </div>
         </div>
         <div class="col-md-6">
             <label for="inputEmail" class="form-label">Adresse Mail</label>
-            <input type="email" class="form-control" name="ADRESSEMAIL">
+            <input type="email" class="form-control" id="inputMail" name="ADRESSEMAIL" required>
         </div>
         <div class="col-12">
             <label for="inputMessage" class="form-label">Votre Message</label>
             <textarea class="form-control" name="inputMessage" style="height: 150px"></textarea>
         </div>
-        <label for="addFiles" class="form-label">Fichiers Joints</label>
-        <p class="fs-6">Max : 5 Fichiers et 20MB par fichier</p>
-        <input type="file" id="addFile">
         <div class="col-12">
-            <input type="submit" class="submitButton" value="Envoyer">
+            <input type="submit" class="submitButton" id="submitContactButton" value="Envoyer">
         </div>
     </form>
 </body>
 
-
+<script src="javascript/primastemMain.js"></script>
 
 <?= $this->endSection() ?>

@@ -10,23 +10,30 @@
                 <div class="carousel-inner imgCarousel">
                     <div class="carousel-item active">
                         <?php
-                            echo '<img class="imgCarousel" src="'.base_url('files/upload/' . $firstPartenaire[0]['IMGPARTENAIRE'] ).    '">';
+                        if (!empty($firstPartenaire)) {
+                            echo '<img class="imgCarousel" src="' . base_url('files/upload/' . $firstPartenaire['IMGPARTENAIRE']) .    '">';
+                        } else {
+                            echo '<h1>Nous avons aucun partenaire pour l\'instant</h1>';
+                        }
                         ?>
                     </div>
                     <?php
                     // var_dump($firstPartenaire);
+                    // var_dump($listePartenaires);
                     // die();
-                    foreach ($listePartenaires as $partenaire) {
-                        // var_dump($partenaire);
-                        echo '  <div class="carousel-item">
-                                    <img class="imgCarousel" src="'.base_url('files/upload/' . $partenaire['IMGPARTENAIRE'] ).'">
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <div class="bgTextPartner">
-                                                <h5>' . $partenaire['NOMPARTENAIRE'] . '</h5>
-                                                <p>' . $partenaire['AVISPARTENAIRE'] . '</p>
+                    if(!empty($listePartenaires)){
+                        foreach ($listePartenaires as $partenaire) {
+                            // var_dump($partenaire);
+                            echo '  <div class="carousel-item">
+                                        <img class="imgCarousel" src="' . base_url('files/upload/' . $partenaire['IMGPARTENAIRE']) . '">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <div class="bgTextPartner">
+                                                    <h5>' . $partenaire['NOMPARTENAIRE'] . '</h5>
+                                                    <p>' . $partenaire['AVISPARTENAIRE'] . '</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                </div>';
+                                    </div>';
+                        }
                     }
                     ?>
                 </div>
@@ -41,7 +48,6 @@
             </div>
         </div>
         <div class="col-md-6">
-            <?= var_dump($allPartenaires) ?>
             <h1 class="fw-bold">Nos Partenaires <br> nous soutiennent ! </h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.</p>
             <p>Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor.</p>
