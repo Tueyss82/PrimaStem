@@ -75,7 +75,7 @@ class Auth extends ShieldAuth
      */
     public array $redirects = [
         'register'          => '/',
-        'login'             => '/',
+        'login'             => 'admin',
         'logout'            => 'login',
         'force_reset'       => '/',
         'permission_denied' => '/',
@@ -428,7 +428,7 @@ class Auth extends ShieldAuth
      *
      * @var class-string<UserModel>
      */
-    public string $userProvider = \App\Models\UserModel::class;
+    public string $userProvider = UserModel::class;
 
     /**
      * Returns the URL that a user should be redirected

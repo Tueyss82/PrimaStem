@@ -29,6 +29,10 @@ class Blog extends BaseController
 
     public function modifIndex()
     {
+        $user = auth()->user();
+        if (!$user->inGroup('admin')) {
+            return view('PrimaStem/index');
+        }
         $articles = $this->blogModel->findAll();
 
         return view('PrimaStem/modifIndex', [
@@ -48,11 +52,19 @@ class Blog extends BaseController
 
     public function ajout()
     {
+        $user = auth()->user();
+        if (!$user->inGroup('admin')) {
+            return view('PrimaStem/index');
+        }
         return view('PrimaStem/ajout_article');
     }
 
     public function create()
     {
+        $user = auth()->user();
+        if (!$user->inGroup('admin')) {
+            return view('PrimaStem/index');
+        }
         $articleData = $this->request->getPost();
 
         $file = $this->request->getFile('MINIAARTICLE');
@@ -84,6 +96,10 @@ class Blog extends BaseController
 
     public function modif($articleId)
     {
+        $user = auth()->user();
+        if (!$user->inGroup('admin')) {
+            return view('PrimaStem/index');
+        }
         $articles = $this->blogModel->find($articleId);
 
         return view('PrimaStem/modifier_article', [
@@ -93,6 +109,10 @@ class Blog extends BaseController
 
     public function update()
     {
+        $user = auth()->user();
+        if (!$user->inGroup('admin')) {
+            return view('PrimaStem/index');
+        }
         $articleData = $this->request->getPost();
 
         $oldFileName = $this->blogModel->getOldFileNameArticle($articleData['IDARTICLE']);
@@ -140,6 +160,10 @@ class Blog extends BaseController
 
     public function deleteIndex()
     {
+        $user = auth()->user();
+        if (!$user->inGroup('admin')) {
+            return view('PrimaStem/index');
+        }
         $articles = $this->blogModel->findAll();
 
         return view('PrimaStem/supprIndex', [
@@ -149,6 +173,10 @@ class Blog extends BaseController
 
     public function delete()
     {
+        $user = auth()->user();
+        if (!$user->inGroup('admin')) {
+            return view('PrimaStem/index');
+        }
         $articleId = $this->request->getPost(); // Récupère l'ID de l'article
         // var_dump($articleId);
         // die();

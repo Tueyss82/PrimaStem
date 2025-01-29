@@ -6,13 +6,17 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 
-service('auth')->routes($routes);
 
 // Site PrimaStem
 
 $routes->get('/', 'PrimaStem::index', ['as' => 'primastem']);
+service('auth')->routes($routes);
 
-$routes->get('adminIndex', 'PrimaStem::adminIndex', ['as' => 'backofficeIndex']); // Backoffice Admin (need login before)
+$routes->group('admin', ['filter' => 'session'], static function ($routes) {
+    $routes->get('/', 'PrimaStem::adminIndex', ['as' => 'backofficeIndex']); // Backoffice Admin (need login before)
+    
+}) ;
+
 
 // Pages 
 
