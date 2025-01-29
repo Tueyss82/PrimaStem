@@ -1,38 +1,38 @@
 .jetonAvancer{
 
-    padding-top: 170px;
-    padding-left: 155px;
-    position: absolute;
+  
+    padding-left: 20px;
+  
   }
   
   .jetonReculer{
   
-    padding-top: 170px;
-    padding-left: 235px;
-    position: absolute;
-    /* display: none; */
+  
+    padding-left: 20px;
+  
+
   }
   
   .jetonAvancerDroite{
   
-    padding-top: 170px;
-    padding-left: 315px;
-    position: absolute;
-    /* display: none; */
+  
+    padding-left: 20px;
+  
+
   }
   
   .jetonAvancerGauche{
   
-    padding-top: 170px;
-    padding-left: 395px;
-    position: absolute;
-    /* display: none; */
+  
+    padding-left: 20px;
+  
+
   }
   
   .jetonMouvementAleatoire{
   
-    padding-top: 170px;
-    padding-left: 475px;
-    position: absolute;
+  
+    padding-left: 20px;
+  
   }
   

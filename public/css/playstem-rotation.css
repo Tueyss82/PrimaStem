@@ -1,110 +1,107 @@
 .jetonRotation {
-  padding-top: 170px;
-  padding-left: 155px;
-  position: absolute;
+  
+  padding-left: 0px;
 }
 
 .jetonRepeter2 {
 
-  padding-top: 170px;
-  padding-left: 235px;
-  position: absolute;
+  padding-top: 4px;
+  padding-left: 20px;
+
 }
 
 .jetonRepeter3 {
 
-  padding-top: 170px;
-  padding-left: 315px;
-  position: absolute;
+  padding-top: 4px;
+  padding-left: 20px;
+
 }
 
 .jetonRepeter4 {
-
-  padding-top: 170px;
-  padding-left: 395px;
-  position: absolute;
+  padding-top: 4px;
+  padding-left: 20px;
+  
 }
 
 .jetonRepeter5 {
+  padding-top: 4px;
+  padding-left: 20px;
 
-  padding-top: 170px;
-  padding-left: 475px;
-  position: absolute;
 }
 
 .jetonRepeter6 {
+  padding-top: 4px;
 
-  padding-top: 250px;
-  padding-left: 155px;
-  position: absolute;
+  padding-left: 20px;
+
 }
 
 .jetonRepeterAleatoire {
 
-  padding-top: 250px;
-  padding-left: 235px;
-  position: absolute;
+
+  padding-left: 20px;
+
 }
 
 .jetonRepeter7 {
 
-  padding-top: 250px;
-  padding-left: 315px;
-  position: absolute;
+
+  padding-left: 20px;
+
 }
 
 .jetonRepeter8 {
 
-  padding-top: 250px;
-  padding-left: 395px;
-  position: absolute;
+
+  padding-left: 20px;
+
 }
 
 .jetonRepeter9 {
 
-  padding-top: 250px;
-  padding-left: 475px;
-  position: absolute;
+
+  padding-left: 20px;
+
 }
 
 .jetonRepeter10 {
 
-  padding-top: 330px;
-  padding-left: 155px;
-  position: absolute;
+
+  padding-left: 20px;
+
 
 }
 
 .jetonRepeter18 {
 
-  padding-top: 330px;
-  padding-left: 235px;
-  position: absolute;
+
+  padding-left: 20px;
+
 }
 
 .jetonRepeter36 {
 
-  padding-top: 330px;
-  padding-left: 315px;
-  position: absolute;
+
+  padding-left: 20px;
+
 }
 
 .jetonRepeter72 {
-  padding-top: 330px;
-  padding-left: 395px;
-  position: absolute;
+
+  padding-left: 20px;
+
 }
 
 .jetonRepeter180 {
 
-  padding-top: 330px;
-  padding-left: 475px;
-  position: absolute;
+
+  padding-left: 20px;
+
 
 }
 
 .jetonRepeter360 {
-  padding-top: 410px;
-  padding-left: 155px;
-  position: absolute;
+
+  padding-left: 20px;
+
 }
