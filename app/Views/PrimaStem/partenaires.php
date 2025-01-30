@@ -2,29 +2,33 @@
 <?= $this->section('contenu') ?>
 
 <title>Nos Partenaires - PrimaStem</title>
+<?= var_dump($allPartenaires) ?>
+
 
 <div class="container mt-5">
-    <div class="row">
-        <div class="col-md-6">
-            <div id="carouselExampleControls" class="carousel slide h-100" data-ride="carousel">
-                <div class="carousel-inner imgCarousel">
-                    <div class="carousel-item active">
-                        <?php
-                        if (!empty($firstPartenaire)) {
-                            echo '<img class="imgCarousel" src="' . base_url('files/upload/' . $firstPartenaire['IMGPARTENAIRE']) .    '">';
-                        } else {
-                            echo '<h1>Nous avons aucun partenaire pour l\'instant</h1>';
-                        }
-                        ?>
-                    </div>
-                    <?php
-                    // var_dump($firstPartenaire);
-                    // var_dump($listePartenaires);
-                    // die();
-                    if(!empty($listePartenaires)){
-                        foreach ($listePartenaires as $partenaire) {
-                            // var_dump($partenaire);
-                            echo '  <div class="carousel-item">
+    <div class="container d-flex justify-content-center align-items-center" style="min-height: 50vh; padding-bottom: 50px;">
+        <div class="p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+            <div class="row">
+                <div class="col-md-6" style="text-align: center;">
+                    <div id="carouselExampleControls" class="carousel slide h-100" data-ride="carousel" id="carousel" data-partenaires="<?= esc(json_encode($allPartenaires)) ?>">
+                        <div class="carousel-inner imgCarousel">
+                            <div class="carousel-item active">
+                                <?php
+                                if (!empty($firstPartenaire)) {
+                                    echo '<img class="imgCarousel" src="' . base_url('files/upload/' . $firstPartenaire[0]['IMGPARTENAIRE']) .    '">';
+                                } else {
+                                    echo '<h1 class="text-center">Nous avons aucun partenaire pour l\'instant</h1>';
+                                }
+                                ?>
+                            </div>
+                            <?php
+                            // var_dump($firstPartenaire);
+                            // var_dump($listePartenaires);
+                            // die();
+                            if (!empty($listePartenaires)) {
+                                foreach ($listePartenaires as $partenaire) {
+                                    // var_dump($partenaire);
+                                    echo '  <div class="carousel-item">
                                         <img class="imgCarousel" src="' . base_url('files/upload/' . $partenaire['IMGPARTENAIRE']) . '">
                                             <div class="carousel-caption d-none d-md-block">
                                                 <div class="bgTextPartner">
@@ -33,29 +37,36 @@
                                                 </div>
                                             </div>
                                     </div>';
+                                }
+                            }
+                            ?>
+                        </div>
+                        <?php
+                        if (!empty($firstPartenaire) && !empty($listePartenaires)) {
+                            echo '<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Précédent</span>
+                        </a>';
+                            echo '<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Suivant</span>
+                        </a>';
                         }
-                    }
-                    ?>
+                        ?>
+                    </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Précédent</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Suivant</span>
-                </a>
+                <div class="col-md-6">
+                    <h1 class="fw-bold">Nos Partenaires <br> nous soutiennent ! </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.</p>
+                    <p>Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor.</p>
+                    <button type="button" class="btn btn-primary">En savoir plus</button>
+                </div>
             </div>
-        </div>
-        <div class="col-md-6">
-            <h1 class="fw-bold">Nos Partenaires <br> nous soutiennent ! </h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.</p>
-            <p>Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor.</p>
-            <button type="button" class="btn btn-primary">En savoir plus</button>
         </div>
     </div>
 </div>
 
+<script src="javascript/primastemMain.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <?= $this->endSection() ?>

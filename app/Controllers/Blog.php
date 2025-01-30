@@ -33,10 +33,18 @@ class Blog extends BaseController
         if (!$user->inGroup('admin')) {
             return view('PrimaStem/index');
         }
-        $articles = $this->blogModel->findAll();
+
+        $query = $this->request->getGet('searchTitleArticle');
+
+        if (!empty($query)) {
+            $data = $this->blogModel->like('TITRE', $query)->findAll();
+        } else {
+            $data = $this->blogModel->findAll(); // Si aucun terme de recherche, afficher tous les articles
+        }
+
 
         return view('PrimaStem/modifIndex', [
-            'listeArticles' => $articles
+            'listeArticles' => $data
         ]);
     }
 
@@ -164,11 +172,16 @@ class Blog extends BaseController
         if (!$user->inGroup('admin')) {
             return view('PrimaStem/index');
         }
-        $articles = $this->blogModel->findAll();
 
-        return view('PrimaStem/supprIndex', [
-            'listeArticles' => $articles
-        ]);
+        $query = $this->request->getGet('searchTitleArticle');
+
+        if (!empty($query)) {
+            $data = $this->blogModel->like('TITRE', $query)->findAll();
+        } else {
+            $data = $this->blogModel->findAll(); // Si aucun terme de recherche, afficher tous les articles
+        }
+
+        return view('PrimaStem/supprIndex', ['listeArticles' => $data]);
     }
 
     public function delete()
