@@ -1,27 +1,6 @@
 <?= $this->extend('PlayStem/layoutPlayStem') ?>
 <?= $this->section('contenu') ?>
 
-<!-- <div id="grilleBackground" class="grilleBackground">
-
-    <div class="robotPrimaStem" id="robotPrimaStem"><img src="imagesPlayStem\mini-logo.png"></div>
-</div> -->
-
-<!-- <script>
-function allowDrop(ev) {
-  ev.preventDefault();
-}
-
-function drag(ev) {
-  ev.dataTransfer.setData("text/plain", ev.target.id);
-}
-
-function drop(ev) {
-  ev.preventDefault();
-  var data = ev.dataTransfer.getData("text/plain");
-  ev.target.appendChild(document.getElementById(data));
-}
-</script> -->
-
 
 <div class="supportJeton">
 
@@ -32,7 +11,6 @@ function drop(ev) {
         <div class="toutesLesOperations" id="operations"><button><img src="imagesPlayStem\operationsCategorie.png"></button></div>
         <div class="fonction" id="fonction"><button><img src="imagesPlayStem\speciauxCategorie.png"></button></div>
 
-        
         <div class="rangeeJetonsNombres1">
             <div class="jeton1" id="jeton1"> </div>
             <div class="jeton2" id="jeton2"> </div>
@@ -171,45 +149,49 @@ function drop(ev) {
     </div>
 </div>
 
-<div id="bodyAll" class="bodyAll">
-    <div class="dropZoneligne1" id="dropZoneligne1" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <div class="dropZone1"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone2"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone3"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone4"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone5"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone6"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+<!-- <div id="grilleBackground" class="grilleBackground">
+    <div class="robotPrimaStem" id="robotPrimaStem"><img src="imagesPlayStem\mini-logo.png"></div>
+</div> -->
+
+<div id="dropzone" class="bodyAll">
+    <div class="dropZoneligne1" id="dropZoneligne1">
+        <div class="dropZone1" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone2" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone3" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone4" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone5" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone6" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
     </div>
 
 
-    <div class="dropZoneligne2" id="dropZoneligne2" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <div class="dropZone7"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone8"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone9"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone10"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone11"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone12"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+    <div class="dropZoneligne2" id="dropZoneligne2">
+        <div class="dropZone7" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone8" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone9" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone10" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone11" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone12" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
 
-    </div>
-
-
-
-    <div class="dropZoneligne3" id="dropZoneligne3" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <div class="dropZone13"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone14"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone15"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone16"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone17"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
     </div>
 
 
 
-    <div class="dropZoneligne4" id="dropZoneligne4" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <div class="dropZone18"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone19"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone20"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone21"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone22"><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+    <div class="dropZoneligne3" id="dropZoneligne3" >
+        <div class="dropZone13" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone14" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone15" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone16" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone17" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+    </div>
+
+
+
+    <div class="dropZoneligne4" id="dropZoneligne4" >
+        <div class="dropZone18" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone19" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone20" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone21" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone22" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
     </div>
 </div>
 
