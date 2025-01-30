@@ -72,103 +72,190 @@
 }
 
 .bodyAll {
+
   background-image: url('../imagesPlayStem/telecommande.png');
   background-repeat: no-repeat;
-  background-position:12% 0%;
+  background-position: 12% 0%;
 
 }
 
 .grilleBackground {
   background-image: url('../imagesPlayStem/grilleRobot.png');
   background-repeat: no-repeat;
-  background-position: 65% 100%; */
-  
+  background-position: 65% 100%;
+
+
 }
-.supportJeton{
-  display: flex;
-  flex-direction: row;
-  background-size: 30% ;
+
+.supportJeton {
+  margin-top: 100px;
+  background-size: 30%;
   background-image: url('../imagesPlayStem/supportJeton.png');
   background-repeat: no-repeat;
-  background-position: 11.5% 0%;
+  background-position: 11.5% 2%;
+
+}
+
+.positionsElementsSupportJetons {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   
 }
 
-.positionJetonsMouvement{
-  display: flex;
-  flex-direction: row;
-}
 
-.positionJetonsMouvement div{
-  /* display: flex;
-  flex-direction: row; */
-}
-
-.positionJetonsRepetition{
-  display: flex;
-  flex-direction: row;
-}
-
-.positionJetonsRepetition div{
-  /* display: flex;
-  flex-direction: row; */
-}
-
-.positionJetonsNombres1{
-  display: flex;
-  flex-direction: row;
-  position: relative;
+.rangeeJetonsNombres1{
+  display: inherit;
+  flex-direction: inherit;
+  flex-wrap: inherit;
+  flex-basis: 100%;
+  margin-top: -520px;
+  margin-left: 210px;
 }
 
 
-.positionJetonsNombres2{
-  display: flex;
-  flex-direction: row;
-  position: relative;
+.rangeeJetonsNombres2{
+  display: inherit;
+  flex-direction: inherit;
+  flex-wrap: inherit;
+  flex-basis: 100%;
+  margin-top: -450px;
+  margin-left: 191px;
+  
 }
 
 
-.positionJetonsNombres3{
-  display: flex;
-  flex-direction: row;
-  position: relative;
+.rangeeJetonsNombres3{
+  display: inherit;
+  flex-direction: inherit;
+  flex-wrap: inherit;
+  flex-basis: 100%;
+  margin-top: -380px;
+  margin-left: 191px;
+  }
+
+
+.rangeeJetonsNombres4{
+  display: inherit;
+  flex-direction: inherit;
+  flex-wrap: inherit;
+  flex-basis: 100%;
+  margin-top: -310px;
+  margin-left: 191px;
+  
 }
 
 
-.positionJetonsNombres4{
-  display: flex;
-  flex-direction: row;
-  position: relative;
+.rangeeJetonsNombres5{
+  display: inherit;
+  flex-direction: inherit;
+  flex-wrap: inherit;
+  flex-basis: 100%;
+  margin-top: -240px;
+  margin-left: 191px;
+  
+}
+
+.rangeeJetonsMouvement1{
+  display: inherit;
+  flex-direction: inherit;
+  flex-wrap: inherit;
+  flex-basis: 100%;
+  margin-top: -530px;
+  margin-left: 180px;
+}
+
+.rangeeJetonsRepetition1{
+  display: inherit;
+  flex-direction: inherit;
+  flex-wrap: inherit;
+  flex-basis: 100%;
+  margin-top: -530px;
+  margin-left: 200px;
+}
+
+.rangeeJetonsRepetition2{
+  display: inherit;
+  flex-direction: inherit;
+  flex-wrap: inherit;
+  flex-basis: 100%;
+  margin-top: -450px;
+  margin-left: 180px;
+}
+
+.rangeeJetonsRepetition3{
+  display: inherit;
+  flex-direction: inherit;
+  flex-wrap: inherit;
+  flex-basis: 100%;
+  margin-top: -380px;
+  margin-left: 180px;
+}
+
+.rangeeJetonsOperations1{
+  display: inherit;
+  flex-direction: inherit;
+  flex-wrap: inherit;
+  flex-basis: 100%;
+  margin-top: -520px;
+  margin-left: 185px;
 }
 
 
-.positionJetonsNombres5{
-  display: flex;
-  flex-direction: row;
-  position: relative;
+.rangeeJetonsOperations2{
+  display: inherit;
+  flex-direction: inherit;
+  flex-wrap: inherit;
+  flex-basis: 100%;
+  margin-top: -450px;
+  margin-left: 185px;
+  
 }
 
-.positionJetonsNombres6{
-  display: flex;
-  flex-direction: row;
-  position: relative;
-}
-.positionJetonsOperations{
-  display: flex;
-  flex-direction: row;
+
+.rangeeJetonsOperations3{
+  display: inherit;
+  flex-direction: inherit;
+  flex-wrap: inherit;
+  flex-basis: 100%;
+  margin-top: -380px;
+  margin-left: 185px;
+  }
+
+
+.rangeeJetonsOperations4{
+  display: inherit;
+  flex-direction: inherit;
+  flex-wrap: inherit;
+  flex-basis: 100%;
+  margin-top: -310px;
+  margin-left: 185px;
+  
 }
 
-.positionJetonsOperations div{
-  /* display: flex;
-  flex-direction: row; */
+
+.rangeeJetonsOperations5{
+  display: inherit;
+  flex-direction: inherit;
+  flex-wrap: inherit;
+  flex-basis: 100%;
+  margin-top: -240px;
+  margin-left: 185px;
+  
+}.rangeeJetonsOperations1{
+  display: inherit;
+  flex-direction: inherit;
+  flex-wrap: inherit;
+  flex-basis: 100%;
+  margin-top: -520px;
+  margin-left: 185px;
 }
 
-.positionJetonsSpeciaux{
-  display: flex;
-  flex-direction: row;
-}
-
-.positionJetonsSpeciaux div{
-  /* display: flex;
-  flex-direction: row; */
+.rangeeJetonsSpeciaux1{
+  display: inherit;
+  flex-direction: inherit;
+  flex-wrap: inherit;
+  flex-basis: 100%;
+  margin-top: -530px;
+  margin-left: 200px;
 }
