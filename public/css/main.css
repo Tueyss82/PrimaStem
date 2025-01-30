@@ -51,6 +51,7 @@ footer {
 .imgIndex {
     width: 600px;
     padding-bottom: 50px;
+    position: relative;
 }
 
 .headerText {
