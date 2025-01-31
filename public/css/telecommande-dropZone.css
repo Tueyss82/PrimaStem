@@ -1,34 +1,39 @@
 .dropZoneligne1 {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
+    padding-bottom: 22vw;
 }
 
 .dropZoneligne2 {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
 }
 
 .dropZoneligne3 {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
 }
 
 .dropZoneligne4 {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
 }
 
 .dropZone1 {
-    padding-top: 10px;
-    padding-left: 190px;
-    flex-direction: inherit;
+    background-color: black;
+    border-radius: 50%;
+    height: 2vw;
+    width: 2vw;
+    margin-left:10em;
 
 }
 
 .dropZone2 {
-    padding-top: 10px;
-    padding-left: 27px;
-    flex-direction: inherit;
+    background-color: black;
+    border-radius: 50%;
+    height: 3em;
+    width: 3em;
+    margin-left: 30px;
 }
 
 .dropZone3 {

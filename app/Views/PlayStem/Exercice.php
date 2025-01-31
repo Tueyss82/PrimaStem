@@ -153,45 +153,49 @@
     <div class="robotPrimaStem" id="robotPrimaStem"><img src="imagesPlayStem\mini-logo.png"></div>
 </div> -->
 
-<div id="dropzone" class="bodyAll">
+
+<!-- <img src="imagesPlayStem\telecommande-dropZone.png"> -->
+
+
+<div id="dropzone" class="telecommande">
     <div class="dropZoneligne1" id="dropZoneligne1">
-        <div class="dropZone1" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone2" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone3" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone4" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone5" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone6" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone1" id="dropZone1"></div>
+        <div class="dropZone2" ></div>
+        <div class="dropZone3" ></div>
+        <div class="dropZone4" ></div>
+        <div class="dropZone5" ></div>
+        <div class="dropZone6" ></div>
     </div>
 
 
     <div class="dropZoneligne2" id="dropZoneligne2">
-        <div class="dropZone7" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone8" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone9" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone10" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone11" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone12" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone7" ></div>
+        <div class="dropZone8" ></div>
+        <div class="dropZone9" ></div>
+        <div class="dropZone10" ></div>
+        <div class="dropZone11" ></div>
+        <div class="dropZone12" ></div>
 
     </div>
 
 
 
     <div class="dropZoneligne3" id="dropZoneligne3" >
-        <div class="dropZone13" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone14" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone15" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone16" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone17" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone13" ></div>
+        <div class="dropZone14" ></div>
+        <div class="dropZone15" ></div>
+        <div class="dropZone16" ></div>
+        <div class="dropZone17" ></div>
     </div>
 
 
 
     <div class="dropZoneligne4" id="dropZoneligne4" >
-        <div class="dropZone18" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone19" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone20" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone21" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
-        <div class="dropZone22" ><img src="imagesPlayStem\telecommande-dropZone.png"></div>
+        <div class="dropZone18" ></div>
+        <div class="dropZone19" ></div>
+        <div class="dropZone20" ></div>
+        <div class="dropZone21" ></div>
+        <div class="dropZone22" ></div>
     </div>
 </div>
 
