@@ -1,108 +1,88 @@
 /* Problème de clickbox des boutons de catégories*/
 
+
+.positionsElementsSupportJetons {
+  display: inline-flex;
+  flex-direction: row;
+  
+}
+
+.positionsElementsSupportJetons button img{
+  height: 2.8vw;
+  width: 2.8vw;
+  
+  min-width: 2.5vw;
+}
+
 .fleche-toutesLesDirections {
   padding-top: 70px;
   padding-left: 200px;
   margin-bottom: 600px;
   z-index: 4;
-  height: max-content;
+  
 }
 
 .toutesLesRotations {
   padding-top: 70px;
   padding-left: 20px;
   z-index: 4;
-  height: max-content;
+
 }
 
 .tousLesNombres {
   padding-top: 70px;
   padding-left: 20px;
   z-index: 4;
-  height: max-content;
+
 }
 
 .toutesLesOperations {
   padding-top: 70px;
   padding-left: 20px;
-  height: max-content;
+
 }
 
 .fonction {
   padding-top: 70px;
   padding-left: 20px;
-  height: max-content;
-}
-
-.exercices-TextLayout {
-  font-family: "Inter-SemiBold", sans-serif;
-  font-size: 28px;
-  padding-left: 400px;
-  padding-top: 100px;
-}
-
-
-.image-container {
-  display: flex;
-  flex-direction: row;
-  /* gap: 10px; */
-}
-
-.consignes {
-  padding-left: 100px;
-}
-
-.telecommande {
-  padding-left: 100px;
-  margin-bottom: 100px;
 
 }
 
-.grilleRobot {
-
-  padding-left: 800px;
-  padding-top: 0px;
-
-}
-
+/* 
 .robotPrimaStem {
   padding-top: 490px;
   padding-left: 1147px;
   position: absolute;
-}
+} */
 
-.bodyAll {
-
-  background-image: url('../imagesPlayStem/telecommande.png');
-  background-repeat: no-repeat;
-  background-position: 12% 0%;
-
-}
 
 .grilleBackground {
+  background-size: 30%;
+  padding-bottom: 700px;
   background-image: url('../imagesPlayStem/grilleRobot.png');
   background-repeat: no-repeat;
-  background-position: 65% 100%;
+  background-position: 80% 0%;
+}
 
 
+
+.telecommande {
+  margin-top: -2em;
+  background-size: 30vw;
+  margin-bottom: 100px;
+  background-image: url('../imagesPlayStem/telecommande.png');
+  background-repeat: no-repeat;
+  background-position: 12% 50%;
 }
 
 .supportJeton {
   margin-top: 100px;
-  background-size: 30%;
+  background-size: 25vw;
   background-image: url('../imagesPlayStem/supportJeton.png');
   background-repeat: no-repeat;
   background-position: 11.5% 2%;
-
+  /* margin-bottom: -720px; */
 }
-
-.positionsElementsSupportJetons {
-  display: inline-flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  
-}
-
 
 .rangeeJetonsNombres1{
   display: inherit;
@@ -111,6 +91,7 @@
   flex-basis: 100%;
   margin-top: -520px;
   margin-left: 210px;
+  height: max-content;
 }
 
 
@@ -121,7 +102,7 @@
   flex-basis: 100%;
   margin-top: -450px;
   margin-left: 191px;
-  
+  height: max-content;
 }
 
 
@@ -132,6 +113,7 @@
   flex-basis: 100%;
   margin-top: -380px;
   margin-left: 191px;
+  height: max-content;
   }
 
 
@@ -142,7 +124,7 @@
   flex-basis: 100%;
   margin-top: -310px;
   margin-left: 191px;
-  
+  height: max-content;
 }
 
 
@@ -153,7 +135,7 @@
   flex-basis: 100%;
   margin-top: -240px;
   margin-left: 191px;
-  
+  height: max-content;
 }
 
 .rangeeJetonsMouvement1{
