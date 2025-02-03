@@ -1,9 +1,12 @@
+@import "tailwindcss";
+
 body {
     display: flex;
     flex-direction: column;
     align-items: normal;
     height: 100%;
 }
+
 
 .bgTextPartner {
     background-color: #787878;
