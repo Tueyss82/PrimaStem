@@ -87,7 +87,7 @@
     </nav>
 
 </header>
-
+<div class="text"></div>
 <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXLRLT6B"

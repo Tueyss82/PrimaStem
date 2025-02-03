@@ -51,6 +51,6 @@
     </div>
 </body>
 
-<script src="javascript/primastemMain.js"></script>
+<script src="javascript/primastemContact.js"></script>
 
 <?= $this->endSection() ?>
