@@ -1,15 +1,12 @@
-
-body{
+@import "tailwindcss";
+    
+body {
     display: flex;
     flex-direction: column;
-    
+
 }
 
-.bgTextPartner {
-    background-color: #787878;
-}
-
-.footer {
+footer {
     background-color: #000000;
     justify-content: end;
 }
@@ -19,7 +16,7 @@ body{
     text-align: center;
 }
 
-.customRow{
+.customRow {
     flex-shrink: 0;
     padding-right: calc(var(--bs-gutter-x)*.5);
     padding-left: calc(var(--bs-gutter-x)*.5);
@@ -44,13 +41,14 @@ body{
     text-align: center;
 }
 
-.imgArt{
+.imgArt {
     width: 636px;
 }
 
 .imgIndex {
     width: 600px;
     padding-bottom: 50px;
+    position: relative;
 }
 
 .headerText {
@@ -60,3 +58,12 @@ body{
 .submitButton {
     background-color: #cd3301;
 }
+.sectionTable {
+    padding-bottom: 50px;
+}
+
+
+
+
+
+
