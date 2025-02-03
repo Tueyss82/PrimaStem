@@ -2,15 +2,13 @@
 <?= $this->section('contenu') ?>
 
 <title>Nos Partenaires - PrimaStem</title>
-<?= var_dump($allPartenaires) ?>
-
 
 <div class="container mt-5">
     <div class="container d-flex justify-content-center align-items-center" style="min-height: 50vh; padding-bottom: 50px;">
         <div class="p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
             <div class="row">
                 <div class="col-md-6" style="text-align: center;">
-                    <div id="carouselExampleControls" class="carousel slide h-100" data-ride="carousel" id="carousel" data-partenaires="<?= esc(json_encode($allPartenaires)) ?>">
+                    <div id="carouselExampleControls" class="carousel slide h-100" data-ride="carousel">
                         <div class="carousel-inner imgCarousel">
                             <div class="carousel-item active">
                                 <?php

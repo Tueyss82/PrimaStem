@@ -1,4 +1,6 @@
 <?= $this->extend('layoutPrimaStem') ?>
+<?= $this->section('head') ?>
+<?= $this->endSection() ?>
 <?= $this->section('contenu') ?>
 
 <title>Accueil - PrimaStem</title>
