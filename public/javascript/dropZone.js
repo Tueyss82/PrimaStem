@@ -31,14 +31,14 @@
 //     }
 // });
 
-document.addEventListener("DOMContentLoaded", () => {
-    const jetons = document.querySelectorAll("#supportJeton img");
+
+    const jetons = document.querySelectorAll("#draggableItems img");
     const dropZones = document.querySelectorAll("#dropzoneT div");
 
     jetons.forEach(jeton => {
-        jeton.draggable = true;
         jeton.addEventListener("dragstart", (event) => {
-            event.dataTransfer.setData("text/plain", event.target.src);
+            event.dataTransfer.setData("data/uri-list", event.target.src);
+            
         });
     });
 
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         dropZones.addEventListener("drop", (event) => {
             event.preventDefault();
-            const imageUrl = event.dataTransfer.getData("text/plain");
+            const imageUrl = event.dataTransfer.getData("data/uri-list");
 
             if (imageUrl) {
                 const newImg = document.createElement("img");
@@ -64,4 +64,4 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
-});
+
