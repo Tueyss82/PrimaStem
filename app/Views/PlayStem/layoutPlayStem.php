@@ -44,7 +44,13 @@
     <meta name="description" content="The small framework with powerful features">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/playstem-exercices.css">
+    <link rel="stylesheet" type="text/css" href="../css/playstem-leçons.css">
+    <link rel="stylesheet" type="text/css" href="../css/playstem-leçon.css">
+    <link rel="stylesheet" type="text/css" href="../css/mainPlayStem.css">
+    <link rel="stylesheet" type="text/css" href="../css/telecommande-dropZone.css">
+
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -108,3 +114,9 @@
         </div>
     </div>
 </footer>
+<script src="javascript/jetonsMouvements.js"></script>
+<script src="javascript/jetonsNombres.js"></script>
+<script src="javascript/jetonsOperations.js"></script>
+<script src="javascript/jetonsRotation.js"></script>
+<script src="javascript/jetonsSpeciaux.js"></script>
+<script src="javascript/dropZone.js"></script>

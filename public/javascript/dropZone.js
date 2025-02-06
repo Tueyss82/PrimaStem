@@ -31,37 +31,37 @@
 //     }
 // });
 
-// document.addEventListener("DOMContentLoaded", () => {
-//     const jetons = document.querySelectorAll("#supportJeton img");
-//     const dropZones = document.querySelectorAll("#dropzone div");
+document.addEventListener("DOMContentLoaded", () => {
+    const jetons = document.querySelectorAll("#supportJeton img");
+    const dropZones = document.querySelectorAll("#dropzoneT div");
 
-//     jetons.forEach(jeton => {
-//         jeton.draggable = true;
-//         jeton.addEventListener("dragstart", (event) => {
-//             event.dataTransfer.setData("text/plain", event.target.src);
-//         });
-//     });
+    jetons.forEach(jeton => {
+        jeton.draggable = true;
+        jeton.addEventListener("dragstart", (event) => {
+            event.dataTransfer.setData("text/plain", event.target.src);
+        });
+    });
 
-//     dropZones.forEach(zone => {
-//         zone.addEventListener("dragover", (event) => {
-//             event.preventDefault();
-//         });
+    dropZones.forEach(zone => {
+        zone.addEventListener("dragover", (event) => {
+            event.preventDefault();
+        });
 
-//         zone.addEventListener("drop", (event) => {
-//             event.preventDefault();
-//             const imageUrl = event.dataTransfer.getData("text/plain");
+        dropZones.addEventListener("drop", (event) => {
+            event.preventDefault();
+            const imageUrl = event.dataTransfer.getData("text/plain");
 
-//             if (imageUrl) {
-//                 const newImg = document.createElement("img");
-//                 newImg.src = imageUrl;
-//                 newImg.style.maxWidth = "100%";
-//                 newImg.style.maxHeight = "100%";
+            if (imageUrl) {
+                const newImg = document.createElement("img");
+                newImg.src = imageUrl;
+                // newImg.style.maxWidth = "100%";
+                // newImg.style.maxHeight = "100%";
                 
-//                 // Nettoyer la dropzone avant d'ajouter la nouvelle image
-//                 zone.innerHTML = "";
-//                 zone.appendChild(newImg);
+                // Nettoyer la dropzone avant d'ajouter la nouvelle image
+                zone.innerHTML = "";
+                zone.appendChild(newImg);
                 
-//             }
-//         });
-//     });
-// });
+            }
+        });
+    });
+});

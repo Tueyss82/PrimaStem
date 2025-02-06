@@ -1,4 +1,4 @@
-.dropZoneligne1 {
+/* .dropZoneligne1 {
     display: inline-flex;
     flex-direction: row;
     padding-bottom: 22vw;
@@ -17,17 +17,11 @@
 .dropZoneligne4 {
     display: inline-flex;
     flex-direction: row;
-}
+} */
 
-.dropZone1 {
-    background-color: black;
-    border-radius: 50%;
-    height: 2vw;
-    width: 2vw;
-    margin-left:10em;
 
-}
 
+/* 
 .dropZone2 {
     background-color: black;
     border-radius: 50%;
@@ -155,4 +149,4 @@
     padding-left: 15px;
     flex-direction: inherit;
     margin-bottom: 200px;
-}
+} */
