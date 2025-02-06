@@ -8,6 +8,7 @@
         grid-template-columns: 1fr 3fr;
         height: 100vh;
         font-family: Arial, sans-serif;
+        flex-grow: 1;
     }
 
     .sidebar {
@@ -17,16 +18,17 @@
     }
 
     .storage {
-        position: relative;
+        display: flex;
         width: 500px;
         /* Agrandissement de l'image */
         height: auto;
         margin-top: 10px;
         padding: 10px;
-        border: 2px dashed black;
+        /* border: 2px dashed black; */
         display: flex;
         flex-wrap: wrap;
         gap: 5px;
+
     }
 
     .storage img {
@@ -60,7 +62,7 @@
     .character {
         width: 50px;
         height: 50px;
-        background: red;
+        
         position: absolute;
         top: 50%;
         left: 50%;
@@ -71,25 +73,19 @@
         padding: 10px;
         margin: 5px;
         cursor: grab;
-        display: none; /* Masqué par défaut */
-    }
-
-    .start-button {
-        margin-top: 10px;
-        padding: 10px;
-        background: green;
-        color: white;
-        border: none;
-        cursor: pointer;
+        display: none;
+        /* Masqué par défaut */
     }
     
 </style>
 </head>
 
 <body>
+
     <div class="sidebar">
-        <div class="mouvement" id="mouvement"> 
-            <button><img src="imagesPlayStem\mouvementCategorie.png"></button>
+
+        <div class="mouvement" id="mouvement">
+            <button ><img src="imagesPlayStem\mouvementCategorie.png"></button>
         </div>
         <div class="rotation" id="rotation">
             <button><img src="imagesPlayStem\repetitionCategorie.png"></button>
@@ -196,45 +192,52 @@
         <div class="draggable" id="jetonFonction"> </div>
         <div class="draggable" id="jetonPause"> </div>
 
+        <!-- <div class="supportJeton"> <img src="../imagesPlayStem/supportJeton.png" class="imageSupport"> -->
         <div class="storage" id="storage-box">
             <img src="../imagesPlayStem/telecommande.png">
-            <div class="drop-circle" style="top: 20px; left: 34px;"></div>
-            <div class="drop-circle" style="top: 20px; left: 113px;"></div>
-            <div class="drop-circle" style="top: 20px; left: 190px;"></div>
-            <div class="drop-circle" style="top: 20px; left: 266px;"></div>
-            <div class="drop-circle" style="top: 20px; left: 337px;"></div>
-            <div class="drop-circle" style="top: 20px; left: 407px;"></div>
+            <div class="drop-circle" style="margin-top: 10px; left: 43px;"></div>
+            <div class="drop-circle" style="margin-top: 10px; left: 124px;"></div>
+            <div class="drop-circle" style="margin-top: 10px; left: 201px;"></div>
+            <div class="drop-circle" style="margin-top: 10px; left: 280px;"></div>
+            <div class="drop-circle" style="margin-top: 10px; left: 350px;"></div>
+            <div class="drop-circle" style="margin-top: 10px; left: 421px;"></div>
 
-            <div class="drop-circle" style="top: 86px; left: 34px;"></div>
-            <div class="drop-circle" style="top: 86px; left: 113px;"></div>
-            <div class="drop-circle" style="top: 86px; left: 190px;"></div>
-            <div class="drop-circle" style="top: 86px; left: 266px;"></div>
-            <div class="drop-circle" style="top: 86px; left: 337px;"></div>
-            <div class="drop-circle" style="top: 86px; left: 407px;"></div>
+            <div class="drop-circle" style="margin-top: 76px; left: 43px;"></div>
+            <div class="drop-circle" style="margin-top: 76px; left: 124px;"></div>
+            <div class="drop-circle" style="margin-top: 76px; left: 201px;"></div>
+            <div class="drop-circle" style="margin-top: 76px; left: 280px;"></div>
+            <div class="drop-circle" style="margin-top: 76px; left: 350px;"></div>
+            <div class="drop-circle" style="margin-top: 76px; left: 421px;"></div>
 
-            <div class="drop-circle" style="top: 180px; left: 65px;"></div>
+        
+            <div class="drop-circle" style="margin-top: 170px; left: 77px;"></div>
+            <div class="drop-circle" style="margin-top: 170px; left: 155px;"></div>
+            <div class="drop-circle" style="margin-top: 170px; left: 233px;"></div>
+            <div class="drop-circle" style="margin-top: 170px; left: 310px;"></div>
+            <div class="drop-circle" style="margin-top: 170px; left: 380px;"></div>
+            
 
-            <div class="drop-circle" style="top: 180px; left: 65px;"></div>
-            <div class="drop-circle" style="top: 180px; left: 145px;"></div>
-            <div class="drop-circle" style="top: 180px; left: 220px;"></div>
-            <div class="drop-circle" style="top: 180px; left: 300px;"></div>
-            <div class="drop-circle" style="top: 180px; left: 367px;"></div>
-            <div class="drop-circle" style="top: 180px; left: 65px;"></div>
+
+            <div class="drop-circle" style="margin-top: 240px; left: 77px;"></div>
+            <div class="drop-circle" style="margin-top: 240px; left: 155px;"></div>
+            <div class="drop-circle" style="margin-top: 240px; left: 233px;"></div>
+            <div class="drop-circle" style="margin-top: 240px; left: 310px;"></div>
+            <div class="drop-circle" style="margin-top: 240px; left: 380px;"></div>
 
 
-            <div class="drop-circle" style="top: 250px; left: 65px;"></div>
-            <div class="drop-circle" style="top: 250px; left: 145px;"></div>
-            <div class="drop-circle" style="top: 250px; left: 220px;"></div>
-            <div class="drop-circle" style="top: 250px; left: 300px;"></div>
-            <div class="drop-circle" style="top: 250px; left: 367px;"></div>
-            <div class="drop-circle" style="top: 250px; left: 65px;"></div>
+            <div class="robotPrimaStem" id="robotPrimaStem" style="margin-top: -165px; margin-left: 430px;">
+                <button><img src="imagesPlayStem\mini-logo.png"></button>
+            </div>
+            <div class="boutonRestart" id="boutonRestart" style="margin-top: -170px; margin-left: 3px;">
+                <button> <img src="imagesPlayStem\boutonRestart.png"></button>
+            </div>
 
         </div>
 
-        <button class="start-button" id="start-button">Démarrer</button>
+
     </div>
     <div class="game-area">
-        <div class="character" id="character"></div>
+        <div class="character" id="character"><img src="imagesPlayStem\mini-logo1.png"> </div>
     </div>
 
     <script>
@@ -275,15 +278,6 @@
             });
         });
 
-        document.querySelector(".game-area").addEventListener("dragover", event => {
-            event.preventDefault();
-        });
-
-        document.querySelector(".game-area").addEventListener("drop", event => {
-            event.preventDefault();
-            let action = event.dataTransfer.getData("text");
-            queue.push(action);
-        });
 
         document.querySelectorAll(".drop-circle").forEach(circle => {
             circle.addEventListener("dragover", event => {
@@ -311,10 +305,6 @@
         }
     </script>
 </body>
-
-
-
-
 
 
 <!-- 
