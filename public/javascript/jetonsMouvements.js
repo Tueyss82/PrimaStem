@@ -7,22 +7,33 @@ mouvement.addEventListener("click", function () {
     
     
     while (limiteJetonsMouvements < 1) {
+
+        // Jeton Direction Haut ^
+
         let imgAvant = document.createElement('img');
         imgAvant.setAttribute('src', 'imagesPlayStem/fleche-haut.png');
-        jetonAvancer.prepend(imgAvant);
+        imgAvant.setAttribute('draggable', 'true');
+        boutonAvancer.appendChild(imgAvant);
+        
+        // Jeton Direction Bas v
 
         let imgReculer = document.createElement('img');
         imgReculer.setAttribute('src', 'imagesPlayStem/fleche-bas.png');
+        imgReculer.setAttribute('draggable', 'true');
         jetonReculer.prepend(imgReculer);
+
+        // Jeton Direction Droite -->
 
         let imgDroite = document.createElement('img');
         imgDroite.setAttribute('src', 'imagesPlayStem/fleche-droite.png');
         jetonAvancerDroite.prepend(imgDroite);
 
+        // Jeton Direction Gauche <--
         let imgGauche = document.createElement('img');
         imgGauche.setAttribute('src', 'imagesPlayStem/fleche-gauche.png');
         jetonAvancerGauche.prepend(imgGauche);
 
+        // Jeton Direction Aléatoire --> v ^ <--
         let imgAleatoire = document.createElement('img');
         imgAleatoire.setAttribute('src', 'imagesPlayStem/fleche-aleatoire.png');
         jetonMouvementAleatoire.prepend(imgAleatoire);
