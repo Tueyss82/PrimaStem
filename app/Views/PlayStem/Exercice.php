@@ -84,7 +84,7 @@
     <div class="sidebar">
 
         <div class="mouvement" id="mouvement">
-            <button><img src="imagesPlayStem\mouvementCategorie.png"></button>
+            <button ><img src="imagesPlayStem\mouvementCategorie.png"></button>
         </div>
         <div class="rotation" id="rotation">
             <button><img src="imagesPlayStem\repetitionCategorie.png"></button>
@@ -99,39 +99,12 @@
             <button><img src="imagesPlayStem\speciauxCategorie.png"></button>
         </div>
 
-        <div class="jetons">
-            <div class="draggable" id="jetonAvancer"> <button id="boutonAvancer"></button></div>
-            <div class="draggable" id="jetonReculer"> </div>
-            <div class="draggable" id="jetonAvancerGauche"> </div>
-            <div class="draggable" id="jetonAvancerDroite"> </div>
-            <div class="draggable" id="jetonMouvementAleatoire"> </div>
-
-            <div class="draggable" id="jetonRotation"> </div>
-            <div class="draggable" id="jetonRepeter2"> </div>
-            <div class="draggable" id="jetonRepeter3"> </div>
-            <div class="draggable" id="jetonRepeter4"> </div>
-            <div class="draggable" id="jetonRepeter5"> </div>
-            <div class="draggable" id="jetonRepeter6"> </div>
-
-            <div class="draggable" id="jetonRepeterAleatoire"> </div>
-            <div class="draggable" id="jetonRepeter7"> </div>
-            <div class="draggable" id="jetonRepeter8"> </div>
-            <div class="draggable" id="jetonRepeter9"> </div>
-            <div class="draggable" id="jetonRepeter10"> </div>
-            <div class="draggable" id="jetonRepeter18"> </div>
-
-            <div class="draggable" id="jetonRepeter36"> </div>
-            <div class="draggable" id="jetonRepeter72"> </div>
-            <div class="draggable" id="jetonRepeter180"> </div>
-            <div class="draggable" id="jetonRepeter360"> </div>
-
-
-            <div class="draggable" id="jeton1"> </div>
-            <div class="draggable" id="jeton2"> </div>
-            <div class="draggable" id="jeton3"> </div>
-            <div class="draggable" id="jeton4"> </div>
-            <div class="draggable" id="jeton5"> </div>
-            <div class="draggable" id="jeton6"> </div>
+        <div class="draggable" id="jeton1"> </div>
+        <div class="draggable" id="jeton2"> </div>
+        <div class="draggable" id="jeton3"> </div>
+        <div class="draggable" id="jeton4"> </div>
+        <div class="draggable" id="jeton5"> </div>
+        <div class="draggable" id="jeton6"> </div>
 
             <div class="draggable" id="jeton7"> </div>
             <div class="draggable" id="jeton8"> </div>
@@ -196,19 +169,19 @@
         <!-- <div class="supportJeton"> <img src="../imagesPlayStem/supportJeton.png" class="imageSupport"> -->
         <div class="storage" id="storage-box">
             <img src="../imagesPlayStem/telecommande.png">
-            <div class="drop-circle" style="margin-top: 10px; left: 43px;"></div>
-            <div class="drop-circle" style="margin-top: 10px; left: 124px;"></div>
-            <div class="drop-circle" style="margin-top: 10px; left: 201px;"></div>
-            <div class="drop-circle" style="margin-top: 10px; left: 280px;"></div>
-            <div class="drop-circle" style="margin-top: 10px; left: 350px;"></div>
-            <div class="drop-circle" style="margin-top: 10px; left: 421px;"></div>
+            <div class="drop-circle" id="circle1" style="margin-top: 10px; left: 43px;"></div>
+            <div class="drop-circle" id="circle2" style="margin-top: 10px; left: 124px;"></div>
+            <div class="drop-circle" id="circle3" style="margin-top: 10px; left: 201px;"></div>
+            <div class="drop-circle" id="circle4" style="margin-top: 10px; left: 280px;"></div>
+            <div class="drop-circle" id="circle5" style="margin-top: 10px; left: 350px;"></div>
+            <div class="drop-circle" id="circle6" style="margin-top: 10px; left: 421px;"></div>
 
-            <div class="drop-circle" style="margin-top: 76px; left: 43px;"></div>
-            <div class="drop-circle" style="margin-top: 76px; left: 124px;"></div>
-            <div class="drop-circle" style="margin-top: 76px; left: 201px;"></div>
-            <div class="drop-circle" style="margin-top: 76px; left: 280px;"></div>
-            <div class="drop-circle" style="margin-top: 76px; left: 350px;"></div>
-            <div class="drop-circle" style="margin-top: 76px; left: 421px;"></div>
+            <div class="drop-circle" id="circle7" style="margin-top: 76px; left: 43px;"></div>
+            <div class="drop-circle" id="circle8" style="margin-top: 76px; left: 124px;"></div>
+            <div class="drop-circle" id="circle9" style="margin-top: 76px; left: 201px;"></div>
+            <div class="drop-circle" id="circle10" style="margin-top: 76px; left: 280px;"></div>
+            <div class="drop-circle" id="circle11" style="margin-top: 76px; left: 350px;"></div>
+            <div class="drop-circle" id="circle12" style="margin-top: 76px; left: 421px;"></div>
 
 
             <div class="drop-circle" style="margin-top: 170px; left: 77px;"></div>
@@ -219,11 +192,11 @@
 
 
 
-            <div class="drop-circle" style="margin-top: 240px; left: 77px;"></div>
-            <div class="drop-circle" style="margin-top: 240px; left: 155px;"></div>
-            <div class="drop-circle" style="margin-top: 240px; left: 233px;"></div>
-            <div class="drop-circle" style="margin-top: 240px; left: 310px;"></div>
-            <div class="drop-circle" style="margin-top: 240px; left: 380px;"></div>
+            <div class="drop-circle" id="circle18" style="margin-top: 240px; left: 77px;"></div>
+            <div class="drop-circle" id="circle19" style="margin-top: 240px; left: 155px;"></div>
+            <div class="drop-circle" id="circle20" style="margin-top: 240px; left: 233px;"></div>
+            <div class="drop-circle" id="circle21" style="margin-top: 240px; left: 310px;"></div>
+            <div class="drop-circle" id="circle22" style="margin-top: 240px; left: 380px;"></div>
 
 
             <div class="boutonStart" id="boutonStart" style="margin-top: -165px; margin-left: 430px;">
@@ -244,34 +217,64 @@
     <script>
         const character = document.getElementById("character");
         let queue = [];
+        // const idCircles = document.querySelectorAll("#drop-circle div");
+        
+        const categories = {
+            "mouvement": ["jetonAvancer", "jetonReculer", "jetonAvancerGauche", "jetonAvancerDroite", "jetonMouvementAleatoire"],
+            "rotation": ["jetonRotation", "jetonRepeter2", "jetonRepeter3", "jetonRepeter4", "jetonRepeter5", "jetonRepeter6", "jetonRepeterAleatoire", "jetonRepeter7", "jetonRepeter8", "jetonRepeter9", "jetonRepeter10", "jetonRepeter18"],
+            "nombres": ["jeton1", "jeton2", "jeton3", "jeton4", "jeton5", "jeton6", "jeton7", "jeton8", "jeton9", "jeton10", "jeton15", "jeton20", "jeton36", "jeton40", "jeton45", "jeton50", "jeton60", "jeton72", "jeton90", "jeton100", "jeton108", "jeton120", "jeton135", "jeton144", "jeton150", "jeton180", "jeton360"],
+            "operations": ["jetonPlus1", "jetonPlus2", "jetonPlus3", "jetonPlus5", "jetonPlus10", "jetonPlus15", "jetonPlus20", "jetonPlus50", "jetonPlus100", "jetonMoins1", "jetonMoins2", "jetonMoins3", "jetonMoins5", "jetonMoins10", "jetonMoins15", "jetonMoins20", "jetonMoins50", "jetonMoins100"],
+            "speciaux": ["jetonFonction", "jetonPause", "jetonMultipliePar2", "jetonMultipliePar3", "jetonDivisePar2", "jetonDivisePar3", "jetonPuissanceDe2", "jetonPuissanceDe3", "jetonRacineCarreDeNombreX"]
+        };
 
-        // Fonction pour afficher/masquer les éléments draggables selon le bouton
         function toggleDraggables(category) {
             const allDraggables = document.querySelectorAll(".draggable");
             allDraggables.forEach(item => {
-                item.style.display = "none"; // Masquer tout d'abord
+                item.style.display = "none";
             });
 
-            // Afficher les éléments en fonction de la catégorie sélectionnée
-            const categories = {
-                "mouvement": ["jetonAvancer", "jetonReculer", "jetonAvancerGauche", "jetonAvancerDroite", "jetonMouvementAleatoire"],
-                "rotation": ["jetonRotation", "jetonRepeter2", "jetonRepeter3", "jetonRepeter4", "jetonRepeter5", "jetonRepeter6", "jetonRepeterAleatoire", "jetonRepeter7", "jetonRepeter8", "jetonRepeter9", "jetonRepeter10", "jetonRepeter18"],
-                "nombres": ["jeton1", "jeton2", "jeton3", "jeton4", "jeton5", "jeton6", "jeton7", "jeton8", "jeton9", "jeton10", "jeton15", "jeton20", "jeton36", "jeton40", "jeton45", "jeton50", "jeton60", "jeton72", "jeton90", "jeton100", "jeton108", "jeton120", "jeton135", "jeton144", "jeton150", "jeton180", "jeton360"],
-                "operations": ["jetonPlus1", "jetonPlus2", "jetonPlus3", "jetonPlus5", "jetonPlus10", "jetonPlus15", "jetonPlus20", "jetonPlus50", "jetonPlus100", "jetonMoins1", "jetonMoins2", "jetonMoins3", "jetonMoins5", "jetonMoins10", "jetonMoins15", "jetonMoins20", "jetonMoins50", "jetonMoins100"],
-                "speciaux": ["jetonFonction", "jetonPause", "jetonMultipliePar2", "jetonMultipliePar3", "jetonDivisePar2", "jetonDivisePar3", "jetonPuissanceDe2", "jetonPuissanceDe3", "jetonRacineCarreDeNombreX"]
-            };
-
             categories[category].forEach(id => {
-                document.getElementById(id).style.display = "block"; // Afficher les éléments correspondants
+                document.getElementById(id).style.display = "block";
             });
         }
 
-        // Ajouter des événements aux boutons pour afficher les draggables correspondants
         document.getElementById("mouvement").addEventListener("click", () => toggleDraggables("mouvement"));
         document.getElementById("rotation").addEventListener("click", () => toggleDraggables("rotation"));
         document.getElementById("nombres").addEventListener("click", () => toggleDraggables("nombres"));
         document.getElementById("operations").addEventListener("click", () => toggleDraggables("operations"));
         document.getElementById("fonction").addEventListener("click", () => toggleDraggables("speciaux"));
+
+        document.querySelectorAll(".draggable").forEach(item => {
+            item.addEventListener("dragstart", event => {
+                event.dataTransfer.setData("text", event.target.dataset.action);
+            });
+        });
+
+
+        document.querySelectorAll(".drop-circle").forEach(circle => {
+            circle.addEventListener("dragover", event => {
+                event.preventDefault();
+            });
+
+            circle.addEventListener("drop", event => {
+                event.preventDefault();
+                let action = event.dataTransfer.getData("text");
+                addDraggableElement(action, circle);
+            });
+        });
+
+        function addDraggableElement(action, target) {
+            let draggedElement = document.createElement("div");
+            draggedElement.className = "draggable";
+            draggedElement.draggable = true;
+            draggedElement.dataset.action = action;
+            draggedElement.textContent = action;
+            target.appendChild(draggedElement);
+
+            draggedElement.addEventListener("dragstart", event => {
+                event.dataTransfer.setData("text", event.target.dataset.action);
+            });
+        }
     </script>
 </body>
 
