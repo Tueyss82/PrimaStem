@@ -1,32 +1,34 @@
 .fixed-sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    overflow-y: auto;
-    width: 400px; /* Adjust the width as needed */
-    padding-top: 200px;
-  }
-
-.exercices{
-    
-    text-align: center;
-    padding-right: 30em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style:normal;
-    font-size:smaller;   
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow-y: auto;
+  width: 400px;
+  /* Adjust the width as needed */
+  padding-top: 200px;
 }
-.leçon{
-    text-align: left;
-    margin-left: 40px;
+
+.exercices {
+
+  text-align: center;
+  padding-right: 30em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: smaller;
+}
+
+.leçon {
+  text-align: left;
+  margin-left: 40px;
 }
 
 .boutonExercice1 {
-    background: #d9d9d9;
-   
-    width: 50px;
-    height: 47px;
-    position: relative;
-    left: 1120px;
-    top: 239px; 
-  }
+  background: #d9d9d9;
+
+  width: 50px;
+  height: 47px;
+  position: relative;
+  left: 1120px;
+  top: 239px;
+}
