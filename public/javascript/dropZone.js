@@ -6,10 +6,14 @@ récupère l'id du jeton placé*/
 
 let robot = document.getElementById("robotPrimaStem");
 
+// Récupère tous les div avec l'id draggable et le convertis en tableau 
+// L'évènement dragstart se produit au début du drag d'une image, tout le long les données
+// comme l'id et la source de l'image sont stockés grâce à la méthode setData (localement)
+// pour être ensuite réutilisés avec la méthode getData  
 document.querySelectorAll('.draggable').forEach(idDiv => {
   idDiv.addEventListener('dragstart', (e) => {
-    e.dataTransfer.setData('text/plain', e.target.id);
-    e.dataTransfer.setData('image/png', e.target.src);
+    e.dataTransfer.setData('text/plain', e.target.id); // text/plain : données liés à l'id 
+    e.dataTransfer.setData('image/png', e.target.src); // image/png : données liés à la source
   });
 
 
@@ -18,9 +22,11 @@ document.querySelectorAll('.draggable').forEach(idDiv => {
 let newDiv = document.createElement("div");
 let newImg = document.createElement("img");
 
+// L'évènement dragover agit sur les emplacements avec l'id drop-circle
+// en 
 document.querySelectorAll('.drop-circle').forEach(dropZone => {
   dropZone.addEventListener('dragover', (e) => {
-    e.preventDefault();
+    e.preventDefault(); // Empêche l'action par défaut de l'event en paramètre, dans ce cas pour les emplacements
   });
 
   dropZone.addEventListener('drop', (e) => {
@@ -88,7 +94,12 @@ startButton.onclick = function () {
     document.querySelectorAll(".drop-circle").forEach(slot => {
       if (slot.querySelector("img") !== null) {
         // console.log("Ce slot contient un jeton :", slot);
-      } else {
+      } 
+      if(slot.querySelector("img").src == getElementById("jetonAvancer").querySelector("img").src) {
+
+      }
+      
+      else {
         // console.log("Ce slot est vide :", slot);
       }
     });
