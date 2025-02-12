@@ -6,6 +6,7 @@
 .body {
     display: inline-flex;
     flex-direction: row;
+    
 }
 
 /* .dropZone1 {

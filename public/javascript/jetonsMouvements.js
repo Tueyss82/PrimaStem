@@ -12,14 +12,14 @@ mouvement.addEventListener("click", function () {
 
         let imgAvant = document.createElement('img');
         imgAvant.setAttribute('src', 'imagesPlayStem/fleche-haut.png');
-        imgAvant.setAttribute('draggable', 'true');
+        
         boutonAvancer.appendChild(imgAvant);
         
         // Jeton Direction Bas v
 
         let imgReculer = document.createElement('img');
         imgReculer.setAttribute('src', 'imagesPlayStem/fleche-bas.png');
-        imgReculer.setAttribute('draggable', 'true');
+        
         jetonReculer.prepend(imgReculer);
 
         // Jeton Direction Droite -->

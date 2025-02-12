@@ -1,17 +1,50 @@
 "use strict";
 
-const { doc } = require("prettier");
+/* Mathis : Remplace l'id en paramètre par le bouton avec l'id BoutonStart,
+pour les évènements crée une boucle sur tous les éléments avec l'id drop-circle et
+récupère l'id du jeton placé*/
 
-document.getElementById("boutonAvancer").addEventListener("click", () => {
-  let robot = document.getElementById("robotPrimaStem");
-  
-  // Récupérer la valeur actuelle de margin-top
-  let currentMarginTop = parseInt(window.getComputedStyle(robot).marginTop);
-  
-  // Déplacer vers le haut de 20px
-  robot.style.marginTop = (currentMarginTop - 20) + "px";
-});
+let robot = document.getElementById("robotPrimaStem");
 
+
+// document.getElementById("haut").addEventListener("click", () => {
+  
+//   // Récupérer la valeur actuelle de margin-top
+//   let currentMarginTop = parseInt(window.getComputedStyle(robot).marginTop);
+  
+//   // Déplacer vers le haut de 20px
+//   robot.style.marginTop = (currentMarginTop - 20) + "px";
+// });
+
+// // Bas
+// document.getElementById("bas").addEventListener("click", () => {
+  
+//   // Récupérer la valeur actuelle de margin-top
+//   let currentMarginTop = parseInt(window.getComputedStyle(robot).marginTop);
+  
+//   // Déplacer vers le bas de 20px
+//   robot.style.marginTop = (currentMarginTop + 20) + "px";
+// });
+
+// // Droite
+// document.getElementById("droite").addEventListener("click", () => {
+  
+//   // Récupérer la valeur actuelle de margin-Left
+//   let currentMarginTop = parseInt(window.getComputedStyle(robot).marginLeft);
+  
+//   // Déplacer vers la droite de 20px
+//   robot.style.marginTop = (currentMarginLeft + 20) + "px";
+// });
+
+// // Gauche
+// document.getElementById("gauche").addEventListener("click", () => {
+  
+//   // Récupérer la valeur actuelle de margin-top
+//   let currentMarginTop = parseInt(window.getComputedStyle(robot).marginLeft);
+  
+//   // Déplacer vers la gauche de 20px
+//   robot.style.marginTop = (currentMarginLeft - 20) + "px";
+// });
 
 
 document.querySelectorAll('.draggable').forEach(idDiv => {
@@ -36,9 +69,9 @@ document.querySelectorAll('.drop-circle').forEach(dropZone => {
       let imgId = e.dataTransfer.getData('text/plain');
       let imgSrc = e.dataTransfer.getData('image/png');
     
-      if (!dropzone.classList.contains("drop-circle")) {
-        dropzone = dropzone.closest(".drop-circle");  
-      }
+      // if (!dropzone.classList.contains("drop-circle")) {
+      //   dropzone = dropzone.closest(".drop-circle");  
+      // }
       newImg.setAttribute("src", imgSrc);
       newDiv.setAttribute("id", imgId);
 
