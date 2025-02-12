@@ -11,6 +11,7 @@
         height: 100vh;
         font-family: Arial, sans-serif;
         flex-grow: 1;
+        grid-auto-flow: row;
     }
 
     .sidebar {
@@ -23,14 +24,14 @@
         display: flex;
         width: 500px;
         /* Agrandissement de l'image */
-        height: auto;
-        margin-top: 10px;
+        height: auto;   
         padding: 10px;
         /* border: 2px dashed black; */
         display: flex;
         flex-wrap: wrap;
         gap: 5px;
-
+        padding-top: 300px;
+        margin-bottom: 200px;
     }
 
     .storage img {
@@ -69,6 +70,7 @@
         left: 50%;
         padding-left: 200px;
         transform: translate(-50%, -50%);
+        rotate: 0deg;
     }
 
     .draggable {
@@ -78,6 +80,8 @@
         box-sizing: border-box;
         /* Masqué par défaut */
     }
+
+    .supportBoutons {}
 </style>
 </head>
 
@@ -85,119 +89,124 @@
 
     <div class="sidebar">
 
-        <div class="mouvement" id="mouvement">
-            <button><img src="imagesPlayStem\mouvementCategorie.png"></button>
+        <div class="supportBoutons">
+            <div class="supportJeton" style="margin-left: 20px; margin-top: 10px;"> <img src="../imagesPlayStem/supportJeton.png" class="imageSupport">
+
+                <div class="mouvement" id="mouvement" style="margin-left: 9px; margin-top: -450px;">
+                    <button><img src="imagesPlayStem\mouvementCategorie.png"></button>
+                </div>
+                <div class="rotation" id="rotation" style="margin-left: 97px; margin-top: -65px;">
+                    <button><img src="imagesPlayStem\repetitionCategorie.png"></button>
+                </div>
+                <div class="nombres" id="nombres" style="margin-left: 187px; margin-top: -65px;">
+                    <button><img src="imagesPlayStem\nombresCategorie.png"></button>
+                </div>
+                <div class="operations" id="operations" style="margin-left: 277px; margin-top: -65px;">
+                    <button><img src="imagesPlayStem\operationsCategorie.png"></button>
+                </div>
+                <div class="speciaux" id="fonction" style="margin-left: 367px; margin-top: -65px;">
+                    <button><img src="imagesPlayStem\speciauxCategorie.png"></button>
+                </div>
+            </div>
+
+            <div class="jetons">
+                <div class="draggable" id="jetonAvancer"> <button id="boutonAvancer"></button></div>
+                <div class="draggable" id="jetonReculer"> </div>
+                <div class="draggable" id="jetonAvancerGauche"> </div>
+                <div class="draggable" id="jetonAvancerDroite"> </div>
+                <div class="draggable" id="jetonMouvementAleatoire"> </div>
+
+                <div class="draggable" id="jetonRotation"> </div>
+                <div class="draggable" id="jetonRepeter2"> </div>
+                <div class="draggable" id="jetonRepeter3"> </div>
+                <div class="draggable" id="jetonRepeter4"> </div>
+                <div class="draggable" id="jetonRepeter5"> </div>
+                <div class="draggable" id="jetonRepeter6"> </div>
+
+                <div class="draggable" id="jetonRepeterAleatoire"> </div>
+                <div class="draggable" id="jetonRepeter7"> </div>
+                <div class="draggable" id="jetonRepeter8"> </div>
+                <div class="draggable" id="jetonRepeter9"> </div>
+                <div class="draggable" id="jetonRepeter10"> </div>
+                <div class="draggable" id="jetonRepeter18"> </div>
+
+                <div class="draggable" id="jetonRepeter36"> </div>
+                <div class="draggable" id="jetonRepeter72"> </div>
+                <div class="draggable" id="jetonRepeter180"> </div>
+                <div class="draggable" id="jetonRepeter360"> </div>
+
+
+                <div class="draggable" id="jeton1"> </div>
+                <div class="draggable" id="jeton2"> </div>
+                <div class="draggable" id="jeton3"> </div>
+                <div class="draggable" id="jeton4"> </div>
+                <div class="draggable" id="jeton5"> </div>
+                <div class="draggable" id="jeton6"> </div>
+
+                <div class="draggable" id="jeton7"> </div>
+                <div class="draggable" id="jeton8"> </div>
+                <div class="draggable" id="jeton9"> </div>
+                <div class="draggable" id="jeton10"> </div>
+                <div class="draggable" id="jeton15"> </div>
+                <div class="draggable" id="jeton20"> </div>
+
+                <div class="draggable" id="jeton36"> </div>
+                <div class="draggable" id="jeton40"> </div>
+                <div class="draggable" id="jeton45"> </div>
+                <div class="draggable" id="jeton50"> </div>
+                <div class="draggable" id="jeton60"> </div>
+                <div class="draggable" id="jeton72"> </div>
+
+                <div class="draggable" id="jeton90"> </div>
+                <div class="draggable" id="jeton100"> </div>
+                <div class="draggable" id="jeton108"> </div>
+                <div class="draggable" id="jeton120"> </div>
+                <div class="draggable" id="jeton135"> </div>
+                <div class="draggable" id="jeton144"> </div>
+
+                <div class="draggable" id="jeton150"> </div>
+                <div class="draggable" id="jeton180"> </div>
+                <div class="draggable" id="jeton360"> </div>
+
+                <div class="draggable" id="jetonPlus1"> </div>
+                <div class="draggable" id="jetonPlus2"> </div>
+                <div class="draggable" id="jetonPlus3"> </div>
+                <div class="draggable" id="jetonPlus5"> </div>
+                <div class="draggable" id="jetonPlus10"> </div>
+                <div class="draggable" id="jetonPlus15"> </div>
+
+                <div class="draggable" id="jetonPlus20"> </div>
+                <div class="draggable" id="jetonPlus50"> </div>
+                <div class="draggable" id="jetonPlus100"> </div>
+                <div class="draggable" id="jetonMoins1"> </div>
+                <div class="draggable" id="jetonMoins2"> </div>
+                <div class="draggable" id="jetonMoins3"> </div>
+
+                <div class="draggable" id="jetonMoins5"> </div>
+                <div class="draggable" id="jetonMoins10"> </div>
+                <div class="draggable" id="jetonMoins15"> </div>
+                <div class="draggable" id="jetonMoins20"> </div>
+                <div class="draggable" id="jetonMoins50"> </div>
+                <div class="draggable" id="jetonMoins100"> </div>
+
+                <div class="draggable" id="jetonMultipliePar2"> </div>
+                <div class="draggable" id="jetonMultipliePar3"> </div>
+
+                <div class="draggable" id="jetonDivisePar2"> </div>
+                <div class="draggable" id="jetonDivisePar3"> </div>
+
+                <div class="draggable" id="jetonPuissanceDe2"> </div>
+                <div class="draggable" id="jetonPuissanceDe3"> </div>
+
+                <div class="draggable" id="jetonRacineCarreDeNombreX"> </div>
+
+                <div class="draggable" id="jetonFonction"> </div>
+                <div class="draggable" id="jetonPause"> </div>
+            </div>
         </div>
-        <div class="rotation" id="rotation">
-            <button><img src="imagesPlayStem\repetitionCategorie.png"></button>
-        </div>
-        <div class="nombres" id="nombres">
-            <button><img src="imagesPlayStem\nombresCategorie.png"></button>
-        </div>
-        <div class="operations" id="operations">
-            <button><img src="imagesPlayStem\operationsCategorie.png"></button>
-        </div>
-        <div class="speciaux" id="fonction">
-            <button><img src="imagesPlayStem\speciauxCategorie.png"></button>
-        </div>
-
-        <div class="jetons">
-            <div class="draggable" id="jetonAvancer"> <button id="boutonAvancer"></button></div>
-            <div class="draggable" id="jetonReculer"> </div>
-            <div class="draggable" id="jetonAvancerGauche"> </div>
-            <div class="draggable" id="jetonAvancerDroite"> </div>
-            <div class="draggable" id="jetonMouvementAleatoire"> </div>
-
-            <div class="draggable" id="jetonRotation"> </div>
-            <div class="draggable" id="jetonRepeter2"> </div>
-            <div class="draggable" id="jetonRepeter3"> </div>
-            <div class="draggable" id="jetonRepeter4"> </div>
-            <div class="draggable" id="jetonRepeter5"> </div>
-            <div class="draggable" id="jetonRepeter6"> </div>
-
-            <div class="draggable" id="jetonRepeterAleatoire"> </div>
-            <div class="draggable" id="jetonRepeter7"> </div>
-            <div class="draggable" id="jetonRepeter8"> </div>
-            <div class="draggable" id="jetonRepeter9"> </div>
-            <div class="draggable" id="jetonRepeter10"> </div>
-            <div class="draggable" id="jetonRepeter18"> </div>
-
-            <div class="draggable" id="jetonRepeter36"> </div>
-            <div class="draggable" id="jetonRepeter72"> </div>
-            <div class="draggable" id="jetonRepeter180"> </div>
-            <div class="draggable" id="jetonRepeter360"> </div>
-
-
-            <div class="draggable" id="jeton1"> </div>
-            <div class="draggable" id="jeton2"> </div>
-            <div class="draggable" id="jeton3"> </div>
-            <div class="draggable" id="jeton4"> </div>
-            <div class="draggable" id="jeton5"> </div>
-            <div class="draggable" id="jeton6"> </div>
-
-            <div class="draggable" id="jeton7"> </div>
-            <div class="draggable" id="jeton8"> </div>
-            <div class="draggable" id="jeton9"> </div>
-            <div class="draggable" id="jeton10"> </div>
-            <div class="draggable" id="jeton15"> </div>
-            <div class="draggable" id="jeton20"> </div>
-
-            <div class="draggable" id="jeton36"> </div>
-            <div class="draggable" id="jeton40"> </div>
-            <div class="draggable" id="jeton45"> </div>
-            <div class="draggable" id="jeton50"> </div>
-            <div class="draggable" id="jeton60"> </div>
-            <div class="draggable" id="jeton72"> </div>
-
-            <div class="draggable" id="jeton90"> </div>
-            <div class="draggable" id="jeton100"> </div>
-            <div class="draggable" id="jeton108"> </div>
-            <div class="draggable" id="jeton120"> </div>
-            <div class="draggable" id="jeton135"> </div>
-            <div class="draggable" id="jeton144"> </div>
-
-            <div class="draggable" id="jeton150"> </div>
-            <div class="draggable" id="jeton180"> </div>
-            <div class="draggable" id="jeton360"> </div>
-
-            <div class="draggable" id="jetonPlus1"> </div>
-            <div class="draggable" id="jetonPlus2"> </div>
-            <div class="draggable" id="jetonPlus3"> </div>
-            <div class="draggable" id="jetonPlus5"> </div>
-            <div class="draggable" id="jetonPlus10"> </div>
-            <div class="draggable" id="jetonPlus15"> </div>
-
-            <div class="draggable" id="jetonPlus20"> </div>
-            <div class="draggable" id="jetonPlus50"> </div>
-            <div class="draggable" id="jetonPlus100"> </div>
-            <div class="draggable" id="jetonMoins1"> </div>
-            <div class="draggable" id="jetonMoins2"> </div>
-            <div class="draggable" id="jetonMoins3"> </div>
-
-            <div class="draggable" id="jetonMoins5"> </div>
-            <div class="draggable" id="jetonMoins10"> </div>
-            <div class="draggable" id="jetonMoins15"> </div>
-            <div class="draggable" id="jetonMoins20"> </div>
-            <div class="draggable" id="jetonMoins50"> </div>
-            <div class="draggable" id="jetonMoins100"> </div>
-
-            <div class="draggable" id="jetonMultipliePar2"> </div>
-            <div class="draggable" id="jetonMultipliePar3"> </div>
-
-            <div class="draggable" id="jetonDivisePar2"> </div>
-            <div class="draggable" id="jetonDivisePar3"> </div>
-
-            <div class="draggable" id="jetonPuissanceDe2"> </div>
-            <div class="draggable" id="jetonPuissanceDe3"> </div>
-
-            <div class="draggable" id="jetonRacineCarreDeNombreX"> </div>
-
-            <div class="draggable" id="jetonFonction"> </div>
-            <div class="draggable" id="jetonPause"> </div>
-        </div>
-        <!-- <div class="supportJeton"> <img src="../imagesPlayStem/supportJeton.png" class="imageSupport"> -->
         <div class="storage" id="storage-box">
             <img src="../imagesPlayStem/telecommande.png">
+
             <div class="drop-circle" style="margin-top: 10px; left: 43px;"></div>
             <div class="drop-circle" style="margin-top: 10px; left: 124px;"></div>
             <div class="drop-circle" style="margin-top: 10px; left: 201px;"></div>

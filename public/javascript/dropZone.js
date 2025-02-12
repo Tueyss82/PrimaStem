@@ -54,6 +54,12 @@ function moveLeft() {
   robot.style.marginLeft = (currentMarginLeft - 20) + "px";
 }
 
+function rotation() {
+  let currentRotate = parseInt(window.getComputedStyle(robot).rotate);
+  robot.style.rotate = (currentRotate + 90) + "deg";
+}
+
+
 // Handle start button click
 document.getElementById("boutonStart").addEventListener("click", () => {
   document.querySelectorAll(".drop-circle").forEach(slot => {
@@ -69,14 +75,66 @@ document.getElementById("boutonStart").addEventListener("click", () => {
         moveRight();
       } else if (imgSrc.includes("gauche")) {
         moveLeft();
+      } else if (imgSrc.includes("rotation")) {
+        rotation();
       }
-    } else {
-      // console.log("Ce slot est vide :", slot);
+
+      // else if (imgSrc.includes("rotation")) {
+      //   rotation();
+      // }
+
+      // else if (imgSrc.includes("rotation")) {
+      //   rotation();
+      // }
+
+      // else if (imgSrc.includes("rotation")) {
+      //   rotation();
+      // }
+
+      // else if (imgSrc.includes("rotation")) {
+      //   rotation();
+      // }
+
+      // else if (imgSrc.includes("rotation")) {
+      //   rotation();
+      // }
+
+      // else if (imgSrc.includes("rotation")) {
+      //   rotation();
+      // }
+
+      // else if (imgSrc.includes("rotation")) {
+      //   rotation();
+      // }
+
+      // else if (imgSrc.includes("rotation")) {
+      //   rotation();
+      // }
+
+      // else if (imgSrc.includes("rotation")) {
+      //   rotation();
+      // }
+
+      // else if (imgSrc.includes("rotation")) {
+      //   rotation();
+      // }
+
+      // else if (imgSrc.includes("rotation")) {
+      //   rotation();
+      // }
+
+      // else if (imgSrc.includes("rotation")) {
+      //   rotation();
+      // }
+
+      else {
+        // console.log("Ce slot est vide :", slot);
+      }
     }
   });
 });
 
-resetButton.onclick = function() {
+resetButton.onclick = function () {
   document.querySelectorAll('.drop-circle').forEach(dropZone => {
     dropZone.innerHTML = "";
   });
