@@ -30,59 +30,56 @@ document.querySelectorAll('.drop-circle').forEach(dropZone => {
   });
 });
 
-// Bas
-document.getElementById("boutonStart").addEventListener("click", () => {
-
-  // Récupérer la valeur actuelle de margin-top
+// Function to move the robot up
+function moveUp() {
   let currentMarginTop = parseInt(window.getComputedStyle(robot).marginTop);
-
-  // Déplacer vers le bas de 20px
-  robot.style.marginTop = (currentMarginTop + 20) + "px";
-});
-
-// Droite
-document.getElementById("boutonStart").addEventListener("click", () => {
-
-  // Récupérer la valeur actuelle de margin-Left
-  let currentMarginLeft = parseInt(window.getComputedStyle(robot).marginLeft);
-
-  // Déplacer vers la droite de 20px
-  robot.style.marginLeft = (currentMarginLeft + 20) + "px";
-});
-
-// Gauche
-document.getElementById("boutonStart").addEventListener("click", () => {
-
-  // Récupérer la valeur actuelle de margin-top
-  let currentMarginLeft = parseInt(window.getComputedStyle(robot).marginLeft);
-
-  // Déplacer vers la gauche de 20px
-  robot.style.marginLeft = (currentMarginLeft - 20) + "px";
-});
-
-startButton.onclick = function () {
-
-  document.getElementById("boutonStart").addEventListener("click", () => {
-    document.querySelectorAll(".drop-circle").forEach(slot => {
-      if (slot.querySelector("img") !== null) {
-        console.log("Ce slot contient un jeton :", slot);
-
-        console.log(slot.querySelector("img").src);
-      }
-      if (slot.querySelector("img").src == document.getElementById("jetonAvancer").querySelector("img").src) {
-        // Récupérer la valeur actuelle de margin-top
-        let currentMarginTop = parseInt(window.getComputedStyle(robot).marginTop);
-
-        // Déplacer vers le haut de 20px
-        robot.style.marginTop = (currentMarginTop - 20) + "px";
-      }
-
-      else {
-        // console.log("Ce slot est vide :", slot);
-      }
-    });
-
-
-
-  });
+  robot.style.marginTop = (currentMarginTop - 20) + "px";
 }
+
+// Function to move the robot down
+function moveDown() {
+  let currentMarginTop = parseInt(window.getComputedStyle(robot).marginTop);
+  robot.style.marginTop = (currentMarginTop + 20) + "px";
+}
+
+// Function to move the robot right
+function moveRight() {
+  let currentMarginLeft = parseInt(window.getComputedStyle(robot).marginLeft);
+  robot.style.marginLeft = (currentMarginLeft + 20) + "px";
+}
+
+// Function to move the robot left
+function moveLeft() {
+  let currentMarginLeft = parseInt(window.getComputedStyle(robot).marginLeft);
+  robot.style.marginLeft = (currentMarginLeft - 20) + "px";
+}
+
+// Handle start button click
+document.getElementById("boutonStart").addEventListener("click", () => {
+  document.querySelectorAll(".drop-circle").forEach(slot => {
+    if (slot.querySelector("img") !== null) {
+      let imgSrc = slot.querySelector("img").src;
+
+      // Check which direction to move based on the image source
+      if (imgSrc.includes("haut")) {
+        moveUp();
+      } else if (imgSrc.includes("bas")) {
+        moveDown();
+      } else if (imgSrc.includes("droite")) {
+        moveRight();
+      } else if (imgSrc.includes("gauche")) {
+        moveLeft();
+      }
+    } else {
+      // console.log("Ce slot est vide :", slot);
+    }
+  });
+});
+
+resetButton.onclick = function() {
+  document.querySelectorAll('.drop-circle').forEach(dropZone => {
+    dropZone.innerHTML = "";
+  });
+  robot.style.marginTop = "0px";
+  robot.style.marginLeft = "0px";
+};

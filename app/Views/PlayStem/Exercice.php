@@ -232,7 +232,7 @@
                 <button id="startButton"> <img src="imagesPlayStem\mini-logo.png"> </button>
             </div>
             <div class="boutonRestart" id="boutonRestart" style="margin-top: -170px; margin-left: 3px;">
-                <button> <img src="imagesPlayStem\boutonRestart.png"></button>
+                <button id="resetButton"> <img src="imagesPlayStem\boutonRestart.png"></button>
             </div>
 
         </div>
