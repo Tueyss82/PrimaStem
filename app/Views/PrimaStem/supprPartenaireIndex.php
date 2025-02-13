@@ -21,7 +21,7 @@ $table = new table();
         <h1 class="headerText" id="divBlog">Partenaires</h1>
 
         <?php
-        $table->setHeading('Nom du Partenaire', 'Avis du Partenaire', 'Image', 'Modifier');
+        $table->setHeading('Nom du Partenaire', 'Avis du Partenaire', 'Image', 'Supprimer');
 
         foreach ($listePartenaires as $partenaire) {
             // var_dump($partenaire);
