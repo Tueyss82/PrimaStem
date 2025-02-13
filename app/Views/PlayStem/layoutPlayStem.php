@@ -114,9 +114,6 @@
         </div>
     </div>
 </footer>
-<script src="javascript/jetonsMouvements.js"></script>
-<script src="javascript/jetonsNombres.js"></script>
-<script src="javascript/jetonsOperations.js"></script>
-<script src="javascript/jetonsRotation.js"></script>
-<script src="javascript/jetonsSpeciaux.js"></script>
+
+<script src="javascript/jetons.js"></script>
 <script src="javascript/dropZone.js"></script>
