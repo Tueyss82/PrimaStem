@@ -1,7 +1,6 @@
 <?= $this->extend('PlayStem/layoutPlayStem') ?>
 <?= $this->section('contenu') ?>
-<?= $this->extend('PlayStem/layoutPlayStem') ?>
-<?= $this->section('contenu') ?>
+
 
 <style>
     body {
@@ -24,14 +23,14 @@
         display: flex;
         width: 500px;
         /* Agrandissement de l'image */
-        height: auto;   
+        height: auto;
         padding: 10px;
         /* border: 2px dashed black; */
-        display: flex;
         flex-wrap: wrap;
         gap: 5px;
         padding-top: 300px;
         margin-bottom: 200px;
+        
     }
 
     .storage img {
@@ -86,6 +85,7 @@
 </head>
 
 <body>
+
 
     <div class="sidebar">
 
@@ -207,35 +207,62 @@
         <div class="storage" id="storage-box">
             <img src="../imagesPlayStem/telecommande.png">
 
-            <div class="drop-circle" style="margin-top: 10px; left: 43px;"></div>
-            <div class="drop-circle" style="margin-top: 10px; left: 124px;"></div>
-            <div class="drop-circle" style="margin-top: 10px; left: 201px;"></div>
-            <div class="drop-circle" style="margin-top: 10px; left: 280px;"></div>
-            <div class="drop-circle" style="margin-top: 10px; left: 350px;"></div>
-            <div class="drop-circle" style="margin-top: 10px; left: 421px;"></div>
+            <div id="storage1" class="storage1" style="margin-top: -386px;">
 
-            <div class="drop-circle" style="margin-top: 76px; left: 43px;"></div>
-            <div class="drop-circle" style="margin-top: 76px; left: 124px;"></div>
-            <div class="drop-circle" style="margin-top: 76px; left: 201px;"></div>
-            <div class="drop-circle" style="margin-top: 76px; left: 280px;"></div>
-            <div class="drop-circle" style="margin-top: 76px; left: 350px;"></div>
-            <div class="drop-circle" style="margin-top: 76px; left: 421px;"></div>
+                <div class="drop-circle" style="margin-top: 9px; left: 44px;"></div>
+                <div class="drop-circle" style="margin-top: 77px; left: 44px;"></div>
+            </div>
 
+            <div id="storage2"  class="storage2" style="margin-top: -386px;">
+                <div class="drop-circle" style="margin-top: 9px; left: 124px;"></div>
+                <div class="drop-circle" style="margin-top: 77px; left: 124px;"></div>
+            </div>
 
-            <div class="drop-circle" style="margin-top: 170px; left: 77px;"></div>
-            <div class="drop-circle" style="margin-top: 170px; left: 155px;"></div>
-            <div class="drop-circle" style="margin-top: 170px; left: 233px;"></div>
-            <div class="drop-circle" style="margin-top: 170px; left: 310px;"></div>
-            <div class="drop-circle" style="margin-top: 170px; left: 380px;"></div>
+            <div id="storage3" class="storage3" style="margin-top: -386px;">
+                <div class="drop-circle" style="margin-top: 9px; left: 201px;"></div>
+                <div class="drop-circle" style="margin-top: 77px; left: 201px;"></div>
+            </div>
 
+            <div id="storage4" class="storage4" style="margin-top: -386px;">
 
+                <div class="drop-circle" style="margin-top: 9px; left: 280px;"></div>
+                <div class="drop-circle" style="margin-top: 77px; left: 280px;"></div>
+            </div>
 
-            <div class="drop-circle" style="margin-top: 240px; left: 77px;"></div>
-            <div class="drop-circle" style="margin-top: 240px; left: 155px;"></div>
-            <div class="drop-circle" style="margin-top: 240px; left: 233px;"></div>
-            <div class="drop-circle" style="margin-top: 240px; left: 310px;"></div>
-            <div class="drop-circle" style="margin-top: 240px; left: 380px;"></div>
+            <div id="storage5" class="storage5" style="margin-top: -386px;">
+                <div class="drop-circle" style="margin-top: 9px; left: 351px;"></div>
+                <div class="drop-circle" style="margin-top: 77px; left: 351px;"></div>
+            </div>
 
+            <div id="storage6" class="storage6" style="margin-top: -386px;">
+                <div class="drop-circle" style="margin-top: 8px; left: 421px;"></div>
+                <div class="drop-circle" style="margin-top: 78px; left: 422px;"></div>
+            </div>
+
+            <div id="storage7" class="storage7" style="margin-top: -386px;">
+                <div class="drop-circle" style="margin-top: 170px; left: 77px;"></div>
+                <div class="drop-circle" style="margin-top: 240px; left: 77px;"></div>
+            </div>
+
+            <div id="storage8" class="storage8" style="margin-top: -386px;">
+                <div class="drop-circle" style="margin-top: 170px; left: 156px;"></div>
+                <div class="drop-circle" style="margin-top: 241px; left: 156px;"></div>
+            </div>
+
+            <div id="storage9" class="storage9" style="margin-top: -386px;">
+                <div class="drop-circle" style="margin-top: 170px; left: 233px;"></div>
+                <div class="drop-circle" style="margin-top: 240px; left: 233px;"></div>
+            </div>
+
+            <div id="storage10" class="storage10" style="margin-top: -386px;">
+                <div class="drop-circle" style="margin-top: 170px; left: 311px;"></div>
+                <div class="drop-circle" style="margin-top: 240px; left: 311px;"></div>
+            </div>
+
+            <div id="storage11" class="storage11" style="margin-top: -386px;">
+                <div class="drop-circle" style="margin-top: 170px; left: 381px;"></div>
+                <div class="drop-circle" style="margin-top: 240px; left: 381px;"></div>
+            </div>
 
             <div class="boutonStart" id="boutonStart" style="margin-top: -165px; margin-left: 430px;">
                 <button id="startButton"> <img src="imagesPlayStem\mini-logo.png"> </button>
@@ -285,7 +312,5 @@
         document.getElementById("fonction").addEventListener("click", () => toggleDraggables("speciaux"));
     </script>
 </body>
-
-<?= $this->endSection() ?>
 
 <?= $this->endSection() ?>
