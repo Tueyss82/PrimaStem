@@ -25,7 +25,7 @@ $table = new table();
             <input type="text" class="form-control" name="searchTitleArticle">
         </form>
         <?php
-        $table->setHeading('Titre de l\'article', 'Description de l\'article', 'Image', 'Modifier');
+        $table->setHeading('Titre de l\'article', 'Description de l\'article', 'Image', 'Supprimer');
         foreach ($listeArticles as $article) {
             // var_dump($article);
             $table->addRow(
