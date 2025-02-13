@@ -1,26 +1,8 @@
-/* @import "tailwindcss/preflight";
-
-@tailwind utilities; */
-
-
-.body {
-    display: inline-flex;
-    flex-direction: row;
-    
-}
-
-/* .dropZone1 {
-    background-color: black;
-    border-radius: 50%;
-    height: 2vw;
-    width: 2vw;
-    margin-left: 10em;
-
-} */
 
 footer {
     background-color: #000000;
-    justify-content: end;
+    display: flex;
+     margin-top: 200px;
 }
 
 .footerText {
