@@ -1,88 +1,71 @@
 <?= $this->extend('PlayStem/layoutPlayStem') ?>
 <?= $this->section('contenu') ?>
 
-
-<style>
-    body {
-        display: grid;
-        grid-template-rows: auto 1fr;
-        grid-template-columns: 1fr 3fr;
-        height: 100vh;
-        font-family: Arial, sans-serif;
-        flex-grow: 1;
-        grid-auto-flow: row;
-    }
-
-    .sidebar {
-        grid-row: 1 / 3;
-        padding: 10px;
-        background: #ddd;
-    }
-
-    .storage {
-        display: flex;
-        width: 500px;
-        /* Agrandissement de l'image */
-        height: auto;
-        padding: 10px;
-        /* border: 2px dashed black; */
-        flex-wrap: wrap;
-        gap: 5px;
-        padding-top: 300px;
-        margin-bottom: 200px;
-
-    }
-
-    .storage img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    .drop-circle {
-        position: absolute;
-        width: 60px;
-        /* Ajusté à la taille de l'image agrandie */
-        height: 60px;
-        background: white;
-        border-radius: 50%;
-        border: 3px solid #A09494;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .game-area {
-        grid-row: 2;
-        background: #f0f0f0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-    }
-
-    .robotPrimaStem {
-        width: 50px;
-        height: 50px;
-
-        top: 50%;
-        left: 50%;
-        padding-left: 200px;
-        transform: translate(-50%, -50%);
-        rotate: 0deg;
-    }
-
-    .draggable {
-        padding: 10px;
-        margin: 5px;
-        display: none;
-        box-sizing: border-box;
-        /* Masqué par défaut */
-    }
-</style>
-</head>
-
 <body>
+
+<!-- Français
+
+div sidebar => Ensemble qui comprend :
+
+- le support pour les jetons
+- les boutons de toutes les catégories de jetons
+- les emplacements pour les jetons dans la télécommande du robot
+- le bouton Start qui démarre le programme
+- le bouton Restart/Reset qui annule le programme
+
+mais ne comprends pas :
+
+- le robot 
+
+Pour réorganiser les éléments comme vous voulez, utilisez si possible les div qui encapsule 
+les différents éléments en blocs parents ayant un ou plusieurs enfants 
+pour le faire, utilisez ou modifier les div déjà exitants qui permettent déjà cela,
+comme :
+
+- class = "supportBoutons" - pour les boutons de catégories et le support de Jetons 
+
+- class = "jetons(Catégorie)|nombre" - pour les jetons des différentes catégories
+
+- class = "storage" - pour l'ensemble de la télécommande 
+                    (sans prendre en compte les boutons Start et Restart)
+                    
+- class = "storage|nombre" - pour les paires d'emplacements 
+                    (Premier = emplacement haut - Deuxième = emplacement bas)
+
+Tout autre div qui n'encapsule qu'un élément n'est pas pris en compte ici
+-->
+
+
+
+<!-- English
+
+div sidebar => Set that includes:
+
+- the support for tokens
+- buttons for all token categories
+- slots for tokens in the robot remote control
+- the Start button that launches the program
+- the Restart/Reset button that cancels the program
+
+but does not include:
+
+- the robot
+
+To rearrange the elements as you like, if possible, use divs that encapsulate different elements into parent blocks with one or more children.  
+To do this, use or modify the existing divs that already allow this, such as:
+
+- class = "supportButtons" - for category buttons and Token support
+
+- class = "tokens(Category)|number" - for tokens of different categories
+
+- class = "storage" - for the entire remote control  
+                    (excluding the Start and Restart buttons)
+
+- class = "storage|number" - for pairs of slots  
+                    (First = top slot - Second = bottom slot)
+
+Any other div that encapsulates only one element is not considered here.
+-->
 
 
     <div class="sidebar">
