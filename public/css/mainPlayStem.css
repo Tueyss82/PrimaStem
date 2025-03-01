@@ -8,7 +8,7 @@ Le css utilisé n'est en aucun cas fonctionnel dans son intégralité, veuillez 
 The css used is by no means functional in its entirety, please take this into account
 */
 
-body {
+.bodyExercice {
     display: grid;
     grid-template-rows: auto 1fr;
     grid-template-columns: 1fr 3fr;
